@@ -4,8 +4,8 @@ p_load(readxl, dplyr, ggplot2, scales, knitr, tidyr, readr, magrittr, stringr, s
 
 
 #load dataframes
-hiring <- read_csv("hiringuse.csv")
-comprehensivedata <- read.csv("ComprehensiveJune2016FellowData.csv")
+hiring <- read.csv("hiringuse.csv")
+comprehensivedata <- read.csv("ComprehensiveJune2016FellowData.csv", stringsAsFactors = FALSE)
 universitydata <-read.csv("UniversityAssignment2016.csv", strip.white=TRUE)
 PS <-read.csv("PS2016.csv")
 PI <-read.csv("PI2016.csv")
@@ -55,9 +55,9 @@ POCHiring<-filter(HiredFellows, Race != White) ##did not work, still includes wh
 
 #filter for non-white race, add to POC, worked!
 POC <- filter(HiredFellows, Race != "White", Race!="I prefer not to disclose", Race!="Not listed - Please add below", !is.na(Race))
-                   
+
 #change blank cases in Race column to NA
-HiredFellows$Race[HiredFellows$Race == ""] <- NA
+HiredFellows$Race[HiredFellows$Race == ""] <- "No"
 
 #change #N/A cases in Renewal. column to No
 HiredFellows$Renewal.[HiredFellows$Renewal. == "#N/A"] <- NA 
@@ -71,17 +71,17 @@ HiredFellows$Cert.Description[HiredFellows$Cert.Description == ""] <- NA
 #change blank cases in Lic.Desc column to NA
 HiredFellows$Lic.Desc[HiredFellows$Lic.Desc == ""] <- NA 
 
- # percentage by category library(data.table)
-                               #  d = data.table(data)
-                              #   a = d[, list(lag=unique(lag), percentage=as.numeric(table(lag)/length(lag))), by="user_type"]
-                                 
+# percentage by category library(data.table)
+#  d = data.table(data)
+#   a = d[, list(lag=unique(lag), percentage=as.numeric(table(lag)/length(lag))), by="user_type"]
+
 #Remove site code, file review, ever app submitted, ever app started, fingerprints, date start teaching, summative PST outcome (all NA), terminate, background, dual employment column
 #ComprehensiveHiring2016$RRSiteCode1.x <- NULL
 
 #make table of Renewal schools count (worked!!)
 Renewals = count(HiredFellows, Renewal. == "Yes")  
-                                 
-                                 
+
+
 #count by district (worked)
 Districts <- count(HiredFellows, District, wt = NULL, sort = TRUE)
 
@@ -90,7 +90,7 @@ DistrictsSA<- count(HiredFellows, District, Subject.Area, wt = NULL, sort = TRUE
 
 #count by district and location
 DistrictsLoc<- count(HiredFellows, District, RRLocationfromapplication17, wt = NULL, sort = TRUE)
-      
+
 #Spread DistrictSA table by subject area (long view to wide view)
 DistrictsSA_Wide <- HiredFellows %>%
   group_by(District, Subject.Area) %>%
@@ -116,30 +116,38 @@ FellowDate <- read_csv("FellowDate.csv")
 
 #join hiring date and fellow date for all 3 dates (fellow reported on HCF, HCF submission, and HCF nomination)
 HiringDates <- left_join(HiringDate, FellowDate, by = "APPID")
+HiringDates$FellowStatedDate <- as.Date(HiringDates$FellowStatedDate, format = "%m/%d/%y")
+HiringDates$NominationDate <- as.Date(HiringDates$NominationDate, format = "%m/%d/%y")
+HiringDates$HCFDate <- as.Date(HiringDates$HCFDate, format = "%m/%d/%y")
+
 
 #add column that pulls earliest data from HiringDate, formula below from Sam Firke, pulls left most column date, not earliest, changed to read_csv, and readr recognized column entries as dates
 #Re: the NA values, type ?pmin to get the manual page for that function.  You'll see it takes an argument na.rm .  Specify na.rm = TRUE to not have it return NA whenever any argument is NA.
 ?pmin
 #na.rm worked, no longer pulls NA values
 earliestdate <- mutate(HiringDates, earliest_date = pmin(NominationDate, HCFDate, FellowStatedDate, na.rm = TRUE))
+earliestdate$earliest_date <- as.Date(earliestdate$earliest_date, format = "%m/%d/%y")
 
 #replace 1/1/00 with 8/11
-earliestdate$earliest_date[earliestdate$earliest_date=="1/1/00"] <- "8/11/16"
-
-#merge cleanhiredfellows and earliest date
-CleanHiredFellows <- left_join(earliestdate, ComprehensiveHiring2016Clean, by ="APPID")
-
+earliestdate$earliest_date[earliestdate$earliest_date=="2000-01-01"] <- "2016-08-11"
+earliestdate$earliest_date[earliestdate$earliest_date=="2002-08-17"] <- "2016-08-17"
+earliestdate$earliest_date[earliestdate$earliest_date=="2015-08-10"] <- "2016-08-10"
 
 #convert date to week of year
 earliestdate <- earliestdate %>%
   # First convert "dates" to R date format; see the help file for
   # parse_date_time to understand the codes I supplied to "orders"
-  mutate(date = parse_date_time(earliest_date, orders = "%m/%d/%y")) %>%
+  mutate(date = parse_date_time(earliest_date, orders = "ymd")) %>%
   # Create vector of numeric weeks from the new date variable
   mutate(week_number = week(date)) 
 
+#merge cleanhiredfellows and earliest date
+CleanHiredFellows <- left_join(earliestdate, ComprehensiveHiring2016Clean, by ="APPID")
+
+
 #count of hires by week
 hiresbyweek <- earliestdate %>%
+  filter(earliest_date > "2015-12-31") %>%
   group_by(week_number) %>%
   summarise(count = n()) %>%
   spread(week_number, count, fill = 0)
@@ -151,44 +159,36 @@ CleanHiredFellows <- left_join(earliestdate, CleanHiredFellows, by ="APPID")
 #hist(hiring$Districts, earliestdate$week_number)
 
 #export earliestdate as CSV
-write.csv(earliestdate, "earliestdate.csv")
+write_csv(earliestdate, "earliestdate.csv")
                                
+#importweekcrosswalk
+weekcrosswalk <- read_csv("weekofhirecrosswalk.csv")
+
+#join weekcrosswalk and cleanhiredfellows (column names equated)
+CleanHiredFellows <- left_join(CleanHiredFellows, weekcrosswalk, by = c("week_number.x" = "week_number"))
 
 #next, calculate percentage of subject area hired each week and in each district
 
 #table of count of SAs hired by week
-subjectareanumber<- count(CleanHiredFellows, week_number, Subject.Area, wt = NULL, sort = TRUE)
+subjectareanumber<- count(CleanHiredFellows, week_number.x, Subject.Area, wt = NULL, sort = TRUE)
 #SA number by week percent
 subjectareanumber$percent<- prop.table(subjectareanumber$n)
 #SA number by district
-subjectareanumberloction <- count(CleanHiredFellows, Subject.Area, District, APPID, wt = NULL, sort = TRUE)
+subjectareanumberloction <- count(CleanHiredFellows, Subject.Area, District, wt = NULL, sort = TRUE)
 
 #remove duplicates so there are 1187 obs for each hiring data set; HiringDates <- unique( HiringDates[ , ] )--only including column 1 drops all other columns, but does remove correct number of duplicate obs)
 #group APPID to see how many duplicates there are and which IDs have duplicates--counts how many times each ID appears
 DuplicateHiringDates <- HiringDates %>%
   group_by(APPID) %>%
   tally() %>%
-  arrange(desc(n)) 
+  arrange(desc(n)) %>%
+  filter(n > 1)
 
 #grouped by APPID and earliest_date, then removed duplicates that were not earliest date
 CleanHiredFellows <- CleanHiredFellows %>%
-group_by(APPID) %>%
+  group_by(APPID) %>%
   arrange(earliest_date.x) %>%
   slice(1) 
-
-#calculate percentage of subject area hired each week and in each district 
-subjectareapercent <- CleanHiredFellows %>%
-  group_by(week_number, Subject.Area) %>%
-  summarise(count = n()) %>%
-  spread(week_number, count, fill = 0)
-
-#add all observations in each row, creating new column "Total"
-subjectareapercent$Total <- rowSums(subjectareapercent[ , -1]) # Not column 1
-
-prop.table(table(subjectareapercent$Total))
-#going to continue working on this with Robert 10/20-10/25
-
-
 
 #Separate project, unrelated to job search stepback----------------------------
 #load PS indicator ratings
@@ -210,7 +210,7 @@ prop.table(table(subjectareapercent$Total))
 #end of separate project-----------------------------------------------------
 
 #export clean hired fellows
-write.csv(CleanHiredFellows, "CleanHiredFellows.csv")
+write_csv(CleanHiredFellows, "CleanHiredFellows.csv")
 
 #replace I with district aligned borough code
 CleanHiredFellows$DBN <- as.character(CleanHiredFellows$DBN)
@@ -227,9 +227,9 @@ table(CleanHiredFellows$borough)
 
 #hiring by borough by week
 HiringBoroughWeek <-  CleanHiredFellows %>%
-  group_by(week_number, borough) %>%
-  summarise(count = n())           
-#next, spread to make the table longer
+  group_by(week_number.x, borough) %>%
+  summarise(count = n()) %>%
+  spread(., week_number.x, count)
 
 #remove duplicates from universitydata--order by APPID, select and rename columns
 universitydata <- universitydata %>%
@@ -248,7 +248,7 @@ universitydata <- universitydata %>%
 CleanHiredFellows <- left_join(CleanHiredFellows, universitydata, by = "APPID")
 
 #hiring by week by university
-universityhiring <- count(CleanHiredFellows, University, Subject.Area, week_number, District, wt = NULL, sort = TRUE)
+universityhiring <- count(CleanHiredFellows, University, Subject.Area, week_number.x, District, wt = NULL, sort = TRUE)
 
 #export subjectareapercent
 write.csv(subjectareapercent, "subjectareabyweek.csv")
@@ -274,16 +274,16 @@ CleanHiredFellows <-left_join(CleanHiredFellows, subjectareagroups, by = "Subjec
 #compunding % of SAs hired by week, adding to 100% in last week
 #change subjectareapercent to subject groups
 subjectareapercent <- CleanHiredFellows %>%
-  group_by(week_number, `Subject Group`) %>%
+  group_by(week_number.x, `Subject Group`) %>%
   summarise(count = n()) %>%
   mutate(percentsubject = round((value/sum(value)*100), 2)) %>%
-  spread(week_number, count, fill = 0)
+  spread(week_number.x, count, fill = 0)
 
 #calculate compounding % of each subject group, by week, totalling to 100% by week 41
 #subject group first, as we are most interested in aggregating groups by this variable
 #ungroup undoes the group_by function--otherwise it would have given percentage of total
 subjectareapercent <- CleanHiredFellows %>%
-  group_by(`Subject Group`, week_number) %>%
+  group_by(`Subject Group`, week_number.x) %>%
   summarise(count = n()) %>%
   ungroup() %>%
   group_by(`Subject Group`) %>%
@@ -297,7 +297,7 @@ write.csv(subjectareapercent, "subjectareapercent.csv")
 #create university groups (removes subject area, just leaves university) in excel crosswalk, import
 UniversityCrosswalk <- read_csv("UniversityCrosswalk.csv")
 
-#clean trailing spaces off of Lehman Math and ESL, use read.csv or read.table you can set the parameterstrip.white=TRUE. 
+#clean trailing spaces off of Lehman Math and ESL, use read.csv?or?read.table?you can set the parameterstrip.white=TRUE. 
 trim.trailing <- function (x) sub("\\s+$", "", x) 
 CleanHiredFellows$University <- trim.trailing(CleanHiredFellows$University)
 
@@ -306,12 +306,47 @@ CleanHiredFellows <-left_join(CleanHiredFellows, UniversityCrosswalk, by = "Univ
 
 #calculate percent of university hired by week
 universitypercent <- CleanHiredFellows %>%
-  group_by(`UniversityClean`, week_number) %>%
+  group_by(`UniversityClean`, week_number.x) %>%
   summarise(count = n()) %>%
   ungroup() %>%
   group_by(`UniversityClean`) %>%
   mutate(percent_of_total = round((count/sum(count)*100), 2),
          cumulative = round(cumsum(percent_of_total)))
+
+#change week of hire to date format
+CleanHiredFellows <- CleanHiredFellows %>%
+  mutate(weekdate = parse_date_time(weekdate, orders = "%m/%d/%y"))
+
+#cumulative percent of Fellow hiring by Borough
+boroughpercent <- CleanHiredFellows %>%
+  group_by(borough, weekdate) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  group_by(borough) %>%
+  mutate(percent_of_total = round((count/sum(count)*100), 2),
+         cumulative = round(cumsum(percent_of_total)))
+
+renewalpercent <- CleanHiredFellows %>%
+  group_by(Renewal., weekdate) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  group_by(Renewal.) %>%
+  mutate(percent_of_total = round((count/sum(count)*100), 2),
+         cumulative = round(cumsum(percent_of_total)))
+         
+
+#Percent of Fellows hired in Renewals by week
+renewalpercent <- CleanHiredFellows %>%
+  group_by(Renewal., weekdate) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  group_by(Renewal.) %>%
+  mutate(percent_of_total = round((count/sum(count)*100), 2),
+         cumulative = round(cumsum(percent_of_total)))
+
+#export renewalpercent
+write_csv(renewalpercent, "renewalbyweek.csv")
+
 
 #look up Caroline Cornell to determine why she is not on the universitydate set--what is her university? was it an error? can i input her university manually?
 
@@ -328,17 +363,92 @@ test_count2 <-  CleanHiredFellows %>%
   tally()
 
 
-
 #graph final summative score by hire week to see if there is a connection between perf at PST and hire date
 hist(CleanHiredFellows$Final.Summative.Score)
-plot(CleanHiredFellows$Final.Summative.Score, CleanHiredFellows$week_number)
-ggplot(CleanHiredFellows, aes(x = Final.Summative.Score, y = week_number)) +
+plot(CleanHiredFellows$Final.Summative.Score, CleanHiredFellows$week_number.x)
+ggplot(CleanHiredFellows, aes(x = Final.Summative.Score, y = week_number.x)) +
   geom_point()
 
 
+#load NHF for all Hires in NYCDOE 2016
+NHF <- read_csv("NHF2016.csv")
+
+#remove empty rows from NHF
+remove_empty_rows(NHF)
+
+#add borough column to NHF
+NHF <- NHF %>%
+  mutate(borough = str_extract(Location, "[A-Z]+" )) 
+table(NHF$borough)
+
+#percent of all Hires working in X
+NHFBorough<- count(NHF, borough, wt = NULL, sort = TRUE)
+#SA number by week percent
+NHFBorough$percent<- prop.table(NHFBorough$n)
+
+#export NHF Borough percent
+write_csv(NHFBorough, "NHFBorough.csv")
+
+#import all 2016 Hires
+allhires <- read_csv("2016AllHiresFV.csv")
+#remove random rows that have all NAs
+allhires <- allhires[complete.cases(allhires[,2]),] 
+
+allhires <- allhires %>%
+  mutate(borough = str_extract(Location, "[A-Z]+" )) 
+table(allhires$borough)
+
+
+#compunding % of SAs hired by week, adding to 100% in last week
+#change subjectareapercent to subject groups
+subjectareapercent <- CleanHiredFellows %>%
+  group_by(week_number.x, `Subject Group`) %>%
+  summarise(count = n()) %>%
+  mutate(percentsubject = round((value/sum(value)*100), 2)) %>%
+  spread(week_number.x, count, fill = 0)
 
 #run a correlation between week number and final summative rating 
 
-rcorr(x, type="pearson") # type can be pearson or spearman
+#rcorr(x, type="pearson") # type can be pearson or spearman
 #mtcars is a data frame 
-rcorr(as.matrix(mtcars))
+#rcorr(as.matrix(mtcars))
+
+# PSTWeekCorrelation <- CleanHiredFellows %>%
+#   rcorr(PSTGroup, week_number, type="pearson") DID NOT WORK
+
+
+#clean 2015 for comparison
+
+#convert date to week of year for 2015
+Hiring2015 <- Hiring2015 %>%
+  # First convert "dates" to R date format; see the help file for
+  # parse_date_time to understand the codes I supplied to "orders"
+  mutate(date = parse_date_time(Nomination.Date, orders = "%m/%d/%Y")) %>%
+  # Create vector of numeric weeks from the new date variable
+  mutate(week_number = week(date)) 
+#change weeknumber to date format
+#join weekcrosswalk and cleanhiredfellows
+Hiring2015 <- left_join(Hiring2015, weekcrosswalk, by ="week_number")
+
+#replace I/XP/KLC with district aligned borough code 
+Hiring2015$Location <- as.character(Hiring2015$Location)
+Hiring2015$Location[Hiring2015$Location=="23I023"] <- "23K023"
+Hiring2015$Location[Hiring2015$Location=="07XP07"] <- "07X007"
+Hiring2015$Location[Hiring2015$Location=="88KLC1"] <- "88K607"
+
+#add borough column to Hiring2015
+Hiring2015 <- Hiring2015 %>%
+  mutate(borough = str_extract(Location, "[A-Z]+" )) 
+table(Hiring2015$borough)
+
+#calculate hiring by borough by week 2015
+Hiring2015BoroughWeek <-  Hiring2015 %>%
+  group_by(week_number, borough) %>%
+  summarise(count = n()) %>%
+  spread(., week_number, count)
+
+
+#calculate difference in time between earliest date and nomination date for 2016
+CleanHiredFellows$daysBetween <- as.Date(CleanHiredFellows$earliest_date.x, format = "%m/%d/%y") - as.Date(CleanHiredFellows$NominationDate.x, format = "%m/%d/%y")
+CleanHiredFellows$daysBetweenHCF <- as.Date(CleanHiredFellows$HCFDate.x, format = "%m/%d/%y") - as.Date(CleanHiredFellows$NominationDate.x, format = "%m/%d/%y")
+
