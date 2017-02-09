@@ -107,7 +107,7 @@ interviewscheduleshowcount30 <- comprehensive %>%
   mutate(schedule_rate_interview30 = scheduled_interview/invited_interview)
 
 #add all invited, schedule, show count to one dataframe
-scheduleandshow <-data.frame(interviewscheduleshowcount30, interviewscheduleshowcount14, initialscheduleshowcount14, initialscheduleshowcount30)
+scheduleandshow <- data.frame(interviewscheduleshowcount30, interviewscheduleshowcount14, initialscheduleshowcount14, initialscheduleshowcount30)
 
 #muliply by 100 to get percent, add to scheduleandshow dataframe
 #***now, how can i make this long instead of wide?
@@ -121,8 +121,11 @@ scheduleandshow$show_rate_initial30 <- initialscheduleshowcount30$show_rate_init
 scheduleandshow$schedule_rate_initial30 <- initialscheduleshowcount30$schedule_rate_initial30*100 
 
 #finally, use gather to convert data from wide format to long
-output <- round(scheduleandshow, digits=2) 
-output <- gather(scheduleandshow)
+output <- scheduleandshow %>%
+  gather(var, value) %>% # what you want the column names to be
+  mutate(value = round(value, digits = 2))
+
+
 #gather adds decimal places  
 
 #calculate days between invite and schedule, schedule and show
