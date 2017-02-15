@@ -23,7 +23,7 @@ comprehensive<-comprehensive[ ! comprehensive$RRAppStatus60 %in% c("Account Crea
 #keep only useful columns df <- subset(df, select = c(a,c))
 comprehensive <- subset(comprehensive, select = c("RRAppUserId3", "RRPrimarySubject8", "RRLocationfromapplication17", "RREverinvitedtophoneinterview31", "RRDateFirstInvitedtoPhoneInterview32", "RRScheduledaphoneinterview33", "RRDatecandidatescheduledfirstphoneinterview34", "RRPhoneinterviewed35", "RRDateofphoneinterview36", "RREverinvitedtoSelectionDay37","RRDateInvitedtoSelectionDay38", "RRScheduledaninpersoninterview39", "RRDatewhenscheduledinpersoninterview40", "RREverInterviewed41", "RRDateofinterview42"))
 
-#change all date variables to date class and consistent format
+#change all date variables to date class and consistent format (could this be done more efficiently?)
 comprehensive$RRDateofinterview42 <- as.Date(comprehensive$RRDateofinterview42, "%m/%d/%Y")
 comprehensive$RRDateFirstInvitedtoPhoneInterview32 <- as.Date(comprehensive$RRDateFirstInvitedtoPhoneInterview32, "%m/%d/%Y")
 comprehensive$RRDatecandidatescheduledfirstphoneinterview34 <- as.Date(comprehensive$RRDatecandidatescheduledfirstphoneinterview34, "%m/%d/%Y")
@@ -107,10 +107,10 @@ interviewscheduleshowcount30 <- comprehensive %>%
   mutate(schedule_rate_interview30 = scheduled_interview/invited_interview)
 
 #add all invited, schedule, show count to one dataframe
-scheduleandshow <-data.frame(interviewscheduleshowcount30, interviewscheduleshowcount14, initialscheduleshowcount14, initialscheduleshowcount30)
+scheduleandshow <- data.frame(interviewscheduleshowcount30, interviewscheduleshowcount14, initialscheduleshowcount14, initialscheduleshowcount30)
 
 #muliply by 100 to get percent, add to scheduleandshow dataframe
-#***now, how can i make this long instead of wide?
+# could this be written more efficiently?
 scheduleandshow$show_rate_interview14 <- interviewscheduleshowcount14$show_rate_interview14*100 
 scheduleandshow$schedule_rate_interview14 <- interviewscheduleshowcount14$schedule_rate_interview14*100 
 scheduleandshow$schedule_rate_interview30 <- interviewscheduleshowcount30$show_rate_interview30*100 
@@ -120,10 +120,11 @@ scheduleandshow$schedule_rate_initial14 <- initialscheduleshowcount14$schedule_r
 scheduleandshow$show_rate_initial30 <- initialscheduleshowcount30$show_rate_initial30*100 
 scheduleandshow$schedule_rate_initial30 <- initialscheduleshowcount30$schedule_rate_initial30*100 
 
-#finally, use gather to convert data from wide format to long
-output <- round(scheduleandshow, digits=2) 
-output <- gather(scheduleandshow)
-#gather adds decimal places  
+#finally, select only schedule and show rates, and use gather to convert data from wide format to long, round to 2 decimal places
+output <- scheduleandshow %>%
+  select(schedule_rate_interview14, show_rate_interview14, schedule_rate_initial14, show_rate_initial14, schedule_rate_interview30, show_rate_interview30, schedule_rate_initial30, show_rate_initial30) %>%
+  gather(scheduleandshow, value) %>% # what you want the column names to be
+  mutate(value = round(value, digits = 2))
 
 #calculate days between invite and schedule, schedule and show
 comprehensive$phonedaystoschedule <- as.Date(comprehensive$RRDatecandidatescheduledfirstphoneinterview34, format = "%m/%d/%y") - as.Date(comprehensive$RRDateFirstInvitedtoPhoneInterview32, format = "%m/%d/%y")
