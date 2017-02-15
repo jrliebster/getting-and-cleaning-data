@@ -26,7 +26,7 @@ comprehensive <- subset(comprehensive, select = c("RRAppUserId3", "RRPrimarySubj
 #change all date variables to date class and consistent format (could this be done more efficiently?)
 #lapply?
 #comprehensive[,"RRDateofinterview42", "RRDateFirstInvitedtoPhoneInterview32", "RRDatecandidatescheduledfirstphoneinterview34", "RRDateofphoneinterview36", "RRDateInvitedtoSelectionDay38", "RRDatewhenscheduledinpersoninterview40"] <- as.Date(comprehensive[,"RRDateofinterview42", "RRDateFirstInvitedtoPhoneInterview32", "RRDatecandidatescheduledfirstphoneinterview34", "RRDateofphoneinterview36", "RRDateInvitedtoSelectionDay38", "RRDatewhenscheduledinpersoninterview40"], "%m/%d/%Y")
-
+#Marie--this could change to become more efficient/streamlined. I'll send you an updated version if it does
 comprehensive$RRDateofinterview42 <- as.Date(comprehensive$RRDateofinterview42, "%m/%d/%Y")
 comprehensive$RRDateFirstInvitedtoPhoneInterview32 <- as.Date(comprehensive$RRDateFirstInvitedtoPhoneInterview32, "%m/%d/%Y")
 comprehensive$RRDatecandidatescheduledfirstphoneinterview34 <- as.Date(comprehensive$RRDatecandidatescheduledfirstphoneinterview34, "%m/%d/%Y")
