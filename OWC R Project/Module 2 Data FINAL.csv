@@ -1,0 +1,3710 @@
+teacher_id,experience,exp_cat,degree,salary,score,rating,retained
+3001,1,New,MA,35000,204.6760293,Developing,0
+3002,4,Novice,MA,38000,233.3192515,Developing,1
+3003,12,Mid,MA,46000,205.6742551,Developing,0
+3004,31,Career,BA,64000,212.4381383,Developing,0
+3005,10,Mid,BA,43000,185.3913217,Minimally Effective,1
+3006,10,Mid,BA,43000,255.7189175,Proficient,1
+3007,13,Mid,BA,46000,275.9585665,Highly Effective,1
+3008,9,Mid,MA,43000,185.0380799,Minimally Effective,1
+3009,26,Career,BA,59000,187.9378563,Minimally Effective,1
+3010,23,Experienced,BA,56000,240.8564988,Developing,1
+3011,3,Novice,MA,37000,183.8740774,Minimally Effective,1
+3012,1,New,MA,35000,208.745031,Developing,1
+3013,33,Career,MA,69000,180.0806227,Minimally Effective,1
+3014,30,Career,BA,63000,216.7309334,Developing,0
+3015,6,Novice,MA,40000,229.5804898,Developing,1
+3016,1,New,MA,35000,202.6243432,Developing,1
+3017,18,Experienced,MA,52000,243.7032664,Developing,0
+3018,12,Mid,BA,45000,222.1304392,Developing,0
+3019,20,Experienced,MA,54000,230.5899385,Developing,1
+3020,22,Experienced,BA,55000,186.2432306,Minimally Effective,1
+3021,14,Mid,MA,48000,250.0847152,Proficient,0
+3022,29,Career,BA,62000,229.8038655,Developing,1
+3023,3,Novice,BA,36000,234.3524303,Developing,1
+3024,11,Mid,MA,45000,256.3646133,Proficient,1
+3025,23,Experienced,MA,57000,274.0445079,Proficient,1
+3026,8,Mid,BA,41000,182.2334817,Minimally Effective,1
+3027,12,Mid,BA,47000,224.6522111,Developing,0
+3028,19,Experienced,BA,54000,228.686164,Developing,0
+3029,30,Career,BA,65000,231.8127761,Developing,1
+3030,4,Novice,MA,38000,256.8425702,Proficient,1
+3031,32,Career,MA,66000,226.9372649,Developing,1
+3032,15,Mid,BA,48000,220.3430615,Developing,1
+3033,1,New,BA,34000,200.878281,Developing,0
+3034,14,Mid,BA,47000,235.3422261,Developing,1
+3035,10,Mid,MA,44000,212.0025243,Developing,1
+3036,2,New,BA,35000,197.9213809,Minimally Effective,1
+3037,38,Career,BA,71000,209.8077004,Developing,1
+3038,2,New,MA,36000,167.8731533,Minimally Effective,1
+3039,13,Mid,BA,46000,270.7496432,Proficient,1
+3040,6,Novice,BA,39000,216.729808,Developing,0
+3041,10,Mid,BA,43000,230.1758509,Developing,1
+3042,3,Novice,BA,36000,237.1967281,Developing,1
+3043,19,Experienced,BA,52000,247.0227444,Developing,1
+3044,2,New,BA,35000,205.3551097,Developing,0
+3045,25,Career,BA,58000,255.3707192,Proficient,1
+3046,19,Experienced,BA,52000,236.0416532,Developing,1
+3047,20,Experienced,MA,54000,240.4201476,Developing,1
+3048,3,Novice,MA,37000,265.8702969,Proficient,1
+3049,24,Experienced,MA,58000,186.4651045,Minimally Effective,1
+3050,1,New,BA,34000,171.5957318,Minimally Effective,1
+3051,14,Mid,BA,47000,280.5085997,Highly Effective,1
+3052,5,Novice,BA,38000,248.848463,Developing,1
+3053,20,Experienced,BA,53000,212.8727572,Developing,1
+3054,4,Novice,BA,37000,229.7732724,Developing,1
+3055,6,Novice,MA,40000,294.0669246,Highly Effective,0
+3056,7,Mid,BA,40000,224.8157486,Developing,1
+3057,4,Novice,BA,37000,220.3161212,Developing,0
+3058,2,New,BA,35000,144.6382527,Ineffective,1
+3059,1,New,BA,34000,245.2892037,Developing,0
+3060,8,Mid,BA,41000,258.3133416,Proficient,1
+3061,19,Experienced,BA,52000,193.0744591,Minimally Effective,1
+3062,5,Novice,MA,39000,217.6571336,Developing,1
+3063,1,New,BA,34000,158.6413442,Minimally Effective,0
+3064,1,New,MA,35000,182.8068253,Minimally Effective,0
+3065,4,Novice,BA,37000,262.2723481,Proficient,1
+3066,26,Career,MA,62000,247.7132858,Developing,1
+3067,21,Experienced,BA,54000,203.287493,Developing,1
+3068,3,Novice,BA,36000,203.1838749,Developing,0
+3069,21,Experienced,MA,55000,200.3480454,Developing,0
+3070,12,Mid,BA,45000,224.7240846,Developing,1
+3071,13,Mid,BA,48000,203.3714685,Developing,1
+3072,3,Novice,MA,37000,177.7619675,Minimally Effective,1
+3073,2,New,MA,36000,233.3625536,Developing,0
+3074,27,Career,BA,60000,239.1937871,Developing,1
+3075,28,Career,BA,61000,199.8724243,Minimally Effective,1
+3076,1,New,BA,34000,206.7068337,Developing,0
+3077,1,New,BA,34000,214.9127311,Developing,1
+3078,30,Career,BA,63000,226.6647372,Developing,1
+3079,11,Mid,MA,45000,223.6814035,Developing,1
+3080,27,Career,MA,61000,227.0677476,Developing,0
+3081,13,Mid,MA,47000,223.2006487,Developing,1
+3082,8,Mid,BA,41000,245.9406001,Developing,0
+3083,1,New,BA,34000,159.8419572,Minimally Effective,1
+3084,30,Career,BA,63000,253.3007681,Proficient,0
+3085,3,Novice,BA,36000,241.9679815,Developing,1
+3086,32,Career,BA,65000,231.8680313,Developing,1
+3087,16,Experienced,BA,49000,244.0088696,Developing,1
+3088,13,Mid,MA,47000,281.3078548,Highly Effective,1
+3089,5,Novice,BA,38000,231.1524161,Developing,1
+3090,11,Mid,MA,45000,241.7070737,Developing,1
+3091,10,Mid,MA,44000,201.5507466,Developing,0
+3092,18,Experienced,BA,51000,195.4409759,Minimally Effective,1
+3093,36,Career,MA,70000,183.3770782,Minimally Effective,1
+3094,3,Novice,MA,37000,198.7999579,Minimally Effective,1
+3095,23,Experienced,BA,58000,215.6135402,Developing,1
+3096,4,Novice,BA,37000,225.7309503,Developing,1
+3097,14,Mid,MA,48000,237.682029,Developing,1
+3098,27,Career,BA,60000,207.9040051,Developing,1
+3099,19,Experienced,BA,52000,281.0447313,Highly Effective,1
+3100,1,New,BA,34000,195.6591436,Minimally Effective,1
+3101,18,Experienced,BA,51000,218.4460746,Developing,1
+3102,1,New,BA,34000,178.8596013,Minimally Effective,0
+3103,38,Career,BA,71000,226.7411445,Developing,1
+3104,2,New,MA,36000,218.5511097,Developing,1
+3105,24,Experienced,BA,57000,256.3210677,Proficient,1
+3106,17,Experienced,MA,51000,226.3028417,Developing,1
+3107,24,Experienced,BA,57000,246.6170199,Developing,0
+3108,2,New,BA,35000,144.6547739,Ineffective,0
+3109,23,Experienced,BA,56000,226.5657856,Developing,1
+3110,7,Mid,BA,40000,246.4122098,Developing,1
+3111,2,New,MA,36000,217.5973389,Developing,1
+3112,3,Novice,MA,37000,185.8122959,Minimally Effective,1
+3113,17,Experienced,BA,50000,190.1034368,Minimally Effective,0
+3114,20,Experienced,PhD or EdD,57000,282.6114361,Highly Effective,1
+3115,18,Experienced,BA,51000,221.5355857,Developing,1
+3116,1,New,BA,34000,150.842607,Minimally Effective,0
+3117,15,Mid,BA,48000,266.3674248,Proficient,1
+3118,36,Career,MA,72000,226.3560012,Developing,0
+3119,11,Mid,BA,44000,202.5042338,Developing,1
+3120,23,Experienced,BA,56000,255.3143808,Proficient,1
+3121,10,Mid,BA,43000,241.5602755,Developing,0
+3122,11,Mid,MA,45000,219.6703991,Developing,1
+3123,37,Career,BA,70000,224.1998815,Developing,1
+3124,11,Mid,MA,45000,248.7272636,Developing,1
+3125,16,Experienced,MA,50000,257.589681,Proficient,1
+3126,30,Career,BA,63000,250.8529484,Proficient,1
+3127,15,Mid,MA,49000,186.6130409,Minimally Effective,1
+3128,12,Mid,MA,48000,258.8228894,Proficient,1
+3129,17,Experienced,BA,50000,236.0899616,Developing,1
+3130,6,Novice,MA,40000,263.9399556,Proficient,1
+3131,9,Mid,MA,43000,223.4232809,Developing,1
+3132,4,Novice,BA,37000,219.660448,Developing,0
+3133,8,Mid,MA,42000,211.6102497,Developing,1
+3134,4,Novice,BA,37000,166.2848449,Minimally Effective,1
+3135,5,Novice,MA,39000,225.6598106,Developing,1
+3136,17,Experienced,BA,50000,279.1055349,Highly Effective,1
+3137,14,Mid,BA,47000,249.2862569,Developing,1
+3138,15,Mid,PhD or EdD,50000,299.8013431,Highly Effective,1
+3139,1,New,BA,34000,196.610411,Minimally Effective,1
+3140,23,Experienced,MA,57000,243.2944637,Developing,1
+3141,8,Mid,BA,41000,217.2765838,Developing,1
+3142,11,Mid,BA,44000,228.7955597,Developing,1
+3143,1,New,BA,34000,178.5879487,Minimally Effective,1
+3144,7,Mid,BA,40000,203.1633465,Developing,1
+3145,2,New,BA,35000,182.9246396,Minimally Effective,1
+3146,14,Mid,BA,47000,221.3150736,Developing,1
+3147,9,Mid,BA,42000,232.0931176,Developing,1
+3148,19,Experienced,BA,52000,266.1539187,Proficient,1
+3149,4,Novice,BA,37000,181.7443398,Minimally Effective,1
+3150,2,New,BA,35000,173.7817545,Minimally Effective,1
+3151,2,New,BA,35000,239.5198091,Developing,1
+3152,12,Mid,MA,46000,207.6116248,Developing,1
+3153,16,Experienced,BA,49000,208.072137,Developing,1
+3154,4,Novice,MA,38000,218.0623667,Developing,0
+3155,17,Experienced,BA,50000,229.9020341,Developing,0
+3156,3,Novice,BA,36000,177.2387968,Minimally Effective,1
+3157,27,Career,BA,60000,240.3079099,Developing,0
+3158,29,Career,BA,62000,220.6272994,Developing,1
+3159,16,Experienced,BA,49000,207.1056817,Developing,1
+3160,35,Career,MA,69000,236.5646341,Developing,1
+3161,19,Experienced,BA,54000,218.3233541,Developing,0
+3162,2,New,MA,36000,219.3695211,Developing,1
+3163,6,Novice,BA,39000,246.9465809,Developing,1
+3164,34,Career,BA,67000,276.268319,Highly Effective,0
+3165,2,New,BA,35000,166.3115073,Minimally Effective,1
+3166,12,Mid,MA,46000,292.1830433,Highly Effective,0
+3167,28,Career,MA,62000,170.4580847,Minimally Effective,0
+3168,1,New,MA,35000,180.7642066,Minimally Effective,0
+3169,21,Experienced,MA,55000,237.6449599,Developing,1
+3170,9,Mid,BA,42000,153.1006487,Minimally Effective,0
+3171,17,Experienced,BA,50000,249.1521894,Developing,1
+3172,21,Experienced,BA,54000,236.1719854,Developing,0
+3173,25,Career,BA,58000,236.5910724,Developing,0
+3174,3,Novice,MA,37000,224.0343081,Developing,1
+3175,20,Experienced,BA,53000,204.0673725,Developing,1
+3176,18,Experienced,MA,52000,143.3467723,Ineffective,1
+3177,21,Experienced,MA,57000,221.1924293,Developing,1
+3178,22,Experienced,MA,56000,252.9928656,Proficient,1
+3179,27,Career,BA,60000,229.3707126,Developing,1
+3180,14,Mid,BA,47000,248.2365203,Developing,0
+3181,11,Mid,BA,48000,226.5909846,Developing,1
+3182,3,Novice,MA,37000,242.0797707,Developing,1
+3183,3,Novice,MA,37000,219.0042168,Developing,1
+3184,27,Career,BA,62000,202.2742562,Developing,0
+3185,3,Novice,MA,37000,185.9816646,Minimally Effective,1
+3186,2,New,MA,36000,219.9141079,Developing,1
+3187,2,New,MA,36000,159.0064674,Minimally Effective,1
+3188,12,Mid,BA,45000,247.809392,Developing,1
+3189,1,New,MA,35000,154.2989794,Minimally Effective,1
+3190,20,Experienced,BA,53000,199.5703838,Minimally Effective,1
+3191,27,Career,MA,61000,220.4180199,Developing,1
+3192,32,Career,BA,65000,235.6781724,Developing,0
+3193,6,Novice,MA,40000,196.1408987,Minimally Effective,1
+3194,1,New,MA,35000,161.1154298,Minimally Effective,0
+3195,34,Career,MA,68000,224.7693285,Developing,1
+3196,7,Mid,PhD or EdD,42000,217.6713077,Developing,1
+3197,5,Novice,BA,38000,266.9474456,Proficient,0
+3198,2,New,BA,35000,224.3113349,Developing,0
+3199,15,Mid,MA,49000,226.6215337,Developing,1
+3200,36,Career,BA,69000,216.3891935,Developing,1
+3201,30,Career,MA,66000,224.2278124,Developing,1
+3202,18,Experienced,BA,51000,245.7922878,Developing,1
+3203,2,New,BA,35000,211.034849,Developing,0
+3204,8,Mid,BA,41000,267.9681543,Proficient,1
+3205,24,Experienced,MA,58000,248.155926,Developing,1
+3206,4,Novice,BA,37000,221.1259305,Developing,1
+3207,3,Novice,BA,36000,201.3628105,Developing,1
+3208,2,New,MA,36000,181.8596863,Minimally Effective,1
+3209,27,Career,BA,60000,253.0896502,Proficient,1
+3210,21,Experienced,BA,54000,210.323127,Developing,1
+3211,21,Experienced,BA,54000,222.8163964,Developing,0
+3212,9,Mid,BA,42000,238.5719521,Developing,1
+3213,1,New,MA,35000,142.959828,Ineffective,1
+3214,24,Experienced,BA,57000,250.4130452,Proficient,1
+3215,37,Career,BA,70000,193.6319932,Minimally Effective,1
+3216,2,New,BA,35000,229.7303009,Developing,1
+3217,1,New,MA,35000,229.0012632,Developing,0
+3218,6,Novice,MA,40000,219.0022866,Developing,0
+3219,7,Mid,BA,40000,182.3936722,Minimally Effective,1
+3220,23,Experienced,BA,56000,188.196178,Minimally Effective,1
+3221,33,Career,BA,66000,185.0058096,Minimally Effective,1
+3222,5,Novice,BA,38000,207.3096483,Developing,1
+3223,15,Mid,BA,48000,219.3090562,Developing,1
+3224,9,Mid,MA,43000,230.5932687,Developing,1
+3225,14,Mid,BA,49000,217.8638121,Developing,0
+3226,3,Novice,MA,37000,214.5850607,Developing,1
+3227,26,Career,BA,59000,239.2323424,Developing,1
+3228,13,Mid,MA,47000,193.3155919,Minimally Effective,1
+3229,21,Experienced,MA,55000,233.4696269,Developing,1
+3230,14,Mid,BA,47000,267.3127294,Proficient,1
+3231,19,Experienced,MA,53000,237.1158124,Developing,1
+3232,23,Experienced,BA,56000,254.7900603,Proficient,0
+3233,16,Experienced,BA,49000,195.8037083,Minimally Effective,1
+3234,8,Mid,BA,41000,239.4395821,Developing,1
+3235,23,Experienced,BA,56000,210.6103547,Developing,0
+3236,1,New,BA,34000,238.6047565,Developing,1
+3237,30,Career,BA,63000,207.2982224,Developing,1
+3238,3,Novice,PhD or EdD,38000,210.6665298,Developing,1
+3239,29,Career,PhD or EdD,64000,185.9516927,Minimally Effective,1
+3240,14,Mid,MA,48000,188.7531529,Minimally Effective,1
+3241,8,Mid,BA,41000,251.1635973,Proficient,1
+3242,1,New,MA,35000,197.6371997,Minimally Effective,1
+3243,1,New,BA,34000,189.3736902,Minimally Effective,0
+3244,25,Career,BA,58000,273.0925889,Proficient,1
+3245,10,Mid,BA,43000,235.5805844,Developing,1
+3246,5,Novice,BA,38000,205.5925568,Developing,1
+3247,11,Mid,BA,44000,254.0898243,Proficient,1
+3248,9,Mid,BA,42000,243.7413612,Developing,1
+3249,14,Mid,BA,47000,212.5575142,Developing,1
+3250,26,Career,MA,60000,237.2021494,Developing,1
+3251,17,Experienced,MA,53000,214.6884827,Developing,1
+3252,1,New,BA,34000,199.1622326,Minimally Effective,1
+3253,31,Career,BA,64000,184.4972836,Minimally Effective,1
+3254,2,New,MA,36000,188.4799538,Minimally Effective,1
+3255,9,Mid,BA,42000,198.6992237,Minimally Effective,1
+3256,10,Mid,MA,44000,272.2462037,Proficient,1
+3257,7,Mid,MA,41000,185.085157,Minimally Effective,1
+3258,13,Mid,MA,47000,212.3696363,Developing,1
+3259,8,Mid,BA,41000,195.7456407,Minimally Effective,0
+3260,15,Mid,BA,50000,214.5006397,Developing,0
+3261,31,Career,BA,64000,227.9853905,Developing,1
+3262,9,Mid,MA,43000,240.3705643,Developing,1
+3263,7,Mid,MA,41000,230.4803104,Developing,1
+3264,25,Career,BA,58000,235.9232969,Developing,1
+3265,6,Novice,MA,40000,184.6747652,Minimally Effective,1
+3266,18,Experienced,MA,52000,208.5303284,Developing,1
+3267,32,Career,PhD or EdD,67000,277.7758403,Highly Effective,1
+3268,2,New,BA,35000,221.7082679,Developing,1
+3269,3,Novice,BA,36000,202.4394148,Developing,1
+3270,5,Novice,MA,39000,184.1061299,Minimally Effective,1
+3271,10,Mid,PhD or EdD,45000,207.6450454,Developing,1
+3272,1,New,MA,35000,236.4994167,Developing,1
+3273,3,Novice,BA,36000,245.6982818,Developing,1
+3274,20,Experienced,BA,53000,202.4448874,Developing,1
+3275,16,Experienced,BA,49000,191.7338535,Minimally Effective,1
+3276,1,New,BA,34000,190.0449781,Minimally Effective,1
+3277,3,Novice,MA,37000,246.3493421,Developing,1
+3278,9,Mid,BA,42000,247.3459306,Developing,1
+3279,16,Experienced,BA,49000,246.6586934,Developing,1
+3280,3,Novice,BA,36000,173.5633697,Minimally Effective,1
+3281,10,Mid,BA,43000,279.3308945,Highly Effective,1
+3282,14,Mid,BA,47000,271.9115481,Proficient,0
+3283,9,Mid,BA,42000,268.1979796,Proficient,0
+3284,9,Mid,BA,42000,276.5112897,Highly Effective,0
+3285,35,Career,BA,72000,244.9271166,Developing,1
+3286,23,Experienced,MA,57000,223.0774407,Developing,1
+3287,1,New,MA,35000,225.9859871,Developing,1
+3288,20,Experienced,BA,53000,208.413713,Developing,1
+3289,1,New,MA,35000,206.7726573,Developing,0
+3290,9,Mid,MA,43000,228.3023912,Developing,1
+3291,28,Career,BA,63000,253.9682137,Proficient,1
+3292,18,Experienced,BA,51000,238.9193155,Developing,1
+3293,13,Mid,BA,46000,272.4936263,Proficient,1
+3294,9,Mid,MA,43000,289.6834492,Highly Effective,1
+3295,9,Mid,BA,42000,226.9400668,Developing,1
+3296,21,Experienced,BA,56000,254.8739005,Proficient,1
+3297,10,Mid,BA,43000,225.495175,Developing,1
+3298,10,Mid,MA,44000,262.983558,Proficient,1
+3299,10,Mid,MA,44000,210.6659241,Developing,1
+3300,29,Career,MA,63000,270.2757807,Proficient,1
+3301,10,Mid,MA,44000,220.0271848,Developing,1
+3302,13,Mid,BA,46000,273.9224193,Proficient,1
+3303,9,Mid,BA,42000,227.4738204,Developing,1
+3304,28,Career,MA,62000,218.1393115,Developing,0
+3305,3,Novice,BA,36000,173.1301938,Minimally Effective,1
+3306,11,Mid,BA,44000,223.8813824,Developing,1
+3307,4,Novice,BA,37000,234.8939315,Developing,0
+3308,7,Mid,MA,41000,208.8338523,Developing,1
+3309,12,Mid,BA,45000,213.2423332,Developing,1
+3310,16,Experienced,BA,49000,244.1717161,Developing,1
+3311,1,New,MA,35000,167.9363262,Minimally Effective,0
+3312,14,Mid,BA,49000,261.2015978,Proficient,1
+3313,19,Experienced,BA,52000,236.7116249,Developing,1
+3314,11,Mid,BA,46000,224.4095326,Developing,1
+3315,1,New,BA,34000,182.0810976,Minimally Effective,1
+3316,13,Mid,MA,47000,224.855864,Developing,1
+3317,9,Mid,BA,42000,228.4215205,Developing,1
+3318,10,Mid,MA,44000,250.366694,Proficient,1
+3319,12,Mid,BA,45000,263.0442509,Proficient,1
+3320,19,Experienced,BA,52000,259.9318702,Proficient,0
+3321,10,Mid,MA,44000,203.5194829,Developing,1
+3322,24,Experienced,MA,58000,194.7317159,Minimally Effective,1
+3323,6,Novice,BA,39000,254.5979049,Proficient,1
+3324,22,Experienced,BA,57000,229.1283731,Developing,1
+3325,7,Mid,BA,40000,226.8378942,Developing,1
+3326,35,Career,BA,68000,200.4185654,Developing,1
+3327,7,Mid,BA,40000,199.6897825,Minimally Effective,1
+3328,18,Experienced,BA,51000,240.2161281,Developing,1
+3329,9,Mid,BA,42000,241.4141009,Developing,1
+3330,4,Novice,MA,38000,189.0643486,Minimally Effective,1
+3331,16,Experienced,MA,50000,195.8740718,Minimally Effective,1
+3332,14,Mid,MA,48000,226.2214694,Developing,1
+3333,29,Career,MA,63000,208.9026452,Developing,1
+3334,20,Experienced,MA,54000,202.1540304,Developing,1
+3335,2,New,MA,36000,199.3380082,Minimally Effective,1
+3336,2,New,BA,35000,187.1062432,Minimally Effective,1
+3337,10,Mid,BA,43000,226.5465663,Developing,1
+3338,1,New,PhD or EdD,36000,254.5541496,Proficient,1
+3339,19,Experienced,MA,53000,285.7040733,Highly Effective,0
+3340,16,Experienced,MA,50000,240.1941042,Developing,1
+3341,1,New,PhD or EdD,36000,192.4358191,Minimally Effective,0
+3342,3,Novice,BA,36000,169.8181625,Minimally Effective,1
+3343,24,Experienced,MA,58000,222.1747538,Developing,1
+3344,22,Experienced,BA,55000,231.5836296,Developing,1
+3345,11,Mid,MA,45000,250.1626099,Proficient,0
+3346,10,Mid,BA,43000,210.6964133,Developing,0
+3347,19,Experienced,MA,53000,216.142845,Developing,0
+3348,11,Mid,BA,44000,230.6293555,Developing,1
+3349,21,Experienced,MA,55000,239.9931577,Developing,1
+3350,17,Experienced,BA,54000,238.8732751,Developing,1
+3351,25,Career,BA,58000,180.3795363,Minimally Effective,1
+3352,6,Novice,MA,40000,247.8145615,Developing,1
+3353,9,Mid,MA,43000,241.3691028,Developing,1
+3354,17,Experienced,BA,50000,213.0395169,Developing,0
+3355,2,New,BA,35000,200.2019038,Developing,1
+3356,25,Career,BA,58000,201.6530712,Developing,1
+3357,1,New,MA,35000,239.3890045,Developing,0
+3358,14,Mid,BA,49000,241.0677048,Developing,1
+3359,18,Experienced,MA,52000,223.7843454,Developing,1
+3360,35,Career,BA,68000,235.8344264,Developing,1
+3361,7,Mid,MA,41000,219.1796527,Developing,1
+3362,14,Mid,MA,48000,245.3491628,Developing,1
+3363,15,Mid,MA,49000,219.7346478,Developing,1
+3364,11,Mid,BA,44000,262.2551536,Proficient,0
+3365,13,Mid,MA,49000,247.2028501,Developing,1
+3366,1,New,BA,34000,184.9482114,Minimally Effective,0
+3367,3,Novice,MA,37000,218.2669772,Developing,1
+3368,2,New,BA,35000,239.274711,Developing,1
+3369,25,Career,BA,60000,240.6317554,Developing,1
+3370,5,Novice,BA,38000,174.289283,Minimally Effective,0
+3371,2,New,BA,35000,173.5481509,Minimally Effective,0
+3372,2,New,BA,35000,236.7011823,Developing,1
+3373,23,Experienced,MA,57000,224.5523364,Developing,0
+3374,4,Novice,MA,38000,204.7927867,Developing,1
+3375,25,Career,BA,58000,228.2737378,Developing,1
+3376,6,Novice,BA,39000,226.8280165,Developing,1
+3377,21,Experienced,MA,59000,244.4133159,Developing,1
+3378,32,Career,MA,66000,244.7562154,Developing,1
+3379,1,New,BA,34000,235.7151566,Developing,0
+3380,8,Mid,BA,41000,229.5512431,Developing,0
+3381,2,New,BA,35000,211.5857615,Developing,1
+3382,34,Career,BA,67000,204.363205,Developing,1
+3383,11,Mid,BA,44000,229.3145959,Developing,1
+3384,10,Mid,BA,43000,222.3737904,Developing,0
+3385,32,Career,MA,66000,206.9156823,Developing,1
+3386,6,Novice,BA,39000,252.7951949,Proficient,1
+3387,24,Experienced,MA,58000,215.500189,Developing,1
+3388,28,Career,MA,62000,213.3989968,Developing,1
+3389,8,Mid,BA,41000,229.2879271,Developing,1
+3390,23,Experienced,BA,56000,174.6988737,Minimally Effective,1
+3391,10,Mid,MA,44000,193.6440555,Minimally Effective,1
+3392,15,Mid,BA,48000,249.8670978,Developing,0
+3393,6,Novice,BA,39000,232.1376822,Developing,1
+3394,13,Mid,BA,48000,246.65586,Developing,1
+3395,6,Novice,BA,39000,243.252333,Developing,1
+3396,30,Career,MA,66000,237.9634428,Developing,1
+3397,10,Mid,BA,43000,211.0846553,Developing,1
+3398,3,Novice,BA,36000,179.7544506,Minimally Effective,1
+3399,11,Mid,BA,44000,254.2809787,Proficient,0
+3400,23,Experienced,BA,56000,212.9031728,Developing,1
+3401,5,Novice,MA,39000,198.4912246,Minimally Effective,1
+3402,24,Experienced,MA,60000,258.4137638,Proficient,0
+3403,20,Experienced,MA,54000,241.6094631,Developing,1
+3404,27,Career,BA,60000,224.3061907,Developing,1
+3405,5,Novice,BA,38000,197.5100074,Minimally Effective,1
+3406,1,New,MA,35000,223.3915414,Developing,0
+3407,2,New,BA,35000,247.4146255,Developing,0
+3408,28,Career,BA,61000,239.1125658,Developing,1
+3409,11,Mid,BA,44000,285.5496336,Highly Effective,1
+3410,9,Mid,BA,42000,220.3017855,Developing,1
+3411,8,Mid,MA,42000,209.1640255,Developing,1
+3412,11,Mid,BA,44000,224.4839903,Developing,1
+3413,24,Experienced,BA,57000,213.9137879,Developing,1
+3414,2,New,BA,35000,217.6359131,Developing,1
+3415,7,Mid,BA,40000,199.1238628,Minimally Effective,1
+3416,25,Career,BA,58000,234.2171067,Developing,0
+3417,23,Experienced,BA,56000,260.1517686,Proficient,1
+3418,33,Career,BA,66000,228.4795157,Developing,0
+3419,2,New,BA,35000,207.2172488,Developing,1
+3420,10,Mid,MA,44000,236.6740651,Developing,1
+3421,9,Mid,MA,43000,235.9815864,Developing,1
+3422,7,Mid,MA,41000,254.4360082,Proficient,1
+3423,25,Career,MA,61000,209.7963676,Developing,1
+3424,31,Career,BA,66000,243.7756428,Developing,1
+3425,34,Career,MA,70000,213.6548354,Developing,0
+3426,17,Experienced,BA,50000,270.4088519,Proficient,1
+3427,33,Career,BA,66000,234.9313797,Developing,1
+3428,5,Novice,BA,38000,250.4205613,Proficient,0
+3429,18,Experienced,BA,51000,180.32589,Minimally Effective,1
+3430,13,Mid,BA,48000,217.3004405,Developing,1
+3431,1,New,BA,34000,198.5729838,Minimally Effective,0
+3432,19,Experienced,BA,52000,238.0111756,Developing,1
+3433,10,Mid,MA,44000,265.5079355,Proficient,1
+3434,7,Mid,MA,41000,195.9735937,Minimally Effective,1
+3435,28,Career,MA,62000,256.4126963,Proficient,1
+3436,1,New,BA,34000,247.1317585,Developing,1
+3437,7,Mid,BA,40000,215.8172021,Developing,0
+3438,1,New,MA,35000,231.291182,Developing,1
+3439,15,Mid,BA,48000,237.7572912,Developing,1
+3440,2,New,MA,36000,190.813006,Minimally Effective,1
+3441,14,Mid,MA,48000,251.2743532,Proficient,1
+3442,3,Novice,BA,36000,192.8644379,Minimally Effective,1
+3443,1,New,BA,34000,197.0762666,Minimally Effective,0
+3444,2,New,BA,35000,180.5873464,Minimally Effective,1
+3445,22,Experienced,BA,55000,272.5379749,Proficient,1
+3446,23,Experienced,MA,57000,208.6026874,Developing,1
+3447,26,Career,BA,59000,202.334339,Developing,1
+3448,25,Career,BA,58000,256.0873076,Proficient,1
+3449,10,Mid,BA,43000,239.353828,Developing,1
+3450,5,Novice,BA,38000,173.5335075,Minimally Effective,1
+3451,20,Experienced,MA,56000,269.2091854,Proficient,1
+3452,1,New,MA,35000,205.3353634,Developing,1
+3453,7,Mid,BA,40000,181.3410779,Minimally Effective,1
+3454,23,Experienced,MA,57000,198.1715819,Minimally Effective,0
+3455,10,Mid,MA,44000,240.5058935,Developing,1
+3456,11,Mid,BA,44000,212.7732362,Developing,1
+3457,26,Career,BA,59000,230.1224571,Developing,1
+3458,20,Experienced,BA,53000,209.041005,Developing,0
+3459,20,Experienced,MA,54000,214.9912304,Developing,1
+3460,3,Novice,BA,36000,229.2609174,Developing,1
+3461,27,Career,BA,60000,282.7130392,Highly Effective,1
+3462,5,Novice,BA,38000,224.5925614,Developing,1
+3463,5,Novice,BA,38000,218.6848848,Developing,1
+3464,1,New,BA,34000,140.1318255,Ineffective,1
+3465,10,Mid,BA,43000,202.5298576,Developing,1
+3466,13,Mid,MA,47000,190.4728802,Minimally Effective,1
+3467,25,Career,BA,58000,204.519743,Developing,1
+3468,19,Experienced,BA,52000,241.8413959,Developing,1
+3469,3,Novice,MA,37000,218.7544526,Developing,1
+3470,2,New,BA,35000,177.3679326,Minimally Effective,1
+3471,5,Novice,BA,38000,207.6062862,Developing,0
+3472,19,Experienced,MA,53000,252.0079401,Proficient,1
+3473,2,New,MA,36000,192.1336557,Minimally Effective,1
+3474,9,Mid,MA,43000,199.4631501,Minimally Effective,1
+3475,16,Experienced,BA,49000,225.7768399,Developing,1
+3476,5,Novice,BA,38000,214.9603398,Developing,1
+3477,25,Career,BA,58000,235.0792884,Developing,1
+3478,11,Mid,BA,46000,219.8421658,Developing,1
+3479,30,Career,BA,63000,224.23422,Developing,1
+3480,30,Career,BA,63000,263.6770133,Proficient,0
+3481,6,Novice,MA,40000,213.2597777,Developing,0
+3482,26,Career,BA,59000,261.5001539,Proficient,1
+3483,1,New,MA,35000,170.4707463,Minimally Effective,0
+3484,7,Mid,PhD or EdD,42000,245.3899544,Developing,1
+3485,14,Mid,MA,48000,207.2574002,Developing,1
+3486,26,Career,BA,61000,206.4774488,Developing,1
+3487,26,Career,MA,60000,201.1120441,Developing,1
+3488,9,Mid,MA,43000,223.4757679,Developing,1
+3489,28,Career,MA,62000,251.1811603,Proficient,1
+3490,5,Novice,MA,39000,224.1114616,Developing,0
+3491,17,Experienced,MA,51000,216.5246174,Developing,1
+3492,18,Experienced,MA,54000,220.9330477,Developing,1
+3493,18,Experienced,BA,51000,207.5587397,Developing,0
+3494,2,New,MA,36000,237.31775,Developing,0
+3495,4,Novice,BA,37000,140.6123966,Ineffective,1
+3496,18,Experienced,MA,52000,257.6699566,Proficient,1
+3497,33,Career,BA,68000,213.1974733,Developing,0
+3498,11,Mid,MA,45000,200.870651,Developing,0
+3499,14,Mid,BA,47000,268.6417987,Proficient,1
+3500,1,New,MA,35000,202.9791378,Developing,1
+3501,30,Career,BA,65000,235.4892091,Developing,0
+3502,9,Mid,BA,42000,221.1992039,Developing,1
+3503,7,Mid,MA,41000,212.4517487,Developing,1
+3504,11,Mid,BA,44000,204.0629006,Developing,1
+3505,10,Mid,BA,43000,227.0989573,Developing,1
+3506,25,Career,MA,61000,270.3493497,Proficient,1
+3507,8,Mid,BA,41000,203.6087828,Developing,1
+3508,17,Experienced,BA,50000,245.7427506,Developing,0
+3509,20,Experienced,MA,54000,218.8119512,Developing,1
+3510,20,Experienced,MA,54000,251.0349532,Proficient,1
+3511,4,Novice,MA,38000,168.3665194,Minimally Effective,1
+3512,19,Experienced,BA,56000,254.8389999,Proficient,1
+3513,21,Experienced,BA,56000,199.5693534,Minimally Effective,1
+3514,27,Career,MA,61000,216.1386801,Developing,1
+3515,19,Experienced,MA,53000,213.1723783,Developing,0
+3516,3,Novice,BA,36000,178.0475705,Minimally Effective,1
+3517,18,Experienced,BA,51000,229.3216579,Developing,1
+3518,3,Novice,BA,36000,215.6772148,Developing,0
+3519,17,Experienced,BA,50000,226.2142603,Developing,1
+3520,3,Novice,MA,37000,191.7917673,Minimally Effective,0
+3521,17,Experienced,BA,50000,232.7119043,Developing,1
+3522,27,Career,MA,61000,195.8503819,Minimally Effective,1
+3523,3,Novice,MA,37000,195.4882897,Minimally Effective,1
+3524,4,Novice,PhD or EdD,39000,209.9316179,Developing,1
+3525,3,Novice,MA,37000,185.6716687,Minimally Effective,1
+3526,13,Mid,BA,46000,221.5274731,Developing,1
+3527,1,New,BA,34000,193.4902354,Minimally Effective,1
+3528,16,Experienced,BA,49000,275.8426082,Highly Effective,1
+3529,7,Mid,BA,40000,195.5396027,Minimally Effective,1
+3530,19,Experienced,BA,52000,191.3797976,Minimally Effective,1
+3531,1,New,MA,35000,174.5130401,Minimally Effective,1
+3532,23,Experienced,BA,58000,226.0762582,Developing,1
+3533,8,Mid,BA,41000,230.5512026,Developing,1
+3534,22,Experienced,BA,55000,219.6261279,Developing,1
+3535,6,Novice,MA,40000,195.3646817,Minimally Effective,1
+3536,2,New,MA,36000,231.8841952,Developing,1
+3537,17,Experienced,MA,51000,195.6806853,Minimally Effective,1
+3538,40,Career,BA,73000,248.7182114,Developing,1
+3539,9,Mid,BA,42000,196.7197807,Minimally Effective,1
+3540,15,Mid,MA,49000,282.488503,Highly Effective,1
+3541,17,Experienced,BA,50000,205.7641144,Developing,1
+3542,33,Career,MA,67000,216.9912419,Developing,0
+3543,28,Career,BA,61000,188.7566108,Minimally Effective,1
+3544,7,Mid,BA,40000,238.7616636,Developing,1
+3545,13,Mid,BA,48000,285.0636243,Highly Effective,1
+3546,20,Experienced,BA,57000,243.1979738,Developing,1
+3547,3,Novice,BA,36000,192.0226848,Minimally Effective,1
+3548,15,Mid,BA,48000,235.6550226,Developing,0
+3549,4,Novice,MA,38000,242.0463584,Developing,1
+3550,1,New,BA,34000,186.9816871,Minimally Effective,1
+3551,5,Novice,MA,39000,178.7069444,Minimally Effective,1
+3552,9,Mid,MA,43000,248.7977877,Developing,1
+3553,30,Career,PhD or EdD,65000,295.4504937,Highly Effective,1
+3554,5,Novice,BA,38000,179.5473338,Minimally Effective,1
+3555,8,Mid,BA,41000,246.2887796,Developing,0
+3556,2,New,BA,35000,213.7420864,Developing,1
+3557,16,Experienced,BA,49000,221.8307956,Developing,1
+3558,3,Novice,MA,37000,206.477917,Developing,1
+3559,36,Career,BA,69000,227.5914662,Developing,1
+3560,2,New,MA,36000,239.4917269,Developing,0
+3561,3,Novice,MA,37000,184.606049,Minimally Effective,1
+3562,1,New,BA,34000,170.4290392,Minimally Effective,1
+3563,9,Mid,BA,42000,235.7406311,Developing,1
+3564,31,Career,BA,66000,209.2841185,Developing,0
+3565,13,Mid,BA,46000,241.607678,Developing,1
+3566,1,New,MA,35000,160.068549,Minimally Effective,0
+3567,19,Experienced,BA,52000,197.9157055,Minimally Effective,1
+3568,16,Experienced,MA,50000,222.0698788,Developing,1
+3569,27,Career,MA,61000,171.2016149,Minimally Effective,1
+3570,10,Mid,MA,44000,249.7141293,Developing,1
+3571,1,New,BA,34000,216.857224,Developing,0
+3572,20,Experienced,MA,54000,229.9536074,Developing,0
+3573,1,New,BA,34000,154.2165513,Minimally Effective,1
+3574,6,Novice,BA,39000,235.8238416,Developing,1
+3575,15,Mid,BA,48000,242.5819848,Developing,1
+3576,2,New,BA,35000,212.4085714,Developing,1
+3577,8,Mid,BA,41000,194.6740294,Minimally Effective,1
+3578,1,New,BA,34000,106.2243619,Ineffective,1
+3579,13,Mid,MA,47000,258.7588022,Proficient,1
+3580,11,Mid,BA,48000,239.3416839,Developing,1
+3581,18,Experienced,MA,52000,174.705837,Minimally Effective,1
+3582,7,Mid,BA,40000,245.219572,Developing,1
+3583,14,Mid,MA,48000,251.9335519,Proficient,1
+3584,28,Career,BA,61000,216.8674425,Developing,1
+3585,24,Experienced,MA,58000,241.3481436,Developing,0
+3586,27,Career,MA,61000,259.9853845,Proficient,1
+3587,3,Novice,MA,37000,200.9193486,Developing,1
+3588,1,New,MA,35000,211.3875779,Developing,1
+3589,2,New,MA,36000,211.1751595,Developing,0
+3590,20,Experienced,BA,53000,219.9558829,Developing,0
+3591,12,Mid,BA,45000,173.602075,Minimally Effective,1
+3592,15,Mid,MA,49000,251.6326297,Proficient,1
+3593,10,Mid,BA,43000,247.2277472,Developing,1
+3594,1,New,MA,35000,156.2357669,Minimally Effective,1
+3595,4,Novice,BA,37000,221.8044908,Developing,1
+3596,20,Experienced,MA,54000,196.9456193,Minimally Effective,1
+3597,14,Mid,BA,47000,244.4350975,Developing,1
+3598,27,Career,BA,60000,211.7602295,Developing,1
+3599,7,Mid,MA,41000,230.6250109,Developing,1
+3600,23,Experienced,MA,57000,180.1763408,Minimally Effective,1
+3601,2,New,BA,35000,250.8587294,Proficient,1
+3602,30,Career,MA,64000,248.2171476,Developing,1
+3603,2,New,BA,35000,209.560414,Developing,1
+3604,22,Experienced,MA,56000,265.5593478,Proficient,1
+3605,11,Mid,BA,44000,229.9425491,Developing,1
+3606,9,Mid,BA,42000,181.2878022,Minimally Effective,1
+3607,31,Career,MA,65000,228.0264368,Developing,1
+3608,5,Novice,MA,39000,184.707692,Minimally Effective,1
+3609,3,Novice,MA,37000,218.8311233,Developing,1
+3610,20,Experienced,BA,53000,213.6222537,Developing,1
+3611,17,Experienced,BA,52000,226.0018741,Developing,1
+3612,24,Experienced,MA,58000,234.0335501,Developing,1
+3613,9,Mid,BA,42000,246.1647339,Developing,1
+3614,20,Experienced,BA,53000,252.27906,Proficient,1
+3615,1,New,BA,34000,140.0216821,Ineffective,1
+3616,34,Career,MA,68000,216.3165262,Developing,1
+3617,1,New,BA,34000,160.4078541,Minimally Effective,1
+3618,8,Mid,BA,41000,234.7638733,Developing,1
+3619,10,Mid,MA,44000,249.6592603,Developing,1
+3620,21,Experienced,MA,55000,237.3178508,Developing,1
+3621,6,Novice,MA,40000,194.7164042,Minimally Effective,1
+3622,13,Mid,MA,47000,269.7951511,Proficient,1
+3623,19,Experienced,BA,52000,224.0366746,Developing,1
+3624,5,Novice,BA,38000,237.9940718,Developing,1
+3625,7,Mid,MA,41000,201.1454064,Developing,1
+3626,20,Experienced,BA,55000,202.1669735,Developing,1
+3627,1,New,MA,35000,237.9568022,Developing,1
+3628,2,New,BA,35000,222.6465078,Developing,1
+3629,39,Career,MA,73000,219.6184419,Developing,1
+3630,2,New,BA,35000,218.2953962,Developing,0
+3631,36,Career,BA,69000,221.0074153,Developing,1
+3632,10,Mid,BA,43000,221.4193517,Developing,1
+3633,18,Experienced,BA,51000,253.992158,Proficient,0
+3634,12,Mid,MA,46000,204.2863387,Developing,1
+3635,2,New,BA,35000,173.449415,Minimally Effective,1
+3636,1,New,MA,35000,238.62181,Developing,0
+3637,23,Experienced,BA,56000,214.479388,Developing,0
+3638,11,Mid,BA,44000,202.5542089,Developing,1
+3639,2,New,MA,36000,186.1319207,Minimally Effective,1
+3640,4,Novice,BA,37000,197.6595243,Minimally Effective,1
+3641,6,Novice,MA,40000,226.8892718,Developing,1
+3642,1,New,BA,34000,154.0260593,Minimally Effective,1
+3643,20,Experienced,BA,53000,224.0513976,Developing,1
+3644,3,Novice,MA,37000,206.1001947,Developing,0
+3645,10,Mid,MA,44000,300,Highly Effective,0
+3646,13,Mid,BA,46000,201.7206948,Developing,0
+3647,13,Mid,BA,46000,255.6381162,Proficient,0
+3648,11,Mid,MA,45000,241.7680014,Developing,1
+3649,3,Novice,MA,37000,163.3341825,Minimally Effective,1
+3650,18,Experienced,BA,53000,190.880093,Minimally Effective,1
+3651,37,Career,BA,70000,186.2104936,Minimally Effective,0
+3652,20,Experienced,BA,55000,258.6724672,Proficient,0
+3653,6,Novice,BA,39000,222.692975,Developing,1
+3654,28,Career,MA,62000,208.3087271,Developing,1
+3655,19,Experienced,BA,52000,253.3032152,Proficient,1
+3656,18,Experienced,BA,51000,256.2563337,Proficient,1
+3657,21,Experienced,BA,54000,208.9387664,Developing,1
+3658,6,Novice,BA,39000,215.1856656,Developing,1
+3659,13,Mid,BA,48000,230.4899583,Developing,1
+3660,5,Novice,BA,38000,201.0162418,Developing,0
+3661,11,Mid,MA,45000,206.9285277,Developing,1
+3662,2,New,MA,36000,251.1593913,Proficient,1
+3663,9,Mid,MA,43000,208.7023267,Developing,0
+3664,20,Experienced,MA,54000,228.7158409,Developing,1
+3665,1,New,BA,34000,129.9761912,Ineffective,0
+3666,35,Career,MA,69000,221.8747699,Developing,1
+3667,34,Career,MA,68000,256.5417755,Proficient,0
+3668,1,New,PhD or EdD,36000,239.6273529,Developing,1
+3669,23,Experienced,BA,56000,217.4827031,Developing,0
+3670,6,Novice,BA,39000,243.6364941,Developing,1
+3671,6,Novice,BA,39000,218.1202182,Developing,1
+3672,2,New,BA,35000,224.6935739,Developing,1
+3673,19,Experienced,MA,53000,210.574608,Developing,1
+3674,3,Novice,MA,37000,220.1027254,Developing,1
+3675,22,Experienced,BA,55000,217.9870946,Developing,1
+3676,27,Career,MA,65000,295.194874,Highly Effective,0
+3677,29,Career,MA,63000,206.6267099,Developing,1
+3678,29,Career,MA,67000,234.8613687,Developing,1
+3679,1,New,MA,35000,199.4720939,Minimally Effective,1
+3680,2,New,MA,36000,188.3696149,Minimally Effective,1
+3681,13,Mid,MA,47000,171.8508484,Minimally Effective,1
+3682,1,New,BA,34000,195.2283264,Minimally Effective,0
+3683,1,New,BA,34000,224.2048012,Developing,0
+3684,16,Experienced,MA,50000,258.1940138,Proficient,1
+3685,5,Novice,MA,39000,179.3028089,Minimally Effective,1
+3686,12,Mid,BA,45000,221.2628662,Developing,0
+3687,34,Career,MA,68000,173.203814,Minimally Effective,1
+3688,19,Experienced,BA,52000,203.5889472,Developing,1
+3689,29,Career,BA,62000,231.7281098,Developing,1
+3690,1,New,MA,35000,175.6286495,Minimally Effective,1
+3691,1,New,MA,35000,213.2295149,Developing,1
+3692,14,Mid,BA,51000,219.179575,Developing,1
+3693,1,New,BA,34000,121.8939061,Ineffective,0
+3694,3,Novice,BA,36000,193.6702602,Minimally Effective,1
+3695,1,New,MA,35000,196.6875412,Minimally Effective,1
+3696,23,Experienced,MA,57000,234.8407854,Developing,1
+3697,5,Novice,MA,39000,183.0385745,Minimally Effective,1
+3698,10,Mid,BA,43000,206.7324018,Developing,1
+3699,14,Mid,BA,47000,256.9178,Proficient,1
+3700,3,Novice,MA,37000,176.8286911,Minimally Effective,1
+3701,1,New,BA,34000,196.1454102,Minimally Effective,1
+3702,4,Novice,MA,38000,210.6697853,Developing,1
+3703,19,Experienced,BA,52000,224.9920284,Developing,0
+3704,26,Career,MA,60000,214.7637342,Developing,1
+3705,20,Experienced,MA,54000,201.0823161,Developing,1
+3706,28,Career,MA,62000,217.6080649,Developing,1
+3707,1,New,BA,34000,188.2511532,Minimally Effective,1
+3708,7,Mid,MA,41000,178.7035869,Minimally Effective,1
+3709,23,Experienced,MA,57000,231.8840926,Developing,1
+3710,31,Career,MA,67000,249.2873078,Developing,0
+3711,1,New,MA,35000,183.9193074,Minimally Effective,1
+3712,16,Experienced,BA,51000,206.8222631,Developing,1
+3713,8,Mid,BA,41000,161.3264476,Minimally Effective,1
+3714,18,Experienced,MA,52000,200.5225522,Developing,1
+3715,8,Mid,MA,42000,226.7517242,Developing,1
+3716,11,Mid,BA,44000,222.0540915,Developing,1
+3717,1,New,BA,34000,216.1274094,Developing,1
+3718,16,Experienced,BA,49000,242.6747304,Developing,1
+3719,12,Mid,BA,45000,208.3296741,Developing,1
+3720,4,Novice,BA,37000,192.1387161,Minimally Effective,1
+3721,13,Mid,BA,46000,255.6413362,Proficient,1
+3722,27,Career,BA,60000,238.3953426,Developing,0
+3723,30,Career,BA,63000,241.2728589,Developing,0
+3724,4,Novice,MA,38000,143.3321129,Ineffective,1
+3725,13,Mid,MA,47000,233.2142366,Developing,1
+3726,25,Career,BA,60000,225.7258911,Developing,1
+3727,3,Novice,MA,37000,222.4822616,Developing,0
+3728,18,Experienced,BA,51000,250.1443891,Proficient,1
+3729,3,Novice,BA,36000,241.2931255,Developing,1
+3730,5,Novice,BA,38000,213.3391759,Developing,1
+3731,2,New,MA,36000,171.5042045,Minimally Effective,1
+3732,25,Career,MA,59000,227.3581448,Developing,1
+3733,7,Mid,MA,41000,261.130221,Proficient,1
+3734,34,Career,BA,67000,232.994576,Developing,0
+3735,5,Novice,BA,38000,158.1397116,Minimally Effective,1
+3736,1,New,BA,34000,222.7213356,Developing,1
+3737,5,Novice,MA,39000,223.4105679,Developing,1
+3738,5,Novice,BA,38000,194.7083983,Minimally Effective,1
+3739,5,Novice,BA,38000,202.7444141,Developing,0
+3740,13,Mid,BA,46000,241.7936565,Developing,1
+3741,17,Experienced,MA,51000,207.4213061,Developing,1
+3742,16,Experienced,BA,49000,244.1128987,Developing,1
+3743,11,Mid,BA,44000,167.613226,Minimally Effective,0
+3744,2,New,MA,36000,142.4247633,Ineffective,1
+3745,11,Mid,BA,44000,182.9532637,Minimally Effective,1
+3746,23,Experienced,BA,56000,261.1562264,Proficient,1
+3747,26,Career,BA,59000,259.6627959,Proficient,1
+3748,3,Novice,MA,37000,206.4613534,Developing,1
+3749,29,Career,MA,63000,249.8851452,Developing,1
+3750,3,Novice,BA,36000,159.6081436,Minimally Effective,1
+3751,35,Career,MA,69000,272.4209838,Proficient,1
+3752,2,New,BA,35000,201.994085,Developing,0
+3753,2,New,BA,35000,163.9415889,Minimally Effective,1
+3754,2,New,BA,35000,189.8247698,Minimally Effective,1
+3755,22,Experienced,MA,56000,244.4849368,Developing,1
+3756,4,Novice,MA,38000,212.1117052,Developing,1
+3757,7,Mid,BA,40000,232.1754933,Developing,1
+3758,20,Experienced,MA,54000,210.7375745,Developing,1
+3759,12,Mid,BA,45000,239.98523,Developing,1
+3760,9,Mid,PhD or EdD,44000,249.6939599,Developing,1
+3761,1,New,BA,34000,189.302666,Minimally Effective,0
+3762,4,Novice,BA,37000,184.5963314,Minimally Effective,1
+3763,5,Novice,BA,38000,198.0061974,Minimally Effective,0
+3764,7,Mid,MA,41000,200.7870523,Developing,1
+3765,12,Mid,BA,47000,258.7741039,Proficient,1
+3766,30,Career,BA,63000,171.6833819,Minimally Effective,1
+3767,32,Career,MA,66000,230.5765278,Developing,1
+3768,12,Mid,BA,45000,220.3792523,Developing,1
+3769,12,Mid,MA,48000,207.9172248,Developing,1
+3770,3,Novice,MA,37000,264.2749302,Proficient,1
+3771,8,Mid,MA,42000,262.4835705,Proficient,1
+3772,27,Career,BA,60000,266.3111271,Proficient,1
+3773,25,Career,BA,58000,232.6139515,Developing,1
+3774,22,Experienced,MA,56000,224.9925751,Developing,1
+3775,2,New,BA,35000,196.316261,Minimally Effective,0
+3776,22,Experienced,MA,56000,259.4428638,Proficient,1
+3777,22,Experienced,MA,56000,216.9141308,Developing,1
+3778,1,New,BA,34000,162.5374208,Minimally Effective,1
+3779,34,Career,BA,67000,228.3152451,Developing,1
+3780,11,Mid,BA,44000,261.008082,Proficient,1
+3781,15,Mid,BA,48000,236.2527013,Developing,1
+3782,1,New,MA,35000,160.629157,Minimally Effective,0
+3783,2,New,BA,35000,176.5440756,Minimally Effective,0
+3784,4,Novice,MA,38000,181.9523086,Minimally Effective,0
+3785,11,Mid,MA,45000,254.1319743,Proficient,1
+3786,26,Career,MA,62000,272.6136144,Proficient,1
+3787,15,Mid,MA,49000,225.6105347,Developing,1
+3788,16,Experienced,MA,50000,242.7902641,Developing,1
+3789,18,Experienced,BA,51000,254.6003598,Proficient,0
+3790,22,Experienced,MA,56000,258.3881845,Proficient,1
+3791,1,New,BA,34000,238.0457021,Developing,0
+3792,4,Novice,BA,37000,219.3041744,Developing,1
+3793,12,Mid,MA,46000,176.3777009,Minimally Effective,1
+3794,14,Mid,MA,48000,231.0629263,Developing,1
+3795,7,Mid,BA,40000,195.6134378,Minimally Effective,1
+3796,11,Mid,BA,44000,229.5065012,Developing,1
+3797,24,Experienced,BA,57000,203.2018037,Developing,1
+3798,6,Novice,BA,39000,246.8315068,Developing,1
+3799,3,Novice,BA,36000,204.4114036,Developing,1
+3800,26,Career,MA,60000,232.6956518,Developing,1
+3801,1,New,MA,35000,155.7230969,Minimally Effective,0
+3802,13,Mid,BA,46000,257.1727917,Proficient,1
+3803,2,New,MA,36000,183.4234052,Minimally Effective,1
+3804,15,Mid,BA,48000,227.5033677,Developing,1
+3805,10,Mid,MA,44000,234.6513885,Developing,0
+3806,16,Experienced,MA,50000,212.9617178,Developing,1
+3807,1,New,BA,34000,208.2383053,Developing,0
+3808,2,New,MA,36000,208.1023578,Developing,1
+3809,1,New,MA,35000,197.8634928,Minimally Effective,0
+3810,13,Mid,BA,50000,252.0933821,Proficient,1
+3811,1,New,MA,35000,187.414164,Minimally Effective,1
+3812,2,New,BA,35000,190.8204858,Minimally Effective,1
+3813,4,Novice,MA,38000,168.2181083,Minimally Effective,1
+3814,4,Novice,MA,38000,240.1780276,Developing,1
+3815,2,New,BA,35000,157.4855,Minimally Effective,1
+3816,13,Mid,MA,47000,210.5645725,Developing,1
+3817,12,Mid,BA,45000,225.1793535,Developing,1
+3818,3,Novice,BA,36000,176.9295411,Minimally Effective,1
+3819,3,Novice,MA,37000,238.9051218,Developing,1
+3820,5,Novice,BA,38000,225.3391493,Developing,0
+3821,4,Novice,BA,37000,252.9994184,Proficient,1
+3822,13,Mid,BA,46000,228.3009615,Developing,1
+3823,14,Mid,MA,48000,255.1206929,Proficient,1
+3824,5,Novice,BA,38000,270.4974603,Proficient,0
+3825,29,Career,MA,63000,203.8885597,Developing,1
+3826,18,Experienced,MA,52000,226.2812746,Developing,0
+3827,25,Career,MA,59000,222.3267028,Developing,1
+3828,35,Career,BA,68000,220.8298329,Developing,1
+3829,19,Experienced,BA,52000,273.5138345,Proficient,0
+3830,1,New,MA,35000,175.8645269,Minimally Effective,0
+3831,24,Experienced,MA,62000,227.7169285,Developing,1
+3832,5,Novice,BA,38000,241.1570044,Developing,1
+3833,26,Career,MA,60000,216.3113785,Developing,1
+3834,30,Career,BA,63000,216.5704282,Developing,1
+3835,29,Career,MA,63000,210.126894,Developing,1
+3836,14,Mid,MA,48000,258.7469082,Proficient,0
+3837,4,Novice,PhD or EdD,39000,267.8720675,Proficient,1
+3838,8,Mid,BA,41000,224.3007256,Developing,1
+3839,12,Mid,MA,46000,228.2043937,Developing,1
+3840,3,Novice,MA,37000,185.7946052,Minimally Effective,1
+3841,37,Career,MA,71000,203.3546668,Developing,1
+3842,12,Mid,MA,46000,210.6692227,Developing,1
+3843,13,Mid,BA,46000,232.7020667,Developing,1
+3844,21,Experienced,BA,54000,182.5027959,Minimally Effective,1
+3845,22,Experienced,MA,58000,177.5525784,Minimally Effective,1
+3846,4,Novice,BA,37000,291.9400641,Highly Effective,1
+3847,33,Career,BA,66000,199.1020437,Minimally Effective,1
+3848,25,Career,BA,58000,215.8236619,Developing,1
+3849,1,New,BA,34000,212.4154628,Developing,1
+3850,14,Mid,MA,48000,219.4452001,Developing,1
+3851,21,Experienced,BA,54000,226.8140032,Developing,1
+3852,21,Experienced,MA,55000,270.3946447,Proficient,1
+3853,20,Experienced,BA,53000,260.9664125,Proficient,0
+3854,3,Novice,BA,36000,200.7888228,Developing,1
+3855,10,Mid,BA,43000,173.8462553,Minimally Effective,1
+3856,25,Career,BA,58000,227.8298232,Developing,1
+3857,20,Experienced,MA,54000,247.8446522,Developing,1
+3858,23,Experienced,BA,56000,273.3854973,Proficient,1
+3859,6,Novice,MA,40000,235.9855591,Developing,1
+3860,4,Novice,MA,38000,216.840085,Developing,1
+3861,6,Novice,BA,39000,184.50667,Minimally Effective,1
+3862,19,Experienced,MA,53000,260.5629549,Proficient,1
+3863,4,Novice,BA,37000,234.1314233,Developing,1
+3864,5,Novice,BA,38000,150.0568747,Minimally Effective,1
+3865,26,Career,MA,60000,212.651156,Developing,0
+3866,14,Mid,MA,48000,235.9262348,Developing,0
+3867,22,Experienced,MA,56000,221.5865908,Developing,0
+3868,1,New,PhD or EdD,36000,186.7587917,Minimally Effective,1
+3869,30,Career,BA,63000,224.6318305,Developing,1
+3870,33,Career,MA,67000,230.787769,Developing,0
+3871,16,Experienced,MA,50000,258.2100312,Proficient,1
+3872,31,Career,BA,64000,294.7075709,Highly Effective,1
+3873,13,Mid,MA,47000,265.8826,Proficient,0
+3874,1,New,MA,35000,247.9841308,Developing,0
+3875,2,New,BA,35000,243.8023326,Developing,0
+3876,23,Experienced,MA,57000,246.8037767,Developing,1
+3877,10,Mid,BA,43000,245.526818,Developing,1
+3878,3,Novice,MA,37000,209.9190532,Developing,1
+3879,13,Mid,BA,46000,205.4759312,Developing,1
+3880,21,Experienced,MA,55000,210.0695744,Developing,1
+3881,24,Experienced,BA,57000,208.0273668,Developing,1
+3882,13,Mid,BA,46000,198.3128193,Minimally Effective,1
+3883,20,Experienced,BA,55000,224.8040756,Developing,1
+3884,18,Experienced,BA,51000,241.7036693,Developing,1
+3885,1,New,BA,34000,180.214972,Minimally Effective,0
+3886,21,Experienced,BA,56000,208.8699131,Developing,1
+3887,1,New,MA,35000,189.1289696,Minimally Effective,0
+3888,8,Mid,BA,41000,212.7718085,Developing,1
+3889,5,Novice,MA,39000,267.1374579,Proficient,1
+3890,13,Mid,BA,46000,229.2305666,Developing,0
+3891,2,New,BA,35000,168.4733916,Minimally Effective,1
+3892,17,Experienced,BA,50000,235.8095227,Developing,1
+3893,7,Mid,MA,41000,227.8159248,Developing,1
+3894,12,Mid,BA,45000,193.3996029,Minimally Effective,1
+3895,6,Novice,BA,39000,204.3795858,Developing,1
+3896,1,New,BA,34000,187.8699869,Minimally Effective,0
+3897,36,Career,BA,69000,214.0880329,Developing,1
+3898,27,Career,MA,61000,224.8115921,Developing,1
+3899,33,Career,MA,67000,283.8264897,Highly Effective,1
+3900,1,New,BA,34000,221.0253665,Developing,1
+3901,40,Career,BA,75000,202.4856305,Developing,1
+3902,2,New,BA,35000,195.382923,Minimally Effective,0
+3903,35,Career,BA,68000,208.7444076,Developing,1
+3904,11,Mid,BA,46000,222.7192099,Developing,1
+3905,20,Experienced,BA,53000,224.706434,Developing,1
+3906,24,Experienced,MA,58000,216.5970863,Developing,1
+3907,8,Mid,MA,42000,234.8373057,Developing,1
+3908,10,Mid,BA,43000,178.5260529,Minimally Effective,0
+3909,6,Novice,BA,39000,221.5881534,Developing,1
+3910,1,New,MA,35000,280.7240083,Highly Effective,0
+3911,17,Experienced,MA,51000,203.9778429,Developing,1
+3912,8,Mid,BA,41000,236.3827514,Developing,1
+3913,10,Mid,BA,43000,251.3492218,Proficient,1
+3914,20,Experienced,BA,53000,246.1280866,Developing,1
+3915,2,New,BA,35000,175.6599664,Minimally Effective,1
+3916,23,Experienced,BA,56000,245.1610947,Developing,1
+3917,6,Novice,BA,39000,218.6996012,Developing,1
+3918,20,Experienced,BA,53000,270.8156087,Proficient,1
+3919,1,New,BA,34000,159.8746887,Minimally Effective,1
+3920,17,Experienced,BA,50000,239.5283001,Developing,1
+3921,21,Experienced,BA,54000,252.2986929,Proficient,1
+3922,16,Experienced,MA,50000,211.716433,Developing,0
+3923,4,Novice,MA,38000,163.3186568,Minimally Effective,0
+3924,4,Novice,BA,37000,194.6659659,Minimally Effective,1
+3925,4,Novice,MA,38000,167.9158321,Minimally Effective,0
+3926,1,New,BA,34000,176.7111701,Minimally Effective,0
+3927,23,Experienced,MA,57000,263.4000509,Proficient,1
+3928,3,Novice,MA,37000,213.0354598,Developing,1
+3929,30,Career,MA,64000,211.5279373,Developing,1
+3930,21,Experienced,MA,55000,237.4561782,Developing,1
+3931,21,Experienced,BA,54000,232.8279286,Developing,1
+3932,7,Mid,MA,41000,207.8543964,Developing,1
+3933,25,Career,BA,58000,241.5456444,Developing,1
+3934,32,Career,MA,66000,199.8850846,Minimally Effective,1
+3935,1,New,BA,34000,186.3915239,Minimally Effective,1
+3936,6,Novice,BA,39000,249.852368,Developing,0
+3937,8,Mid,BA,41000,231.8665233,Developing,1
+3938,13,Mid,MA,47000,231.8543824,Developing,1
+3939,5,Novice,BA,38000,236.5345252,Developing,1
+3940,11,Mid,MA,45000,238.4721793,Developing,1
+3941,9,Mid,MA,43000,197.9077454,Minimally Effective,1
+3942,15,Mid,MA,49000,227.2615168,Developing,1
+3943,4,Novice,MA,38000,200.9107723,Developing,1
+3944,2,New,MA,36000,174.7611465,Minimally Effective,1
+3945,3,Novice,BA,36000,199.7998805,Minimally Effective,1
+3946,6,Novice,BA,39000,221.2367309,Developing,1
+3947,21,Experienced,MA,55000,220.8227852,Developing,1
+3948,1,New,BA,34000,274.8287366,Proficient,0
+3949,2,New,MA,36000,277.3056891,Highly Effective,0
+3950,29,Career,BA,64000,200.7956856,Developing,1
+3951,23,Experienced,MA,57000,231.3810846,Developing,1
+3952,26,Career,MA,60000,213.7569902,Developing,1
+3953,7,Mid,BA,40000,214.204562,Developing,1
+3954,5,Novice,BA,38000,222.394386,Developing,1
+3955,9,Mid,BA,42000,259.9724559,Proficient,1
+3956,28,Career,BA,65000,253.7545713,Proficient,1
+3957,8,Mid,BA,41000,248.3156392,Developing,1
+3958,4,Novice,MA,38000,298.8548815,Highly Effective,1
+3959,4,Novice,MA,38000,189.3386124,Minimally Effective,1
+3960,8,Mid,BA,41000,245.6097848,Developing,1
+3961,21,Experienced,MA,55000,268.8610043,Proficient,0
+3962,7,Mid,BA,40000,217.7139616,Developing,0
+3963,27,Career,BA,60000,300,Highly Effective,0
+3964,26,Career,BA,59000,255.1442621,Proficient,1
+3965,19,Experienced,BA,52000,173.508557,Minimally Effective,1
+3966,7,Mid,MA,41000,266.7813622,Proficient,1
+3967,28,Career,MA,62000,229.656825,Developing,1
+3968,1,New,BA,34000,182.659253,Minimally Effective,1
+3969,24,Experienced,BA,57000,257.301092,Proficient,1
+3970,3,Novice,MA,37000,186.5930294,Minimally Effective,0
+3971,14,Mid,BA,47000,263.0741783,Proficient,0
+3972,2,New,BA,35000,190.9051097,Minimally Effective,0
+3973,32,Career,BA,67000,187.1549704,Minimally Effective,1
+3974,19,Experienced,BA,52000,263.7051802,Proficient,1
+3975,6,Novice,MA,40000,218.0555702,Developing,0
+3976,9,Mid,BA,42000,237.0515567,Developing,1
+3977,3,Novice,BA,36000,197.0501097,Minimally Effective,1
+3978,6,Novice,BA,39000,220.0994627,Developing,1
+3979,7,Mid,BA,40000,231.839655,Developing,0
+3980,22,Experienced,MA,56000,204.5464343,Developing,0
+3981,14,Mid,BA,47000,228.6352563,Developing,0
+3982,4,Novice,BA,37000,279.0727788,Highly Effective,0
+3983,20,Experienced,BA,53000,217.5276765,Developing,0
+3984,7,Mid,BA,40000,241.5940082,Developing,1
+3985,8,Mid,MA,42000,246.7317034,Developing,0
+3986,1,New,MA,35000,209.6980118,Developing,0
+3987,28,Career,MA,62000,252.1350421,Proficient,0
+3988,33,Career,MA,67000,183.1590403,Minimally Effective,0
+3989,37,Career,MA,71000,219.1898341,Developing,1
+3990,13,Mid,MA,47000,222.0761599,Developing,1
+3991,5,Novice,MA,39000,207.9089833,Developing,1
+3992,17,Experienced,MA,51000,240.9938832,Developing,0
+3993,2,New,BA,35000,221.0657287,Developing,1
+3994,17,Experienced,BA,52000,238.2994174,Developing,1
+3995,8,Mid,BA,41000,226.4836908,Developing,0
+3996,8,Mid,BA,41000,230.1081565,Developing,0
+3997,1,New,MA,35000,185.2137532,Minimally Effective,1
+3998,5,Novice,BA,38000,216.3283298,Developing,0
+3999,8,Mid,MA,42000,229.6192224,Developing,1
+4.00E+03,6,Novice,MA,40000,240.4393815,Developing,1
+4001,22,Experienced,MA,56000,245.1623131,Developing,1
+4002,5,Novice,BA,38000,263.5004788,Proficient,0
+4003,3,Novice,MA,37000,213.6768983,Developing,1
+4004,36,Career,MA,70000,274.1896913,Proficient,1
+4005,6,Novice,MA,40000,232.7082687,Developing,1
+4006,26,Career,MA,60000,219.9687432,Developing,1
+4007,2,New,BA,35000,179.5032671,Minimally Effective,0
+4008,2,New,MA,36000,165.6472422,Minimally Effective,1
+4009,27,Career,BA,60000,263.4291011,Proficient,1
+4010,2,New,MA,36000,191.1158481,Minimally Effective,0
+4011,12,Mid,BA,45000,203.2383679,Developing,1
+4012,27,Career,BA,60000,190.9286546,Minimally Effective,1
+4013,37,Career,BA,70000,244.7228157,Developing,1
+4014,15,Mid,MA,49000,262.0919828,Proficient,1
+4015,8,Mid,MA,42000,211.0163219,Developing,1
+4016,32,Career,BA,65000,226.5774781,Developing,0
+4017,13,Mid,MA,47000,201.0399243,Developing,1
+4018,38,Career,MA,72000,240.8228894,Developing,1
+4019,24,Experienced,MA,58000,230.810652,Developing,0
+4020,4,Novice,MA,38000,198.9416421,Minimally Effective,1
+4021,19,Experienced,BA,52000,242.1696939,Developing,0
+4022,14,Mid,BA,47000,250.5575118,Proficient,1
+4023,3,Novice,BA,36000,192.5582148,Minimally Effective,1
+4024,17,Experienced,BA,52000,205.0928474,Developing,1
+4025,30,Career,MA,64000,254.5470289,Proficient,1
+4026,11,Mid,MA,45000,217.6857673,Developing,1
+4027,1,New,MA,35000,189.9155364,Minimally Effective,0
+4028,6,Novice,BA,39000,249.8724538,Developing,1
+4029,6,Novice,MA,40000,237.1716834,Developing,1
+4030,17,Experienced,BA,50000,233.737486,Developing,1
+4031,9,Mid,BA,42000,242.1700848,Developing,1
+4032,1,New,BA,34000,148.5090819,Ineffective,0
+4033,5,Novice,BA,38000,225.2076378,Developing,1
+4034,6,Novice,BA,39000,193.0379228,Minimally Effective,1
+4035,15,Mid,BA,48000,241.1797716,Developing,1
+4036,1,New,BA,34000,168.8638565,Minimally Effective,1
+4037,25,Career,MA,59000,224.1709094,Developing,1
+4038,17,Experienced,MA,53000,208.4516823,Developing,1
+4039,2,New,BA,35000,203.0645112,Developing,0
+4040,20,Experienced,MA,54000,218.1708316,Developing,1
+4041,10,Mid,BA,43000,248.361185,Developing,0
+4042,26,Career,BA,59000,239.5957482,Developing,0
+4043,31,Career,BA,66000,224.9067895,Developing,1
+4044,3,Novice,BA,36000,232.5952055,Developing,1
+4045,17,Experienced,BA,50000,249.0916325,Developing,0
+4046,5,Novice,BA,38000,184.1547028,Minimally Effective,1
+4047,2,New,MA,36000,177.290794,Minimally Effective,1
+4048,4,Novice,BA,37000,209.4650596,Developing,1
+4049,19,Experienced,BA,52000,233.5859306,Developing,1
+4050,10,Mid,MA,44000,266.396279,Proficient,0
+4051,4,Novice,BA,37000,265.2440668,Proficient,0
+4052,22,Experienced,BA,55000,246.5632162,Developing,1
+4053,12,Mid,MA,46000,226.4670117,Developing,0
+4054,4,Novice,MA,38000,213.5051934,Developing,1
+4055,11,Mid,BA,44000,291.7655702,Highly Effective,1
+4056,5,Novice,BA,38000,223.7776119,Developing,0
+4057,26,Career,MA,60000,230.3990054,Developing,1
+4058,1,New,BA,34000,127.6213464,Ineffective,0
+4059,2,New,BA,35000,183.1044586,Minimally Effective,1
+4060,11,Mid,BA,44000,183.0229123,Minimally Effective,1
+4061,9,Mid,BA,42000,206.6048297,Developing,1
+4062,7,Mid,BA,40000,211.0400545,Developing,0
+4063,1,New,BA,34000,133.7428678,Ineffective,1
+4064,9,Mid,BA,42000,211.8760706,Developing,1
+4065,6,Novice,BA,39000,217.2172918,Developing,1
+4066,11,Mid,BA,46000,234.5202144,Developing,1
+4067,9,Mid,BA,42000,218.0156787,Developing,1
+4068,35,Career,BA,68000,254.5949495,Proficient,1
+4069,20,Experienced,BA,53000,241.2968368,Developing,0
+4070,21,Experienced,BA,54000,204.781553,Developing,1
+4071,10,Mid,BA,43000,239.7582145,Developing,1
+4072,26,Career,BA,61000,219.6155534,Developing,1
+4073,14,Mid,BA,49000,195.5507045,Minimally Effective,1
+4074,19,Experienced,MA,53000,273.9181615,Proficient,1
+4075,13,Mid,MA,49000,216.1891887,Developing,1
+4076,15,Mid,MA,49000,275.6145138,Highly Effective,1
+4077,32,Career,BA,65000,228.0791762,Developing,1
+4078,15,Mid,BA,48000,230.2325552,Developing,1
+4079,18,Experienced,MA,52000,191.852763,Minimally Effective,1
+4080,12,Mid,BA,45000,241.2863554,Developing,0
+4081,16,Experienced,BA,49000,232.0387966,Developing,1
+4082,29,Career,BA,64000,213.0247984,Developing,1
+4083,14,Mid,BA,47000,198.0862762,Minimally Effective,0
+4084,24,Experienced,MA,58000,216.3204072,Developing,1
+4085,27,Career,BA,60000,255.6557397,Proficient,1
+4086,10,Mid,BA,43000,195.4067757,Minimally Effective,1
+4087,1,New,MA,35000,137.1411432,Ineffective,1
+4088,5,Novice,BA,38000,211.6625731,Developing,0
+4089,3,Novice,BA,36000,142.6358011,Ineffective,1
+4090,1,New,BA,34000,164.6646406,Minimally Effective,0
+4091,10,Mid,BA,43000,214.893092,Developing,1
+4092,2,New,MA,36000,220.8829264,Developing,0
+4093,4,Novice,MA,38000,196.6628319,Minimally Effective,1
+4094,11,Mid,MA,47000,255.2415818,Proficient,1
+4095,19,Experienced,MA,55000,252.8611714,Proficient,1
+4096,35,Career,BA,68000,211.0278547,Developing,0
+4097,21,Experienced,BA,54000,240.3782478,Developing,0
+4098,10,Mid,BA,43000,202.8454993,Developing,0
+4099,15,Mid,BA,48000,247.6429858,Developing,1
+4100,36,Career,BA,69000,223.0306485,Developing,1
+4101,23,Experienced,MA,57000,270.3674914,Proficient,0
+4102,16,Experienced,MA,50000,237.122288,Developing,1
+4103,1,New,BA,34000,180.0993262,Minimally Effective,1
+4104,23,Experienced,BA,56000,215.1929288,Developing,1
+4105,8,Mid,BA,41000,220.8731037,Developing,1
+4106,18,Experienced,MA,52000,239.8959782,Developing,1
+4107,18,Experienced,BA,51000,216.3437377,Developing,1
+4108,22,Experienced,MA,56000,254.0408697,Proficient,1
+4109,13,Mid,BA,50000,221.2242078,Developing,1
+4110,1,New,MA,35000,195.1602509,Minimally Effective,1
+4111,10,Mid,BA,43000,272.3821558,Proficient,1
+4112,11,Mid,MA,45000,251.4766173,Proficient,1
+4113,33,Career,MA,67000,201.8280426,Developing,1
+4114,8,Mid,BA,41000,236.8166001,Developing,1
+4115,4,Novice,MA,38000,179.3093559,Minimally Effective,1
+4116,20,Experienced,MA,56000,235.7990764,Developing,1
+4117,8,Mid,BA,41000,171.3069781,Minimally Effective,1
+4118,18,Experienced,BA,51000,222.4951276,Developing,1
+4119,9,Mid,MA,43000,213.4106657,Developing,1
+4120,6,Novice,PhD or EdD,41000,203.0516077,Developing,1
+4121,25,Career,MA,59000,211.3331048,Developing,1
+4122,1,New,BA,34000,197.0654391,Minimally Effective,1
+4123,1,New,BA,34000,185.6974763,Minimally Effective,0
+4124,2,New,BA,35000,195.582393,Minimally Effective,1
+4125,18,Experienced,BA,51000,213.6873416,Developing,0
+4126,2,New,BA,35000,190.5215175,Minimally Effective,1
+4127,11,Mid,MA,45000,279.4529839,Highly Effective,1
+4128,33,Career,BA,66000,233.1313888,Developing,1
+4129,12,Mid,MA,46000,266.87744,Proficient,0
+4130,2,New,MA,36000,174.9095525,Minimally Effective,1
+4131,29,Career,BA,62000,235.2411752,Developing,1
+4132,25,Career,BA,58000,258.6751069,Proficient,1
+4133,1,New,BA,34000,129.7312926,Ineffective,1
+4134,22,Experienced,BA,57000,224.3463842,Developing,1
+4135,23,Experienced,MA,57000,236.1092178,Developing,1
+4136,20,Experienced,BA,53000,235.7695228,Developing,1
+4137,11,Mid,BA,44000,185.7507302,Minimally Effective,1
+4138,14,Mid,BA,47000,207.5182679,Developing,1
+4139,17,Experienced,BA,50000,267.8162096,Proficient,1
+4140,6,Novice,BA,39000,238.266715,Developing,1
+4141,4,Novice,PhD or EdD,39000,201.0640657,Developing,1
+4142,3,Novice,BA,36000,203.7504282,Developing,1
+4143,3,Novice,MA,37000,213.6836479,Developing,1
+4144,13,Mid,MA,47000,264.6630278,Proficient,0
+4145,12,Mid,MA,46000,236.4507534,Developing,0
+4146,1,New,MA,35000,214.4980915,Developing,1
+4147,1,New,BA,34000,196.3916931,Minimally Effective,1
+4148,4,Novice,MA,38000,208.8010099,Developing,1
+4149,4,Novice,BA,37000,236.2312567,Developing,1
+4150,28,Career,MA,62000,218.6856461,Developing,1
+4151,9,Mid,BA,42000,207.777037,Developing,1
+4152,15,Mid,BA,48000,236.2014503,Developing,1
+4153,14,Mid,MA,48000,263.8393169,Proficient,1
+4154,13,Mid,MA,47000,237.1819967,Developing,1
+4155,32,Career,MA,66000,238.4829725,Developing,1
+4156,14,Mid,BA,47000,224.8422991,Developing,1
+4157,26,Career,BA,63000,268.7389615,Proficient,1
+4158,22,Experienced,MA,56000,221.6242229,Developing,1
+4159,14,Mid,MA,48000,223.6350292,Developing,1
+4160,3,Novice,BA,36000,270.5552268,Proficient,1
+4161,4,Novice,MA,38000,185.7660909,Minimally Effective,1
+4162,17,Experienced,BA,50000,241.0810926,Developing,0
+4163,5,Novice,MA,39000,183.3443211,Minimally Effective,1
+4164,1,New,MA,35000,245.9208114,Developing,0
+4165,32,Career,BA,67000,226.8962527,Developing,1
+4166,8,Mid,BA,41000,219.0932757,Developing,1
+4167,20,Experienced,BA,53000,206.0522237,Developing,1
+4168,17,Experienced,BA,50000,249.4503466,Developing,1
+4169,4,Novice,MA,38000,207.1305148,Developing,1
+4170,4,Novice,BA,37000,248.4781406,Developing,1
+4171,9,Mid,MA,43000,261.7389343,Proficient,1
+4172,9,Mid,BA,42000,236.3758577,Developing,1
+4173,11,Mid,MA,45000,260.9234373,Proficient,1
+4174,7,Mid,BA,40000,212.3733027,Developing,1
+4175,9,Mid,BA,42000,232.4292817,Developing,1
+4176,11,Mid,BA,44000,256.8474503,Proficient,1
+4177,1,New,MA,35000,224.4026343,Developing,1
+4178,8,Mid,BA,41000,225.5306671,Developing,0
+4179,11,Mid,BA,44000,256.1280862,Proficient,1
+4180,31,Career,BA,64000,216.1136432,Developing,1
+4181,5,Novice,MA,39000,223.5909185,Developing,1
+4182,34,Career,MA,68000,228.4729079,Developing,1
+4183,3,Novice,MA,37000,199.7396627,Minimally Effective,0
+4184,27,Career,BA,62000,227.0873145,Developing,0
+4185,21,Experienced,BA,54000,283.594793,Highly Effective,1
+4186,21,Experienced,BA,54000,190.624926,Minimally Effective,1
+4187,24,Experienced,BA,57000,187.0321272,Minimally Effective,1
+4188,14,Mid,MA,48000,192.6097305,Minimally Effective,1
+4189,14,Mid,BA,47000,248.6026595,Developing,1
+4190,20,Experienced,BA,53000,210.6984494,Developing,0
+4191,20,Experienced,BA,53000,183.7226858,Minimally Effective,1
+4192,6,Novice,MA,40000,234.3217971,Developing,1
+4193,11,Mid,PhD or EdD,46000,203.0112565,Developing,1
+4194,2,New,BA,35000,240.1346305,Developing,0
+4195,7,Mid,BA,40000,239.8360823,Developing,1
+4196,1,New,BA,34000,212.7341277,Developing,0
+4197,9,Mid,BA,42000,203.1809871,Developing,1
+4198,3,Novice,MA,37000,258.2980868,Proficient,1
+4199,14,Mid,MA,48000,190.3254039,Minimally Effective,1
+4200,22,Experienced,MA,58000,295.6159685,Highly Effective,1
+4201,20,Experienced,BA,53000,230.5240012,Developing,1
+4202,18,Experienced,MA,52000,212.3193186,Developing,1
+4203,13,Mid,BA,48000,207.5210415,Developing,0
+4204,21,Experienced,PhD or EdD,56000,255.5273762,Proficient,1
+4205,15,Mid,BA,50000,234.7411161,Developing,1
+4206,28,Career,MA,62000,265.8279259,Proficient,1
+4207,4,Novice,MA,38000,234.028219,Developing,1
+4208,12,Mid,BA,45000,208.9494114,Developing,1
+4209,6,Novice,MA,40000,225.7619292,Developing,1
+4210,25,Career,BA,58000,245.5284368,Developing,1
+4211,7,Mid,BA,40000,204.8053599,Developing,1
+4212,38,Career,BA,71000,200.6163182,Developing,0
+4213,10,Mid,MA,44000,193.5064426,Minimally Effective,1
+4214,34,Career,MA,70000,211.7348585,Developing,0
+4215,17,Experienced,MA,51000,242.9379272,Developing,1
+4216,20,Experienced,MA,54000,239.5083436,Developing,1
+4217,18,Experienced,MA,52000,250.2153375,Proficient,1
+4218,31,Career,BA,64000,234.5802521,Developing,0
+4219,7,Mid,BA,40000,282.3679462,Highly Effective,0
+4220,15,Mid,BA,48000,192.1788042,Minimally Effective,0
+4221,27,Career,BA,60000,241.1786865,Developing,1
+4222,9,Mid,MA,43000,240.0536553,Developing,1
+4223,22,Experienced,MA,60000,263.4883271,Proficient,1
+4224,1,New,BA,34000,184.9029237,Minimally Effective,1
+4225,9,Mid,BA,42000,197.9858753,Minimally Effective,1
+4226,3,Novice,MA,37000,235.0486535,Developing,1
+4227,11,Mid,BA,44000,195.8469945,Minimally Effective,1
+4228,9,Mid,BA,42000,206.3167862,Developing,1
+4229,24,Experienced,BA,57000,231.7894007,Developing,0
+4230,26,Career,BA,59000,223.6500399,Developing,1
+4231,5,Novice,PhD or EdD,40000,227.5870437,Developing,1
+4232,31,Career,BA,68000,211.475226,Developing,1
+4233,9,Mid,BA,42000,209.3396347,Developing,1
+4234,13,Mid,BA,46000,297.8351915,Highly Effective,0
+4235,30,Career,MA,64000,264.2796509,Proficient,1
+4236,12,Mid,BA,45000,203.6586446,Developing,1
+4237,1,New,BA,34000,174.8846092,Minimally Effective,0
+4238,7,Mid,BA,40000,182.1965385,Minimally Effective,1
+4239,14,Mid,MA,52000,225.0986258,Developing,1
+4240,21,Experienced,BA,58000,196.4314633,Minimally Effective,1
+4241,30,Career,BA,63000,239.3828206,Developing,1
+4242,1,New,BA,34000,171.2785889,Minimally Effective,1
+4243,33,Career,BA,66000,207.6681153,Developing,1
+4244,14,Mid,MA,50000,165.4567404,Minimally Effective,1
+4245,25,Career,BA,58000,255.7319373,Proficient,1
+4246,4,Novice,MA,38000,191.839553,Minimally Effective,1
+4247,27,Career,BA,60000,272.6684347,Proficient,1
+4248,10,Mid,MA,44000,228.425301,Developing,1
+4249,24,Experienced,BA,57000,229.6254846,Developing,1
+4250,2,New,BA,35000,219.9319998,Developing,1
+4251,33,Career,MA,71000,196.2228295,Minimally Effective,1
+4252,6,Novice,MA,40000,220.2069771,Developing,1
+4253,14,Mid,MA,50000,202.6567724,Developing,1
+4254,18,Experienced,MA,52000,238.7254303,Developing,0
+4255,1,New,BA,34000,212.7837354,Developing,1
+4256,34,Career,BA,67000,225.7961742,Developing,0
+4257,5,Novice,BA,38000,152.7129406,Minimally Effective,1
+4258,24,Experienced,BA,57000,224.9415243,Developing,1
+4259,1,New,MA,35000,177.4726846,Minimally Effective,1
+4260,10,Mid,MA,44000,283.4597006,Highly Effective,0
+4261,14,Mid,MA,48000,230.7546185,Developing,1
+4262,27,Career,BA,62000,189.8379512,Minimally Effective,1
+4263,16,Experienced,BA,49000,215.069243,Developing,1
+4264,28,Career,BA,61000,214.8526243,Developing,1
+4265,3,Novice,MA,37000,206.5453466,Developing,0
+4266,22,Experienced,BA,55000,270.5463277,Proficient,1
+4267,32,Career,MA,68000,259.5125348,Proficient,1
+4268,4,Novice,BA,37000,296.9701387,Highly Effective,1
+4269,11,Mid,BA,44000,230.3736606,Developing,0
+4270,1,New,MA,35000,192.5473963,Minimally Effective,0
+4271,2,New,BA,35000,221.9428872,Developing,0
+4272,12,Mid,MA,46000,198.8223626,Minimally Effective,1
+4273,4,Novice,BA,37000,223.8942659,Developing,0
+4274,7,Mid,BA,40000,235.8627409,Developing,0
+4275,2,New,BA,35000,218.8089077,Developing,1
+4276,25,Career,BA,58000,237.9559254,Developing,1
+4277,2,New,BA,35000,136.4711944,Ineffective,1
+4278,9,Mid,BA,42000,235.6152991,Developing,1
+4279,26,Career,BA,61000,256.6220605,Proficient,0
+4280,7,Mid,BA,40000,234.806881,Developing,1
+4281,4,Novice,BA,37000,248.3197211,Developing,1
+4282,18,Experienced,BA,51000,233.5577027,Developing,1
+4283,19,Experienced,BA,52000,232.9760088,Developing,1
+4284,8,Mid,MA,42000,198.6504928,Minimally Effective,1
+4285,5,Novice,BA,38000,217.9812998,Developing,1
+4286,3,Novice,BA,36000,251.5224099,Proficient,0
+4287,14,Mid,MA,50000,237.4723967,Developing,1
+4288,20,Experienced,BA,53000,213.9165479,Developing,1
+4289,24,Experienced,BA,57000,252.4915747,Proficient,1
+4290,31,Career,MA,65000,300,Highly Effective,1
+4291,10,Mid,MA,44000,213.6760951,Developing,1
+4292,22,Experienced,MA,56000,238.2848124,Developing,1
+4293,1,New,BA,34000,227.7510959,Developing,0
+4294,2,New,BA,35000,292.5986893,Highly Effective,0
+4295,6,Novice,MA,40000,253.0213956,Proficient,1
+4296,31,Career,BA,64000,234.3322519,Developing,1
+4297,5,Novice,BA,38000,259.3975097,Proficient,1
+4298,22,Experienced,BA,55000,243.3918612,Developing,1
+4299,12,Mid,BA,45000,231.4388082,Developing,1
+4300,13,Mid,BA,46000,245.8213133,Developing,1
+4301,5,Novice,BA,38000,213.564052,Developing,1
+4302,1,New,BA,34000,195.4577452,Minimally Effective,1
+4303,13,Mid,BA,46000,256.9484196,Proficient,1
+4304,27,Career,BA,60000,223.6355805,Developing,1
+4305,16,Experienced,BA,49000,228.9870431,Developing,1
+4306,34,Career,BA,67000,223.5094473,Developing,1
+4307,11,Mid,MA,47000,252.8865775,Proficient,1
+4308,15,Mid,MA,49000,237.0140312,Developing,1
+4309,2,New,BA,35000,183.4537728,Minimally Effective,1
+4310,1,New,MA,35000,255.3372303,Proficient,1
+4311,28,Career,BA,61000,227.2956034,Developing,1
+4312,2,New,BA,35000,219.6781691,Developing,1
+4313,13,Mid,BA,48000,189.7801512,Minimally Effective,1
+4314,1,New,BA,34000,141.1227772,Ineffective,1
+4315,4,Novice,BA,37000,229.9166368,Developing,1
+4316,24,Experienced,MA,58000,203.430986,Developing,1
+4317,5,Novice,BA,38000,202.7603733,Developing,1
+4318,4,Novice,MA,38000,220.5223147,Developing,1
+4319,24,Experienced,BA,57000,240.2891633,Developing,1
+4320,4,Novice,BA,37000,236.9921012,Developing,1
+4321,10,Mid,BA,43000,235.5292929,Developing,1
+4322,6,Novice,BA,39000,209.2255538,Developing,1
+4323,4,Novice,MA,38000,208.602996,Developing,0
+4324,19,Experienced,BA,52000,257.6778624,Proficient,1
+4325,5,Novice,MA,39000,160.7209068,Minimally Effective,1
+4326,5,Novice,BA,38000,225.6104224,Developing,1
+4327,17,Experienced,BA,50000,216.7996731,Developing,1
+4328,21,Experienced,BA,56000,255.7825168,Proficient,1
+4329,6,Novice,BA,39000,276.7273049,Highly Effective,0
+4330,7,Mid,MA,41000,211.5030202,Developing,1
+4331,12,Mid,BA,45000,279.572415,Highly Effective,1
+4332,28,Career,BA,61000,190.973577,Minimally Effective,1
+4333,10,Mid,MA,44000,239.1254731,Developing,1
+4334,2,New,BA,35000,229.3258659,Developing,1
+4335,12,Mid,MA,46000,236.3703752,Developing,1
+4336,23,Experienced,BA,56000,224.4230399,Developing,1
+4337,2,New,BA,35000,167.585582,Minimally Effective,1
+4338,9,Mid,BA,42000,198.3818577,Minimally Effective,1
+4339,3,Novice,MA,37000,224.1357134,Developing,1
+4340,23,Experienced,MA,57000,201.1789825,Developing,1
+4341,5,Novice,MA,39000,187.162976,Minimally Effective,1
+4342,4,Novice,PhD or EdD,39000,215.8073856,Developing,1
+4343,9,Mid,BA,42000,197.7391937,Minimally Effective,1
+4344,13,Mid,BA,46000,202.4923005,Developing,1
+4345,8,Mid,MA,42000,221.6091083,Developing,0
+4346,17,Experienced,BA,50000,221.857583,Developing,0
+4347,1,New,BA,34000,215.1327824,Developing,1
+4348,31,Career,MA,65000,254.7410831,Proficient,1
+4349,5,Novice,MA,39000,173.6236232,Minimally Effective,1
+4350,6,Novice,BA,39000,183.0161871,Minimally Effective,1
+4351,5,Novice,MA,39000,288.9486878,Highly Effective,1
+4352,17,Experienced,MA,51000,195.6179707,Minimally Effective,1
+4353,1,New,BA,34000,191.6435233,Minimally Effective,1
+4354,14,Mid,MA,48000,248.527903,Developing,1
+4355,8,Mid,BA,41000,261.6716111,Proficient,0
+4356,8,Mid,BA,41000,295.9981163,Highly Effective,0
+4357,37,Career,BA,70000,216.3417234,Developing,1
+4358,4,Novice,BA,37000,157.1393243,Minimally Effective,1
+4359,32,Career,MA,70000,229.804904,Developing,1
+4360,13,Mid,BA,46000,230.0429901,Developing,1
+4361,13,Mid,BA,46000,236.9618602,Developing,1
+4362,4,Novice,BA,37000,220.5005863,Developing,1
+4363,15,Mid,MA,49000,235.6731263,Developing,1
+4364,10,Mid,BA,43000,232.666248,Developing,1
+4365,18,Experienced,BA,51000,209.6578123,Developing,1
+4366,2,New,BA,35000,201.4750034,Developing,0
+4367,7,Mid,MA,41000,184.6157057,Minimally Effective,1
+4368,3,Novice,MA,37000,197.0488751,Minimally Effective,1
+4369,2,New,MA,36000,234.8760493,Developing,1
+4370,4,Novice,BA,37000,248.7977968,Developing,1
+4371,20,Experienced,MA,54000,229.1585651,Developing,1
+4372,2,New,MA,36000,246.1894426,Developing,1
+4373,13,Mid,MA,47000,254.7708257,Proficient,1
+4374,22,Experienced,BA,55000,236.9248872,Developing,1
+4375,27,Career,MA,61000,211.0389374,Developing,1
+4376,13,Mid,MA,47000,263.9103794,Proficient,1
+4377,1,New,MA,35000,154.2916535,Minimally Effective,0
+4378,19,Experienced,BA,52000,220.5115656,Developing,0
+4379,20,Experienced,MA,54000,206.9055579,Developing,0
+4380,14,Mid,BA,47000,231.4281827,Developing,1
+4381,14,Mid,MA,48000,214.720204,Developing,0
+4382,4,Novice,BA,37000,234.0761685,Developing,1
+4383,6,Novice,MA,40000,260.3256378,Proficient,1
+4384,17,Experienced,BA,50000,205.5100752,Developing,0
+4385,7,Mid,MA,41000,258.0587531,Proficient,1
+4386,14,Mid,BA,47000,212.992637,Developing,1
+4387,5,Novice,MA,39000,243.4340362,Developing,1
+4388,24,Experienced,MA,60000,217.8820203,Developing,1
+4389,21,Experienced,MA,55000,209.2183903,Developing,1
+4390,18,Experienced,BA,51000,244.8119301,Developing,1
+4391,13,Mid,BA,46000,222.2460973,Developing,1
+4392,14,Mid,MA,48000,259.0395917,Proficient,1
+4393,8,Mid,MA,42000,200.4995505,Developing,0
+4394,6,Novice,BA,39000,226.5591124,Developing,1
+4395,1,New,BA,34000,160.1424334,Minimally Effective,1
+4396,27,Career,MA,63000,227.3796137,Developing,1
+4397,14,Mid,BA,47000,229.5494669,Developing,1
+4398,36,Career,MA,70000,194.9174322,Minimally Effective,1
+4399,1,New,MA,35000,166.1199168,Minimally Effective,0
+4400,13,Mid,BA,46000,276.1382304,Highly Effective,1
+4401,12,Mid,MA,46000,235.1195953,Developing,1
+4402,1,New,BA,34000,167.8356273,Minimally Effective,1
+4403,15,Mid,BA,48000,249.697545,Developing,1
+4404,17,Experienced,BA,50000,220.5778496,Developing,1
+4405,17,Experienced,MA,51000,221.767415,Developing,1
+4406,12,Mid,MA,46000,207.4563696,Developing,0
+4407,20,Experienced,BA,53000,180.7104334,Minimally Effective,1
+4408,21,Experienced,MA,55000,257.1384009,Proficient,1
+4409,3,Novice,BA,36000,219.5404383,Developing,1
+4410,23,Experienced,MA,57000,226.3138609,Developing,1
+4411,1,New,BA,34000,179.703284,Minimally Effective,0
+4412,4,Novice,MA,38000,212.464395,Developing,1
+4413,3,Novice,BA,36000,300,Highly Effective,1
+4414,2,New,MA,36000,252.0472867,Proficient,1
+4415,8,Mid,MA,42000,212.5982197,Developing,1
+4416,5,Novice,BA,38000,184.0756773,Minimally Effective,1
+4417,12,Mid,BA,45000,240.0485435,Developing,1
+4418,37,Career,MA,75000,225.179306,Developing,1
+4419,1,New,BA,34000,169.1977312,Minimally Effective,1
+4420,32,Career,MA,66000,221.409529,Developing,1
+4421,15,Mid,BA,48000,213.5980708,Developing,1
+4422,15,Mid,BA,48000,211.980753,Developing,1
+4423,14,Mid,BA,49000,235.2687863,Developing,1
+4424,16,Experienced,BA,51000,240.8363357,Developing,1
+4425,3,Novice,BA,36000,240.2625376,Developing,0
+4426,1,New,MA,35000,142.5504535,Ineffective,1
+4427,9,Mid,BA,42000,164.77649,Minimally Effective,1
+4428,22,Experienced,BA,57000,236.8455041,Developing,1
+4429,27,Career,BA,60000,219.1922728,Developing,1
+4430,7,Mid,BA,40000,195.4008218,Minimally Effective,0
+4431,4,Novice,MA,38000,223.727909,Developing,1
+4432,23,Experienced,MA,57000,191.941626,Minimally Effective,1
+4433,15,Mid,MA,49000,162.3572693,Minimally Effective,1
+4434,9,Mid,BA,42000,225.8390767,Developing,1
+4435,1,New,MA,35000,180.7924829,Minimally Effective,1
+4436,24,Experienced,BA,57000,220.5489332,Developing,1
+4437,35,Career,BA,70000,270.2193471,Proficient,1
+4438,1,New,MA,35000,150.0730196,Minimally Effective,0
+4439,11,Mid,MA,45000,192.9567341,Minimally Effective,1
+4440,11,Mid,BA,44000,212.6717931,Developing,1
+4441,1,New,BA,34000,213.3690371,Developing,1
+4442,26,Career,BA,59000,254.0330864,Proficient,1
+4443,1,New,MA,35000,175.4809589,Minimally Effective,0
+4444,11,Mid,BA,44000,195.0494933,Minimally Effective,1
+4445,23,Experienced,BA,56000,236.9482796,Developing,1
+4446,16,Experienced,MA,52000,230.7595373,Developing,1
+4447,27,Career,BA,62000,193.3487252,Minimally Effective,1
+4448,3,Novice,BA,36000,194.3666304,Minimally Effective,1
+4449,26,Career,MA,60000,233.3291419,Developing,1
+4450,3,Novice,BA,36000,132.9833612,Ineffective,1
+4451,25,Career,BA,58000,224.8683107,Developing,0
+4452,3,Novice,BA,36000,257.1637409,Proficient,1
+4453,7,Mid,BA,40000,244.5805538,Developing,1
+4454,23,Experienced,MA,57000,182.7791229,Minimally Effective,1
+4455,22,Experienced,BA,55000,188.5604231,Minimally Effective,1
+4456,2,New,BA,35000,201.7655489,Developing,1
+4457,6,Novice,BA,39000,180.7091219,Minimally Effective,0
+4458,2,New,BA,35000,261.5061869,Proficient,0
+4459,34,Career,BA,67000,219.5677998,Developing,1
+4460,39,Career,BA,74000,253.5503108,Proficient,1
+4461,13,Mid,BA,46000,243.9387078,Developing,1
+4462,3,Novice,BA,36000,171.8364792,Minimally Effective,1
+4463,27,Career,BA,60000,228.06896,Developing,1
+4464,5,Novice,MA,39000,197.4649886,Minimally Effective,1
+4465,1,New,MA,35000,170.7918479,Minimally Effective,1
+4466,17,Experienced,BA,50000,255.787473,Proficient,1
+4467,6,Novice,MA,40000,210.7379377,Developing,1
+4468,10,Mid,BA,43000,223.2188591,Developing,1
+4469,20,Experienced,BA,53000,187.5288634,Minimally Effective,1
+4470,24,Experienced,BA,59000,219.6215727,Developing,1
+4471,31,Career,BA,64000,222.4021159,Developing,1
+4472,18,Experienced,MA,56000,280.2647792,Highly Effective,1
+4473,4,Novice,MA,38000,235.0744831,Developing,1
+4474,12,Mid,BA,45000,226.8869407,Developing,1
+4475,23,Experienced,BA,56000,258.5589378,Proficient,1
+4476,4,Novice,BA,37000,217.7838693,Developing,1
+4477,11,Mid,BA,44000,174.3413856,Minimally Effective,1
+4478,8,Mid,BA,41000,262.8516893,Proficient,1
+4479,31,Career,BA,64000,206.603071,Developing,1
+4480,11,Mid,MA,45000,216.6650007,Developing,1
+4481,2,New,BA,35000,188.4287599,Minimally Effective,1
+4482,22,Experienced,PhD or EdD,57000,186.3164269,Minimally Effective,1
+4483,12,Mid,BA,45000,179.3181946,Minimally Effective,1
+4484,10,Mid,BA,43000,252.4920612,Proficient,1
+4485,4,Novice,BA,37000,229.959197,Developing,1
+4486,2,New,PhD or EdD,37000,213.5178374,Developing,1
+4487,24,Experienced,BA,57000,270.2954125,Proficient,0
+4488,2,New,BA,35000,233.5686796,Developing,1
+4489,3,Novice,MA,37000,246.2273473,Developing,1
+4490,7,Mid,MA,41000,176.4923636,Minimally Effective,1
+4491,10,Mid,BA,43000,218.2385437,Developing,1
+4492,6,Novice,MA,40000,216.0169236,Developing,1
+4493,7,Mid,MA,41000,280.1626676,Highly Effective,1
+4494,1,New,BA,34000,137.4590255,Ineffective,1
+4495,8,Mid,BA,41000,241.4693242,Developing,1
+4496,4,Novice,MA,38000,208.2550693,Developing,1
+4497,1,New,MA,35000,157.2783779,Minimally Effective,1
+4498,21,Experienced,MA,55000,208.1577554,Developing,1
+4499,16,Experienced,MA,50000,240.1156183,Developing,1
+4500,17,Experienced,BA,50000,252.0322717,Proficient,1
+4501,1,New,MA,35000,263.5558446,Proficient,1
+4502,9,Mid,BA,42000,154.7728543,Minimally Effective,0
+4503,7,Mid,BA,40000,253.322997,Proficient,1
+4504,8,Mid,BA,41000,227.4875141,Developing,1
+4505,2,New,BA,35000,204.582554,Developing,1
+4506,18,Experienced,BA,51000,239.7285663,Developing,1
+4507,1,New,BA,34000,166.6730888,Minimally Effective,0
+4508,5,Novice,BA,38000,219.5808522,Developing,0
+4509,27,Career,MA,61000,229.3938254,Developing,1
+4510,10,Mid,MA,44000,221.5410634,Developing,1
+4511,14,Mid,BA,47000,244.0196681,Developing,1
+4512,13,Mid,MA,47000,257.8075918,Proficient,0
+4513,8,Mid,BA,41000,261.0076664,Proficient,1
+4514,1,New,MA,35000,156.6051712,Minimally Effective,1
+4515,19,Experienced,BA,52000,203.9850138,Developing,1
+4516,21,Experienced,BA,54000,243.321202,Developing,1
+4517,8,Mid,BA,41000,300,Highly Effective,0
+4518,4,Novice,BA,37000,202.9338695,Developing,0
+4519,17,Experienced,MA,51000,192.6839664,Minimally Effective,1
+4520,16,Experienced,MA,50000,219.8480163,Developing,1
+4521,6,Novice,MA,40000,202.2584152,Developing,1
+4522,15,Mid,BA,48000,209.6260828,Developing,1
+4523,27,Career,BA,60000,213.0744984,Developing,1
+4524,17,Experienced,BA,50000,203.226645,Developing,0
+4525,12,Mid,MA,48000,249.5062114,Developing,1
+4526,2,New,MA,36000,224.2175448,Developing,1
+4527,21,Experienced,BA,54000,216.159134,Developing,1
+4528,12,Mid,MA,48000,232.588394,Developing,1
+4529,11,Mid,BA,44000,282.9783746,Highly Effective,1
+4530,1,New,MA,35000,125.8561383,Ineffective,1
+4531,16,Experienced,BA,49000,252.9629955,Proficient,1
+4532,13,Mid,MA,47000,217.147825,Developing,1
+4533,4,Novice,BA,37000,228.5595495,Developing,1
+4534,9,Mid,MA,43000,196.738219,Minimally Effective,1
+4535,25,Career,MA,59000,179.4061948,Minimally Effective,1
+4536,12,Mid,BA,45000,240.0156722,Developing,1
+4537,13,Mid,BA,46000,226.6931105,Developing,0
+4538,4,Novice,BA,37000,246.5569568,Developing,1
+4539,4,Novice,BA,37000,190.3189613,Minimally Effective,1
+4540,5,Novice,BA,38000,263.6922392,Proficient,1
+4541,8,Mid,BA,41000,234.1992193,Developing,1
+4542,6,Novice,BA,39000,172.5150081,Minimally Effective,1
+4543,2,New,MA,36000,193.801012,Minimally Effective,1
+4544,8,Mid,BA,41000,272.2307029,Proficient,1
+4545,3,Novice,BA,36000,155.6306752,Minimally Effective,1
+4546,32,Career,MA,70000,243.6380833,Developing,1
+4547,7,Mid,BA,40000,261.3042302,Proficient,1
+4548,6,Novice,BA,39000,225.0896824,Developing,1
+4549,3,Novice,BA,36000,211.465736,Developing,1
+4550,15,Mid,BA,48000,253.4510823,Proficient,1
+4551,1,New,MA,35000,177.3985584,Minimally Effective,0
+4552,1,New,PhD or EdD,36000,202.4321602,Developing,0
+4553,10,Mid,MA,44000,260.3881504,Proficient,1
+4554,17,Experienced,BA,52000,200.1858534,Developing,1
+4555,18,Experienced,MA,52000,229.9641536,Developing,0
+4556,3,Novice,BA,36000,179.8266227,Minimally Effective,1
+4557,19,Experienced,BA,52000,249.4563717,Developing,1
+4558,8,Mid,BA,41000,243.574234,Developing,1
+4559,21,Experienced,MA,55000,198.477185,Minimally Effective,1
+4560,1,New,BA,34000,155.1325092,Minimally Effective,1
+4561,26,Career,BA,59000,236.6005174,Developing,0
+4562,25,Career,BA,58000,237.0152159,Developing,0
+4563,6,Novice,BA,39000,233.9552271,Developing,1
+4564,19,Experienced,MA,53000,175.8176211,Minimally Effective,1
+4565,38,Career,MA,74000,246.1745311,Developing,1
+4566,14,Mid,MA,48000,255.3459346,Proficient,1
+4567,12,Mid,MA,46000,192.2132011,Minimally Effective,1
+4568,18,Experienced,BA,51000,263.9173185,Proficient,0
+4569,6,Novice,MA,40000,231.827209,Developing,1
+4570,9,Mid,MA,43000,213.8711974,Developing,1
+4571,3,Novice,BA,36000,204.1604586,Developing,1
+4572,31,Career,MA,65000,203.5493299,Developing,1
+4573,1,New,MA,35000,200.5756092,Developing,0
+4574,18,Experienced,MA,52000,233.4485791,Developing,1
+4575,2,New,BA,35000,197.4037241,Minimally Effective,1
+4576,29,Career,MA,63000,210.577276,Developing,1
+4577,1,New,MA,35000,168.7627604,Minimally Effective,1
+4578,4,Novice,MA,38000,215.7320163,Developing,1
+4579,7,Mid,BA,40000,203.8500495,Developing,1
+4580,15,Mid,BA,48000,223.1844627,Developing,1
+4581,4,Novice,BA,37000,271.9976717,Proficient,1
+4582,5,Novice,BA,38000,220.3094075,Developing,1
+4583,16,Experienced,MA,50000,203.10745,Developing,1
+4584,21,Experienced,MA,55000,219.2614607,Developing,0
+4585,17,Experienced,BA,50000,242.8990476,Developing,1
+4586,3,Novice,BA,36000,183.6659258,Minimally Effective,1
+4587,18,Experienced,BA,53000,231.2540689,Developing,0
+4588,17,Experienced,BA,50000,236.8087637,Developing,0
+4589,1,New,BA,34000,166.2790069,Minimally Effective,1
+4590,3,Novice,BA,36000,217.650711,Developing,1
+4591,3,Novice,BA,36000,208.6849564,Developing,0
+4592,13,Mid,BA,46000,193.9673074,Minimally Effective,0
+4593,15,Mid,BA,48000,180.9364061,Minimally Effective,1
+4594,17,Experienced,BA,52000,244.6402504,Developing,1
+4595,2,New,MA,36000,180.9203735,Minimally Effective,1
+4596,3,Novice,BA,36000,157.6303586,Minimally Effective,1
+4597,6,Novice,BA,39000,176.8840333,Minimally Effective,1
+4598,6,Novice,BA,39000,208.3817768,Developing,1
+4599,16,Experienced,MA,50000,250.0420902,Proficient,1
+4600,3,Novice,BA,36000,213.8910967,Developing,1
+4601,10,Mid,BA,43000,268.4844866,Proficient,1
+4602,29,Career,MA,63000,211.1323287,Developing,1
+4603,3,Novice,MA,37000,232.2993679,Developing,1
+4604,27,Career,MA,61000,203.890863,Developing,1
+4605,10,Mid,BA,43000,189.603094,Minimally Effective,0
+4606,3,Novice,BA,36000,176.5867906,Minimally Effective,1
+4607,4,Novice,BA,37000,220.7676892,Developing,0
+4608,3,Novice,MA,37000,138.6768852,Ineffective,0
+4609,6,Novice,BA,39000,193.822274,Minimally Effective,1
+4610,6,Novice,BA,39000,218.9432693,Developing,0
+4611,21,Experienced,BA,54000,257.2321396,Proficient,1
+4612,19,Experienced,MA,53000,217.5480675,Developing,1
+4613,6,Novice,BA,39000,227.9153819,Developing,1
+4614,1,New,BA,34000,169.5287215,Minimally Effective,1
+4615,15,Mid,BA,48000,227.1714589,Developing,1
+4616,10,Mid,BA,43000,239.1530004,Developing,1
+4617,29,Career,BA,62000,243.8112405,Developing,1
+4618,5,Novice,PhD or EdD,40000,137.4905191,Ineffective,1
+4619,5,Novice,BA,38000,250.5660753,Proficient,0
+4620,10,Mid,MA,44000,267.6700063,Proficient,0
+4621,17,Experienced,BA,50000,254.5838021,Proficient,1
+4622,11,Mid,MA,45000,226.0633267,Developing,0
+4623,9,Mid,BA,42000,204.3971325,Developing,1
+4624,15,Mid,MA,49000,271.4818393,Proficient,1
+4625,35,Career,PhD or EdD,72000,245.2685846,Developing,1
+4626,14,Mid,BA,47000,192.9197963,Minimally Effective,1
+4627,1,New,BA,34000,220.6107108,Developing,0
+4628,24,Experienced,BA,59000,243.0020363,Developing,1
+4629,29,Career,BA,64000,184.6319282,Minimally Effective,0
+4630,12,Mid,BA,45000,225.8742783,Developing,1
+4631,19,Experienced,BA,52000,213.9629524,Developing,1
+4632,5,Novice,BA,38000,241.7020802,Developing,0
+4633,25,Career,BA,58000,213.3455287,Developing,1
+4634,1,New,BA,34000,154.7415838,Minimally Effective,1
+4635,2,New,BA,35000,151.9262528,Minimally Effective,1
+4636,19,Experienced,MA,53000,263.7121203,Proficient,0
+4637,1,New,BA,34000,199.9114531,Minimally Effective,0
+4638,38,Career,BA,71000,247.5210485,Developing,1
+4639,1,New,MA,35000,149.2535693,Ineffective,0
+4640,2,New,MA,36000,237.2986578,Developing,1
+4641,20,Experienced,BA,53000,292.3358788,Highly Effective,1
+4642,21,Experienced,MA,55000,269.3508672,Proficient,1
+4643,23,Experienced,MA,57000,236.2233617,Developing,1
+4644,4,Novice,BA,37000,221.6802183,Developing,1
+4645,25,Career,BA,58000,281.3638442,Highly Effective,1
+4646,19,Experienced,BA,52000,238.237354,Developing,1
+4647,3,Novice,BA,36000,186.1508539,Minimally Effective,1
+4648,14,Mid,BA,47000,231.6509921,Developing,1
+4649,3,Novice,MA,37000,179.833384,Minimally Effective,1
+4650,29,Career,BA,62000,169.4672124,Minimally Effective,1
+4651,4,Novice,BA,37000,248.1918404,Developing,1
+4652,27,Career,MA,61000,210.640058,Developing,1
+4653,6,Novice,BA,39000,236.1872923,Developing,1
+4654,7,Mid,MA,41000,180.417079,Minimally Effective,1
+4655,22,Experienced,MA,56000,242.6774624,Developing,1
+4656,20,Experienced,MA,56000,248.9619524,Developing,1
+4657,19,Experienced,BA,52000,270.5401136,Proficient,0
+4658,31,Career,BA,64000,224.5678324,Developing,1
+4659,20,Experienced,MA,54000,251.0497573,Proficient,1
+4660,6,Novice,BA,39000,241.6663829,Developing,0
+4661,5,Novice,BA,38000,257.2730014,Proficient,1
+4662,8,Mid,BA,41000,256.1356559,Proficient,1
+4663,2,New,BA,35000,238.3161284,Developing,1
+4664,24,Experienced,BA,57000,157.9222134,Minimally Effective,1
+4665,10,Mid,MA,44000,217.6179925,Developing,1
+4666,19,Experienced,BA,52000,203.6893085,Developing,1
+4667,2,New,BA,35000,158.1075653,Minimally Effective,1
+4668,30,Career,BA,63000,188.8829612,Minimally Effective,1
+4669,10,Mid,MA,44000,247.6728801,Developing,1
+4670,16,Experienced,BA,51000,258.5119431,Proficient,0
+4671,28,Career,BA,61000,240.4446008,Developing,1
+4672,33,Career,BA,66000,217.5133158,Developing,1
+4673,2,New,MA,36000,203.833979,Developing,0
+4674,3,Novice,BA,36000,140.0298403,Ineffective,1
+4675,15,Mid,BA,48000,177.9822711,Minimally Effective,0
+4676,9,Mid,MA,43000,222.4758188,Developing,1
+4677,13,Mid,BA,46000,239.0769602,Developing,1
+4678,23,Experienced,BA,56000,289.3517564,Highly Effective,0
+4679,25,Career,BA,58000,269.1825338,Proficient,1
+4680,1,New,BA,34000,188.0369374,Minimally Effective,1
+4681,10,Mid,BA,43000,240.6274747,Developing,1
+4682,9,Mid,BA,42000,213.8633716,Developing,1
+4683,35,Career,BA,68000,212.6523987,Developing,1
+4684,5,Novice,MA,39000,236.0764294,Developing,1
+4685,16,Experienced,BA,49000,224.0581018,Developing,1
+4686,3,Novice,BA,36000,205.142044,Developing,1
+4687,4,Novice,BA,37000,199.9034832,Minimally Effective,0
+4688,2,New,MA,36000,224.8565759,Developing,1
+4689,9,Mid,BA,42000,209.5335348,Developing,1
+4690,1,New,BA,34000,193.5609159,Minimally Effective,1
+4691,4,Novice,BA,37000,192.9221773,Minimally Effective,1
+4692,4,Novice,MA,38000,176.6420579,Minimally Effective,1
+4693,9,Mid,MA,43000,213.9856667,Developing,1
+4694,9,Mid,BA,42000,192.2748856,Minimally Effective,1
+4695,6,Novice,MA,40000,220.6361402,Developing,1
+4696,7,Mid,BA,40000,249.5105624,Developing,1
+4697,18,Experienced,MA,52000,201.5909896,Developing,0
+4698,23,Experienced,MA,57000,215.5026439,Developing,1
+4699,1,New,BA,34000,234.9240577,Developing,0
+4700,14,Mid,BA,49000,239.1090349,Developing,1
+4701,17,Experienced,PhD or EdD,52000,242.0985915,Developing,1
+4702,10,Mid,BA,43000,233.8529922,Developing,0
+4703,6,Novice,MA,40000,226.3864395,Developing,1
+4704,17,Experienced,PhD or EdD,54000,243.2686429,Developing,1
+4705,23,Experienced,MA,57000,248.467497,Developing,1
+4706,18,Experienced,BA,51000,227.0749978,Developing,1
+4707,14,Mid,BA,47000,244.3243569,Developing,1
+4708,13,Mid,MA,47000,197.0826585,Minimally Effective,1
+4709,7,Mid,BA,40000,219.9008519,Developing,0
+4710,2,New,BA,35000,175.4987234,Minimally Effective,1
+4711,1,New,BA,34000,208.7439549,Developing,0
+4712,9,Mid,BA,42000,260.1056285,Proficient,1
+4713,4,Novice,MA,38000,228.2978482,Developing,0
+4714,9,Mid,BA,42000,205.5636762,Developing,0
+4715,35,Career,BA,68000,264.5751902,Proficient,1
+4716,31,Career,BA,64000,200.1053516,Developing,1
+4717,4,Novice,PhD or EdD,39000,224.7777058,Developing,0
+4718,8,Mid,MA,42000,184.7704546,Minimally Effective,1
+4719,32,Career,BA,65000,206.6872636,Developing,1
+4720,16,Experienced,MA,50000,194.5114899,Minimally Effective,1
+4721,16,Experienced,MA,52000,207.075299,Developing,0
+4722,3,Novice,BA,36000,210.0334106,Developing,1
+4723,1,New,BA,34000,166.3971654,Minimally Effective,0
+4724,9,Mid,PhD or EdD,44000,243.8511731,Developing,0
+4725,3,Novice,MA,37000,224.2225732,Developing,1
+4726,1,New,MA,35000,189.6645161,Minimally Effective,0
+4727,24,Experienced,MA,58000,215.2949497,Developing,1
+4728,21,Experienced,BA,54000,230.6820092,Developing,1
+4729,22,Experienced,MA,56000,242.2231064,Developing,0
+4730,20,Experienced,BA,55000,207.0978577,Developing,1
+4731,30,Career,BA,63000,218.4945044,Developing,1
+4732,13,Mid,MA,47000,240.214054,Developing,0
+4733,9,Mid,MA,43000,204.4264575,Developing,1
+4734,5,Novice,MA,39000,186.3030145,Minimally Effective,1
+4735,18,Experienced,MA,52000,240.4443952,Developing,1
+4736,8,Mid,MA,42000,245.6433648,Developing,1
+4737,22,Experienced,BA,55000,225.4525737,Developing,1
+4738,26,Career,BA,61000,211.3785057,Developing,1
+4739,5,Novice,BA,38000,196.6762591,Minimally Effective,1
+4740,8,Mid,BA,41000,167.0865272,Minimally Effective,1
+4741,22,Experienced,BA,55000,252.4411128,Proficient,1
+4742,6,Novice,PhD or EdD,41000,223.814967,Developing,0
+4743,16,Experienced,BA,51000,229.1847829,Developing,1
+4744,11,Mid,MA,45000,271.6911193,Proficient,1
+4745,5,Novice,BA,38000,192.7049639,Minimally Effective,1
+4746,31,Career,BA,64000,265.5478159,Proficient,1
+4747,5,Novice,BA,38000,199.7257617,Minimally Effective,1
+4748,33,Career,BA,66000,188.6982062,Minimally Effective,1
+4749,21,Experienced,BA,54000,216.4479279,Developing,1
+4750,12,Mid,BA,45000,253.8536896,Proficient,1
+4751,17,Experienced,MA,51000,201.2635171,Developing,1
+4752,31,Career,BA,64000,233.5425253,Developing,1
+4753,1,New,MA,35000,183.0681899,Minimally Effective,0
+4754,16,Experienced,MA,50000,227.5864517,Developing,1
+4755,4,Novice,BA,37000,218.3231246,Developing,1
+4756,3,Novice,BA,36000,123.2993036,Ineffective,1
+4757,11,Mid,MA,45000,220.3660296,Developing,1
+4758,4,Novice,MA,38000,200.2515537,Developing,1
+4759,5,Novice,BA,38000,204.3183711,Developing,1
+4760,3,Novice,BA,36000,196.4701467,Minimally Effective,1
+4761,9,Mid,MA,43000,236.6520735,Developing,1
+4762,15,Mid,BA,48000,196.4361101,Minimally Effective,1
+4763,40,Career,BA,73000,183.1623099,Minimally Effective,1
+4764,19,Experienced,BA,52000,197.5836666,Minimally Effective,1
+4765,26,Career,MA,62000,229.8491965,Developing,1
+4766,34,Career,MA,68000,257.8632483,Proficient,0
+4767,4,Novice,MA,38000,190.143124,Minimally Effective,1
+4768,18,Experienced,BA,51000,227.872049,Developing,1
+4769,10,Mid,BA,43000,183.1581983,Minimally Effective,1
+4770,8,Mid,MA,42000,223.6733572,Developing,1
+4771,2,New,MA,36000,190.3055811,Minimally Effective,1
+4772,1,New,BA,34000,174.4465105,Minimally Effective,1
+4773,35,Career,BA,68000,219.2420259,Developing,1
+4774,3,Novice,MA,37000,198.4733254,Minimally Effective,1
+4775,21,Experienced,BA,54000,236.6568886,Developing,1
+4776,17,Experienced,BA,50000,242.51445,Developing,0
+4777,26,Career,MA,60000,206.836383,Developing,1
+4778,2,New,BA,35000,229.0424785,Developing,0
+4779,2,New,BA,35000,199.8009732,Minimally Effective,1
+4780,25,Career,BA,58000,221.3020902,Developing,0
+4781,19,Experienced,MA,53000,262.66038,Proficient,0
+4782,10,Mid,BA,43000,247.9328313,Developing,1
+4783,14,Mid,MA,48000,180.7580082,Minimally Effective,1
+4784,1,New,MA,35000,189.8020299,Minimally Effective,0
+4785,13,Mid,PhD or EdD,50000,219.6909069,Developing,1
+4786,13,Mid,BA,46000,206.7278814,Developing,0
+4787,13,Mid,MA,47000,194.8277525,Minimally Effective,1
+4788,27,Career,BA,60000,229.1912127,Developing,1
+4789,19,Experienced,MA,53000,252.4246041,Proficient,1
+4790,1,New,MA,35000,246.3494809,Developing,1
+4791,28,Career,MA,64000,290.7539539,Highly Effective,0
+4792,1,New,BA,34000,222.7772839,Developing,1
+4793,22,Experienced,BA,55000,231.4223463,Developing,1
+4794,12,Mid,BA,45000,219.117292,Developing,0
+4795,16,Experienced,MA,50000,246.9391211,Developing,0
+4796,14,Mid,BA,47000,198.8384448,Minimally Effective,1
+4797,9,Mid,BA,42000,204.0454274,Developing,1
+4798,14,Mid,BA,49000,243.9263964,Developing,1
+4799,9,Mid,BA,42000,247.5753547,Developing,1
+4800,4,Novice,BA,37000,182.6220284,Minimally Effective,1
+4801,13,Mid,BA,46000,245.1887225,Developing,1
+4802,33,Career,MA,67000,183.7235221,Minimally Effective,1
+4803,18,Experienced,BA,51000,198.5804826,Minimally Effective,0
+4804,25,Career,MA,59000,218.2160806,Developing,1
+4805,5,Novice,MA,39000,209.5045365,Developing,1
+4806,14,Mid,BA,47000,171.4448658,Minimally Effective,1
+4807,12,Mid,BA,45000,251.0897554,Proficient,1
+4808,35,Career,BA,68000,210.2511241,Developing,1
+4809,1,New,BA,34000,214.6607216,Developing,0
+4810,16,Experienced,BA,49000,248.1398217,Developing,1
+4811,24,Experienced,MA,58000,207.1480525,Developing,1
+4812,36,Career,BA,69000,244.3821492,Developing,0
+4813,14,Mid,BA,47000,211.0432934,Developing,1
+4814,9,Mid,MA,43000,275.5171461,Highly Effective,0
+4815,16,Experienced,MA,50000,196.9741926,Minimally Effective,1
+4816,22,Experienced,MA,56000,212.2337587,Developing,1
+4817,14,Mid,BA,47000,210.3384035,Developing,0
+4818,16,Experienced,BA,49000,191.9413439,Minimally Effective,1
+4819,23,Experienced,BA,56000,244.2417224,Developing,1
+4820,4,Novice,BA,37000,226.1348376,Developing,1
+4821,23,Experienced,MA,57000,216.7704349,Developing,0
+4822,16,Experienced,BA,51000,218.8150556,Developing,1
+4823,30,Career,BA,63000,208.044094,Developing,1
+4824,14,Mid,BA,49000,221.0168676,Developing,1
+4825,1,New,MA,35000,199.7326679,Minimally Effective,1
+4826,9,Mid,BA,42000,241.7791014,Developing,1
+4827,15,Mid,BA,48000,280.7597148,Highly Effective,1
+4828,11,Mid,BA,44000,190.3333506,Minimally Effective,1
+4829,17,Experienced,MA,51000,242.3526392,Developing,1
+4830,27,Career,BA,64000,217.1522508,Developing,1
+4831,22,Experienced,MA,56000,250.0596011,Proficient,1
+4832,8,Mid,BA,41000,226.7888348,Developing,1
+4833,17,Experienced,BA,50000,208.8171497,Developing,1
+4834,34,Career,MA,68000,198.8183426,Minimally Effective,0
+4835,2,New,BA,35000,205.8059154,Developing,1
+4836,5,Novice,MA,39000,188.2587823,Minimally Effective,0
+4837,19,Experienced,BA,52000,207.6875285,Developing,1
+4838,19,Experienced,MA,53000,270.4225266,Proficient,1
+4839,1,New,MA,35000,158.4037525,Minimally Effective,1
+4840,1,New,MA,35000,159.3248142,Minimally Effective,1
+4841,17,Experienced,BA,50000,259.0437829,Proficient,1
+4842,10,Mid,BA,43000,241.7746763,Developing,1
+4843,30,Career,BA,63000,242.4690138,Developing,1
+4844,20,Experienced,BA,53000,258.5502925,Proficient,0
+4845,2,New,MA,36000,160.4908176,Minimally Effective,1
+4846,19,Experienced,MA,53000,228.894323,Developing,1
+4847,26,Career,MA,60000,220.1660346,Developing,1
+4848,27,Career,MA,65000,205.8619567,Developing,1
+4849,2,New,BA,35000,138.3059822,Ineffective,1
+4850,6,Novice,BA,39000,256.2767076,Proficient,1
+4851,13,Mid,BA,46000,207.2409073,Developing,1
+4852,25,Career,BA,58000,231.4999317,Developing,1
+4853,31,Career,BA,64000,262.6959254,Proficient,1
+4854,35,Career,BA,68000,238.5311203,Developing,0
+4855,9,Mid,BA,42000,258.6761933,Proficient,1
+4856,36,Career,BA,69000,211.1356002,Developing,1
+4857,10,Mid,MA,44000,198.9562653,Minimally Effective,1
+4858,25,Career,BA,58000,233.8618074,Developing,0
+4859,11,Mid,BA,46000,191.4006095,Minimally Effective,1
+4860,15,Mid,MA,53000,252.8366516,Proficient,0
+4861,29,Career,MA,63000,222.9543448,Developing,1
+4862,1,New,PhD or EdD,36000,194.1290627,Minimally Effective,0
+4863,7,Mid,MA,41000,279.8474277,Highly Effective,0
+4864,6,Novice,MA,40000,198.3225236,Minimally Effective,1
+4865,13,Mid,BA,46000,221.8487495,Developing,0
+4866,27,Career,BA,60000,212.0677127,Developing,0
+4867,16,Experienced,MA,50000,227.1438909,Developing,1
+4868,21,Experienced,BA,54000,258.3886938,Proficient,1
+4869,11,Mid,BA,44000,200.6747428,Developing,1
+4870,10,Mid,BA,43000,214.6216661,Developing,1
+4871,14,Mid,BA,47000,235.8979973,Developing,1
+4872,19,Experienced,BA,52000,222.5007508,Developing,1
+4873,5,Novice,MA,39000,137.8200583,Ineffective,1
+4874,3,Novice,MA,37000,182.692385,Minimally Effective,1
+4875,8,Mid,BA,41000,213.9267546,Developing,1
+4876,11,Mid,MA,45000,255.809129,Proficient,1
+4877,2,New,BA,35000,150.0505761,Minimally Effective,1
+4878,27,Career,BA,60000,233.0049484,Developing,1
+4879,10,Mid,BA,43000,237.0222627,Developing,1
+4880,17,Experienced,MA,51000,254.9249379,Proficient,1
+4881,1,New,MA,35000,168.3444995,Minimally Effective,0
+4882,9,Mid,MA,43000,243.2268985,Developing,1
+4883,17,Experienced,BA,50000,270.8116405,Proficient,1
+4884,2,New,BA,35000,159.9444229,Minimally Effective,1
+4885,14,Mid,BA,47000,210.9891374,Developing,1
+4886,1,New,MA,35000,184.8380906,Minimally Effective,0
+4887,4,Novice,BA,37000,246.0831586,Developing,0
+4888,6,Novice,BA,39000,237.3962302,Developing,1
+4889,10,Mid,MA,44000,246.7327146,Developing,1
+4890,18,Experienced,MA,52000,223.4939286,Developing,1
+4891,4,Novice,MA,38000,237.9768833,Developing,1
+4892,22,Experienced,BA,55000,218.8796125,Developing,1
+4893,21,Experienced,BA,54000,241.770811,Developing,1
+4894,28,Career,BA,61000,178.1631359,Minimally Effective,1
+4895,7,Mid,MA,41000,197.6235469,Minimally Effective,1
+4896,31,Career,MA,69000,191.5149912,Minimally Effective,1
+4897,22,Experienced,BA,55000,244.3950127,Developing,1
+4898,18,Experienced,MA,52000,194.9421521,Minimally Effective,1
+4899,10,Mid,MA,44000,260.9669798,Proficient,1
+4900,5,Novice,BA,38000,217.9032423,Developing,1
+4901,1,New,BA,34000,160.8929149,Minimally Effective,0
+4902,4,Novice,MA,38000,269.0578136,Proficient,0
+4903,3,Novice,MA,37000,157.943743,Minimally Effective,1
+4904,1,New,BA,34000,175.0919411,Minimally Effective,1
+4905,6,Novice,BA,39000,205.8654564,Developing,0
+4906,1,New,MA,35000,148.747296,Ineffective,1
+4907,26,Career,BA,59000,227.999787,Developing,1
+4908,25,Career,MA,61000,217.1017947,Developing,1
+4909,12,Mid,BA,45000,227.1811469,Developing,1
+4910,10,Mid,BA,43000,233.3147637,Developing,1
+4911,38,Career,MA,72000,251.6464327,Proficient,0
+4912,3,Novice,BA,36000,214.1610088,Developing,1
+4913,2,New,BA,35000,214.7640333,Developing,1
+4914,20,Experienced,BA,53000,234.9988135,Developing,1
+4915,25,Career,BA,58000,273.5534223,Proficient,0
+4916,5,Novice,BA,38000,174.6966301,Minimally Effective,0
+4917,3,Novice,MA,37000,225.1074138,Developing,1
+4918,1,New,BA,34000,209.417609,Developing,0
+4919,30,Career,BA,67000,185.7803722,Minimally Effective,1
+4920,18,Experienced,BA,51000,278.7415974,Highly Effective,0
+4921,3,Novice,BA,36000,221.4142391,Developing,1
+4922,22,Experienced,BA,55000,257.5160859,Proficient,1
+4923,1,New,MA,35000,218.2468322,Developing,1
+4924,9,Mid,MA,43000,221.3289562,Developing,1
+4925,31,Career,MA,65000,227.1872074,Developing,1
+4926,3,Novice,BA,36000,201.5587237,Developing,1
+4927,5,Novice,BA,38000,204.5068974,Developing,0
+4928,1,New,BA,34000,184.1044408,Minimally Effective,1
+4929,26,Career,BA,59000,193.6665098,Minimally Effective,1
+4930,26,Career,BA,61000,217.2961261,Developing,1
+4931,10,Mid,BA,43000,258.7103179,Proficient,1
+4932,21,Experienced,MA,55000,221.8352192,Developing,0
+4933,23,Experienced,MA,57000,187.5017657,Minimally Effective,1
+4934,9,Mid,MA,43000,208.6079488,Developing,0
+4935,12,Mid,MA,46000,204.718615,Developing,0
+4936,6,Novice,BA,39000,199.8055339,Minimally Effective,1
+4937,10,Mid,BA,43000,211.7086515,Developing,1
+4938,14,Mid,BA,49000,198.8944133,Minimally Effective,1
+4939,7,Mid,MA,41000,266.7938246,Proficient,1
+4940,19,Experienced,MA,53000,232.0738003,Developing,1
+4941,1,New,MA,35000,159.498203,Minimally Effective,1
+4942,3,Novice,BA,36000,275.3966294,Highly Effective,0
+4943,1,New,MA,35000,190.4489725,Minimally Effective,0
+4944,37,Career,BA,70000,200.0184762,Developing,1
+4945,12,Mid,BA,45000,252.3498522,Proficient,1
+4946,24,Experienced,MA,58000,230.0431812,Developing,1
+4947,16,Experienced,MA,50000,267.3106637,Proficient,1
+4948,31,Career,MA,65000,252.1587054,Proficient,1
+4949,13,Mid,BA,46000,240.7032875,Developing,1
+4950,18,Experienced,MA,52000,230.5567192,Developing,1
+4951,3,Novice,BA,36000,259.6388751,Proficient,1
+4952,25,Career,BA,58000,254.1311981,Proficient,1
+4953,37,Career,BA,70000,240.3576901,Developing,1
+4954,5,Novice,BA,38000,214.0395105,Developing,0
+4955,1,New,MA,35000,211.8458064,Developing,0
+4956,7,Mid,BA,40000,211.4407239,Developing,1
+4957,10,Mid,BA,43000,219.4144678,Developing,1
+4958,16,Experienced,MA,50000,183.30953,Minimally Effective,1
+4959,5,Novice,PhD or EdD,40000,277.2893706,Highly Effective,1
+4960,36,Career,MA,70000,231.354937,Developing,1
+4961,28,Career,BA,61000,233.008039,Developing,1
+4962,10,Mid,MA,44000,239.5059491,Developing,1
+4963,7,Mid,BA,40000,221.5461284,Developing,1
+4964,20,Experienced,MA,54000,193.6035791,Minimally Effective,1
+4965,1,New,MA,35000,244.2675101,Developing,1
+4966,2,New,BA,35000,239.1496568,Developing,1
+4967,17,Experienced,BA,50000,254.1663267,Proficient,1
+4968,7,Mid,MA,41000,186.6512882,Minimally Effective,0
+4969,23,Experienced,BA,56000,260.4120706,Proficient,1
+4970,3,Novice,BA,36000,230.5617318,Developing,1
+4971,3,Novice,BA,36000,188.4611588,Minimally Effective,1
+4972,2,New,MA,36000,177.5949934,Minimally Effective,1
+4973,14,Mid,PhD or EdD,53000,277.3621172,Highly Effective,1
+4974,18,Experienced,BA,53000,208.9642781,Developing,1
+4975,23,Experienced,BA,56000,232.1624646,Developing,1
+4976,8,Mid,MA,42000,259.7124627,Proficient,1
+4977,3,Novice,MA,37000,202.4796441,Developing,1
+4978,21,Experienced,BA,54000,237.7692926,Developing,1
+4979,7,Mid,BA,40000,272.8485121,Proficient,0
+4980,22,Experienced,BA,55000,249.3102752,Developing,1
+4981,12,Mid,BA,45000,191.2562786,Minimally Effective,1
+4982,5,Novice,BA,38000,208.2089175,Developing,0
+4983,29,Career,MA,63000,222.1767859,Developing,1
+4984,14,Mid,BA,47000,245.0432943,Developing,1
+4985,34,Career,BA,67000,197.6865913,Minimally Effective,1
+4986,2,New,MA,36000,225.4397292,Developing,1
+4987,17,Experienced,BA,50000,244.3340091,Developing,1
+4988,1,New,BA,34000,173.805948,Minimally Effective,1
+4989,23,Experienced,BA,56000,193.9924286,Minimally Effective,1
+4990,3,Novice,MA,37000,208.356961,Developing,1
+4991,5,Novice,MA,39000,227.8081748,Developing,1
+4992,1,New,MA,35000,224.0960867,Developing,1
+4993,9,Mid,MA,43000,194.0410408,Minimally Effective,1
+4994,6,Novice,MA,40000,242.3078677,Developing,1
+4995,29,Career,MA,65000,261.0307446,Proficient,1
+4996,7,Mid,BA,40000,228.2356031,Developing,1
+4997,21,Experienced,MA,57000,245.1110933,Developing,1
+4998,5,Novice,BA,38000,258.798088,Proficient,1
+4999,12,Mid,BA,45000,251.814201,Proficient,1
+5.00E+03,24,Experienced,MA,58000,195.7835908,Minimally Effective,1
+5001,18,Experienced,BA,53000,251.579978,Proficient,1
+5002,20,Experienced,BA,53000,196.1528803,Minimally Effective,0
+5003,1,New,BA,34000,185.2406453,Minimally Effective,0
+5004,3,Novice,MA,37000,203.665064,Developing,1
+5005,27,Career,BA,62000,217.295829,Developing,1
+5006,33,Career,MA,67000,224.9039323,Developing,1
+5007,1,New,BA,34000,197.7939678,Minimally Effective,1
+5008,26,Career,BA,59000,223.7772955,Developing,1
+5009,12,Mid,BA,45000,208.0338084,Developing,1
+5010,5,Novice,BA,38000,200.9631998,Developing,1
+5011,20,Experienced,BA,53000,227.3404566,Developing,0
+5012,35,Career,BA,68000,236.3342346,Developing,1
+5013,21,Experienced,MA,55000,224.7553533,Developing,1
+5014,6,Novice,MA,40000,248.8864584,Developing,1
+5015,1,New,BA,34000,190.4153978,Minimally Effective,0
+5016,15,Mid,BA,48000,187.8191303,Minimally Effective,1
+5017,10,Mid,MA,44000,251.4295015,Proficient,1
+5018,2,New,BA,35000,201.8553932,Developing,1
+5019,36,Career,BA,71000,203.4536359,Developing,1
+5020,17,Experienced,MA,51000,233.1855122,Developing,1
+5021,18,Experienced,BA,51000,221.5466749,Developing,1
+5022,13,Mid,MA,47000,248.5841166,Developing,1
+5023,9,Mid,MA,43000,252.5293676,Proficient,1
+5024,10,Mid,MA,44000,239.9414923,Developing,1
+5025,6,Novice,BA,39000,178.2255646,Minimally Effective,1
+5026,4,Novice,BA,37000,212.0254315,Developing,1
+5027,14,Mid,BA,47000,215.3032398,Developing,1
+5028,33,Career,BA,66000,264.8338306,Proficient,1
+5029,1,New,PhD or EdD,36000,167.0611189,Minimally Effective,1
+5030,10,Mid,BA,43000,260.8703353,Proficient,0
+5031,6,Novice,BA,39000,189.8665384,Minimally Effective,1
+5032,33,Career,BA,66000,240.5497399,Developing,1
+5033,9,Mid,BA,42000,224.6126637,Developing,1
+5034,16,Experienced,MA,50000,182.2224316,Minimally Effective,1
+5035,20,Experienced,MA,54000,251.8085789,Proficient,1
+5036,30,Career,MA,64000,194.5275028,Minimally Effective,1
+5037,6,Novice,MA,40000,215.7809874,Developing,1
+5038,14,Mid,BA,49000,261.1087327,Proficient,0
+5039,3,Novice,BA,36000,169.6910808,Minimally Effective,1
+5040,1,New,BA,34000,146.0349469,Ineffective,0
+5041,26,Career,MA,60000,224.9577286,Developing,1
+5042,24,Experienced,BA,57000,260.1999229,Proficient,0
+5043,28,Career,BA,63000,215.7412072,Developing,1
+5044,7,Mid,BA,40000,221.0050678,Developing,1
+5045,13,Mid,BA,46000,240.769603,Developing,1
+5046,19,Experienced,MA,53000,199.5372084,Minimally Effective,0
+5047,28,Career,BA,61000,277.625522,Highly Effective,1
+5048,6,Novice,BA,39000,242.8897313,Developing,1
+5049,16,Experienced,BA,49000,221.7984705,Developing,1
+5050,11,Mid,BA,44000,234.7631532,Developing,1
+5051,9,Mid,BA,42000,217.6613832,Developing,1
+5052,8,Mid,BA,41000,233.4979086,Developing,1
+5053,1,New,BA,34000,130.4310141,Ineffective,1
+5054,6,Novice,BA,39000,165.1599953,Minimally Effective,1
+5055,19,Experienced,BA,52000,207.4544751,Developing,1
+5056,2,New,MA,36000,227.5711585,Developing,1
+5057,6,Novice,BA,39000,221.8240291,Developing,1
+5058,17,Experienced,BA,50000,244.8115058,Developing,1
+5059,25,Career,MA,59000,256.626606,Proficient,0
+5060,13,Mid,MA,49000,203.5413876,Developing,1
+5061,22,Experienced,MA,56000,251.960509,Proficient,1
+5062,18,Experienced,BA,53000,199.3452795,Minimally Effective,1
+5063,3,Novice,BA,36000,208.588602,Developing,1
+5064,25,Career,BA,58000,244.7566756,Developing,1
+5065,12,Mid,BA,45000,261.4852656,Proficient,1
+5066,25,Career,MA,59000,253.6549098,Proficient,1
+5067,4,Novice,MA,38000,277.3299453,Highly Effective,1
+5068,1,New,PhD or EdD,36000,194.0915128,Minimally Effective,1
+5069,9,Mid,MA,43000,244.6134567,Developing,1
+5070,4,Novice,BA,37000,196.0707964,Minimally Effective,1
+5071,24,Experienced,BA,59000,251.0751793,Proficient,1
+5072,7,Mid,BA,40000,227.2631692,Developing,1
+5073,6,Novice,BA,39000,252.1795951,Proficient,1
+5074,2,New,MA,36000,203.5750337,Developing,1
+5075,11,Mid,BA,44000,247.1992754,Developing,1
+5076,17,Experienced,MA,51000,215.603005,Developing,0
+5077,29,Career,MA,63000,251.7612365,Proficient,1
+5078,3,Novice,MA,37000,228.4066333,Developing,1
+5079,24,Experienced,MA,58000,190.8942128,Minimally Effective,1
+5080,7,Mid,MA,41000,233.6851826,Developing,1
+5081,2,New,BA,35000,219.141794,Developing,1
+5082,21,Experienced,BA,56000,231.6335295,Developing,0
+5083,11,Mid,BA,44000,208.7103163,Developing,1
+5084,10,Mid,MA,44000,217.9190413,Developing,1
+5085,7,Mid,MA,41000,258.6353381,Proficient,0
+5086,4,Novice,BA,37000,215.5986474,Developing,1
+5087,25,Career,MA,59000,217.9465765,Developing,1
+5088,26,Career,BA,59000,237.9095587,Developing,1
+5089,1,New,BA,34000,159.3667946,Minimally Effective,1
+5090,15,Mid,BA,48000,211.1604659,Developing,1
+5091,13,Mid,BA,46000,228.8955804,Developing,0
+5092,38,Career,PhD or EdD,73000,242.2101801,Developing,1
+5093,6,Novice,PhD or EdD,41000,170.8673786,Minimally Effective,1
+5094,27,Career,BA,60000,206.5284683,Developing,1
+5095,15,Mid,BA,48000,199.379294,Minimally Effective,1
+5096,4,Novice,MA,38000,216.9076469,Developing,1
+5097,4,Novice,MA,38000,184.3329115,Minimally Effective,1
+5098,6,Novice,BA,39000,219.0645268,Developing,0
+5099,4,Novice,BA,37000,232.5541906,Developing,1
+5100,7,Mid,BA,40000,246.626576,Developing,1
+5101,22,Experienced,BA,55000,203.6505271,Developing,0
+5102,13,Mid,BA,46000,237.3675848,Developing,1
+5103,2,New,BA,35000,125.4055294,Ineffective,1
+5104,13,Mid,BA,46000,243.0283799,Developing,1
+5105,3,Novice,MA,37000,201.1356347,Developing,0
+5106,22,Experienced,BA,55000,217.2843066,Developing,1
+5107,7,Mid,BA,40000,222.3303719,Developing,1
+5108,9,Mid,BA,42000,256.5180896,Proficient,1
+5109,1,New,BA,34000,223.5830942,Developing,1
+5110,9,Mid,BA,42000,252.1479613,Proficient,0
+5111,29,Career,MA,63000,207.423946,Developing,1
+5112,4,Novice,BA,37000,213.7159635,Developing,1
+5113,9,Mid,BA,42000,218.142568,Developing,1
+5114,34,Career,BA,67000,252.6998581,Proficient,1
+5115,3,Novice,BA,36000,210.3252137,Developing,1
+5116,20,Experienced,BA,53000,220.6759765,Developing,1
+5117,23,Experienced,MA,59000,232.7725575,Developing,1
+5118,10,Mid,BA,43000,280.8564769,Highly Effective,1
+5119,28,Career,MA,62000,233.3466464,Developing,1
+5120,5,Novice,BA,38000,221.3055709,Developing,1
+5121,8,Mid,BA,41000,273.0284821,Proficient,1
+5122,1,New,BA,34000,156.9234435,Minimally Effective,0
+5123,27,Career,MA,63000,236.9543571,Developing,1
+5124,12,Mid,BA,45000,222.002896,Developing,1
+5125,5,Novice,BA,38000,183.9281979,Minimally Effective,1
+5126,19,Experienced,MA,53000,261.3771662,Proficient,1
+5127,8,Mid,MA,42000,203.8265357,Developing,0
+5128,8,Mid,BA,41000,202.8339394,Developing,0
+5129,3,Novice,BA,36000,235.121199,Developing,1
+5130,21,Experienced,MA,55000,195.071992,Minimally Effective,1
+5131,22,Experienced,BA,55000,251.9735325,Proficient,1
+5132,5,Novice,BA,38000,235.7507278,Developing,0
+5133,1,New,BA,34000,200.693057,Developing,1
+5134,13,Mid,BA,46000,285.473607,Highly Effective,0
+5135,16,Experienced,BA,49000,219.2618903,Developing,1
+5136,21,Experienced,BA,56000,220.2712833,Developing,1
+5137,2,New,BA,35000,182.9472919,Minimally Effective,0
+5138,7,Mid,BA,40000,211.107036,Developing,1
+5139,25,Career,BA,60000,198.2362787,Minimally Effective,0
+5140,2,New,MA,36000,211.9712209,Developing,0
+5141,37,Career,BA,70000,186.6429621,Minimally Effective,1
+5142,22,Experienced,BA,55000,285.7334562,Highly Effective,0
+5143,8,Mid,MA,42000,246.7250665,Developing,1
+5144,4,Novice,MA,38000,218.225171,Developing,1
+5145,30,Career,BA,63000,256.8092294,Proficient,1
+5146,21,Experienced,BA,54000,269.9998698,Proficient,0
+5147,29,Career,BA,62000,199.6120764,Minimally Effective,1
+5148,6,Novice,MA,40000,220.7293702,Developing,1
+5149,7,Mid,MA,41000,245.9637052,Developing,0
+5150,19,Experienced,MA,53000,272.8692373,Proficient,0
+5151,22,Experienced,BA,57000,203.813667,Developing,1
+5152,3,Novice,BA,36000,255.615782,Proficient,0
+5153,12,Mid,BA,45000,215.3927387,Developing,1
+5154,23,Experienced,BA,58000,252.2108144,Proficient,0
+5155,9,Mid,MA,43000,226.744487,Developing,0
+5156,24,Experienced,MA,58000,229.9941217,Developing,1
+5157,18,Experienced,BA,53000,239.8911242,Developing,1
+5158,19,Experienced,BA,52000,167.7040876,Minimally Effective,1
+5159,29,Career,MA,65000,213.2304907,Developing,0
+5160,4,Novice,MA,38000,183.9769148,Minimally Effective,1
+5161,10,Mid,PhD or EdD,45000,207.1519261,Developing,1
+5162,2,New,BA,35000,174.2063316,Minimally Effective,1
+5163,17,Experienced,MA,51000,249.6521056,Developing,1
+5164,6,Novice,BA,39000,204.7904683,Developing,0
+5165,1,New,MA,35000,183.697412,Minimally Effective,1
+5166,1,New,MA,35000,204.1670356,Developing,1
+5167,5,Novice,BA,38000,213.5710238,Developing,0
+5168,10,Mid,MA,44000,273.1431738,Proficient,1
+5169,10,Mid,PhD or EdD,45000,203.5515111,Developing,0
+5170,18,Experienced,BA,53000,274.4857889,Proficient,1
+5171,15,Mid,MA,51000,282.9862542,Highly Effective,1
+5172,4,Novice,MA,38000,233.968357,Developing,1
+5173,27,Career,BA,60000,177.1021227,Minimally Effective,1
+5174,14,Mid,PhD or EdD,49000,232.8513635,Developing,0
+5175,28,Career,BA,61000,243.3871569,Developing,1
+5176,7,Mid,MA,41000,217.0304968,Developing,1
+5177,1,New,BA,34000,241.9699916,Developing,1
+5178,28,Career,BA,61000,210.8404606,Developing,1
+5179,1,New,MA,35000,169.4901695,Minimally Effective,1
+5180,26,Career,MA,62000,170.7545859,Minimally Effective,0
+5181,10,Mid,BA,43000,224.4367779,Developing,1
+5182,24,Experienced,PhD or EdD,59000,274.6075768,Proficient,1
+5183,19,Experienced,BA,52000,236.2754709,Developing,1
+5184,37,Career,MA,71000,214.6610799,Developing,1
+5185,2,New,BA,35000,151.8026538,Minimally Effective,1
+5186,35,Career,BA,68000,275.0594725,Highly Effective,0
+5187,2,New,MA,36000,221.9280636,Developing,1
+5188,1,New,BA,34000,175.2565485,Minimally Effective,1
+5189,12,Mid,MA,46000,260.054954,Proficient,1
+5190,33,Career,MA,67000,215.4271403,Developing,1
+5191,7,Mid,BA,40000,214.0599335,Developing,1
+5192,2,New,MA,36000,199.1037167,Minimally Effective,0
+5193,19,Experienced,BA,52000,230.6391702,Developing,1
+5194,4,Novice,BA,37000,232.0496984,Developing,1
+5195,2,New,MA,36000,206.9247871,Developing,1
+5196,28,Career,BA,61000,228.3637105,Developing,0
+5197,4,Novice,MA,38000,243.7122119,Developing,1
+5198,21,Experienced,MA,55000,265.6916497,Proficient,1
+5199,19,Experienced,MA,53000,249.8881153,Developing,1
+5200,1,New,BA,34000,237.0231907,Developing,0
+5201,14,Mid,BA,47000,262.3492841,Proficient,1
+5202,1,New,BA,34000,223.7793023,Developing,0
+5203,5,Novice,BA,38000,200.1058839,Developing,0
+5204,17,Experienced,MA,53000,252.4030891,Proficient,0
+5205,25,Career,MA,59000,227.9201158,Developing,1
+5206,6,Novice,BA,39000,214.6726732,Developing,1
+5207,10,Mid,MA,44000,201.8810749,Developing,1
+5208,8,Mid,MA,42000,225.6438941,Developing,0
+5209,21,Experienced,MA,55000,272.8729679,Proficient,1
+5210,5,Novice,BA,38000,192.0559072,Minimally Effective,1
+5211,3,Novice,MA,37000,174.496599,Minimally Effective,1
+5212,13,Mid,BA,46000,229.2436658,Developing,1
+5213,1,New,BA,34000,170.0671442,Minimally Effective,1
+5214,26,Career,MA,60000,195.1086142,Minimally Effective,1
+5215,3,Novice,MA,37000,164.9938077,Minimally Effective,0
+5216,2,New,BA,35000,129.0776078,Ineffective,1
+5217,11,Mid,BA,44000,243.4847272,Developing,0
+5218,16,Experienced,MA,50000,214.2220106,Developing,1
+5219,30,Career,BA,63000,226.2676258,Developing,1
+5220,9,Mid,BA,42000,200.7661294,Developing,1
+5221,20,Experienced,BA,53000,271.0858776,Proficient,1
+5222,11,Mid,MA,47000,236.2938111,Developing,1
+5223,20,Experienced,BA,55000,216.878044,Developing,1
+5224,5,Novice,BA,38000,216.3980819,Developing,1
+5225,3,Novice,MA,37000,238.8807909,Developing,0
+5226,22,Experienced,BA,55000,222.8594078,Developing,1
+5227,12,Mid,MA,46000,242.5081663,Developing,1
+5228,21,Experienced,MA,55000,248.0517441,Developing,1
+5229,4,Novice,BA,37000,196.0938265,Minimally Effective,1
+5230,19,Experienced,MA,53000,184.7014464,Minimally Effective,0
+5231,24,Experienced,BA,57000,227.9538598,Developing,1
+5232,8,Mid,BA,41000,239.4293716,Developing,1
+5233,4,Novice,BA,37000,195.9034635,Minimally Effective,1
+5234,38,Career,BA,71000,268.9292766,Proficient,1
+5235,17,Experienced,BA,50000,266.7234963,Proficient,1
+5236,33,Career,BA,66000,241.664582,Developing,1
+5237,37,Career,MA,71000,214.2268563,Developing,1
+5238,2,New,BA,35000,192.4230838,Minimally Effective,1
+5239,17,Experienced,BA,50000,260.4263306,Proficient,1
+5240,13,Mid,BA,48000,209.1324649,Developing,1
+5241,16,Experienced,MA,50000,220.4588228,Developing,1
+5242,7,Mid,MA,41000,191.2336933,Minimally Effective,1
+5243,6,Novice,MA,40000,195.674962,Minimally Effective,1
+5244,16,Experienced,BA,49000,181.6763524,Minimally Effective,1
+5245,21,Experienced,BA,54000,282.7579974,Highly Effective,1
+5246,21,Experienced,MA,55000,239.2727577,Developing,1
+5247,8,Mid,BA,41000,225.2589307,Developing,1
+5248,19,Experienced,BA,54000,205.1044145,Developing,1
+5249,4,Novice,BA,37000,157.7629013,Minimally Effective,1
+5250,14,Mid,BA,47000,242.5535435,Developing,1
+5251,21,Experienced,BA,56000,194.473431,Minimally Effective,1
+5252,2,New,MA,36000,182.1248185,Minimally Effective,1
+5253,10,Mid,BA,43000,232.0383018,Developing,1
+5254,27,Career,BA,60000,212.8449126,Developing,1
+5255,15,Mid,BA,48000,227.5042242,Developing,1
+5256,5,Novice,BA,38000,227.9390411,Developing,1
+5257,27,Career,MA,61000,249.1022392,Developing,1
+5258,17,Experienced,BA,50000,267.498505,Proficient,1
+5259,33,Career,MA,67000,256.2536929,Proficient,1
+5260,2,New,MA,36000,201.1558317,Developing,1
+5261,19,Experienced,BA,54000,219.0181505,Developing,1
+5262,14,Mid,MA,48000,198.9422952,Minimally Effective,0
+5263,18,Experienced,MA,52000,248.8218298,Developing,1
+5264,16,Experienced,MA,50000,208.8474995,Developing,1
+5265,10,Mid,BA,43000,249.9167767,Developing,1
+5266,6,Novice,MA,40000,250.5501708,Proficient,1
+5267,7,Mid,BA,40000,199.1533499,Minimally Effective,1
+5268,32,Career,BA,65000,193.641544,Minimally Effective,1
+5269,11,Mid,MA,45000,198.1313218,Minimally Effective,1
+5270,3,Novice,BA,36000,241.4479028,Developing,1
+5271,1,New,BA,34000,161.8157326,Minimally Effective,0
+5272,25,Career,BA,58000,197.7674487,Minimally Effective,1
+5273,3,Novice,MA,37000,190.4305062,Minimally Effective,0
+5274,1,New,MA,35000,143.9026701,Ineffective,0
+5275,9,Mid,MA,43000,268.8144692,Proficient,0
+5276,5,Novice,BA,38000,164.8485358,Minimally Effective,1
+5277,14,Mid,MA,50000,252.5566208,Proficient,1
+5278,23,Experienced,BA,56000,212.2192142,Developing,0
+5279,2,New,BA,35000,209.3107664,Developing,0
+5280,31,Career,BA,64000,235.7639808,Developing,1
+5281,11,Mid,MA,47000,248.5091903,Developing,1
+5282,6,Novice,MA,40000,237.38504,Developing,0
+5283,16,Experienced,MA,50000,212.8945006,Developing,1
+5284,24,Experienced,BA,57000,280.7561185,Highly Effective,0
+5285,2,New,BA,35000,210.8856247,Developing,0
+5286,2,New,BA,35000,172.7946763,Minimally Effective,1
+5287,16,Experienced,MA,50000,234.8556477,Developing,0
+5288,3,Novice,MA,37000,271.305291,Proficient,1
+5289,13,Mid,MA,47000,202.995591,Developing,1
+5290,22,Experienced,MA,56000,186.7824183,Minimally Effective,1
+5291,17,Experienced,BA,50000,241.0464416,Developing,1
+5292,4,Novice,BA,37000,262.8965868,Proficient,0
+5293,33,Career,MA,67000,237.4548754,Developing,1
+5294,9,Mid,BA,42000,226.9718066,Developing,1
+5295,21,Experienced,MA,55000,258.8156023,Proficient,1
+5296,3,Novice,MA,37000,239.9035172,Developing,1
+5297,4,Novice,BA,37000,255.0860457,Proficient,0
+5298,2,New,MA,36000,173.8795026,Minimally Effective,0
+5299,1,New,MA,35000,132.215549,Ineffective,1
+5300,15,Mid,MA,49000,202.3510556,Developing,1
+5301,23,Experienced,MA,57000,201.6459071,Developing,1
+5302,29,Career,MA,63000,240.1472046,Developing,1
+5303,12,Mid,MA,46000,229.489608,Developing,1
+5304,6,Novice,BA,39000,209.3232191,Developing,1
+5305,7,Mid,BA,40000,214.3902202,Developing,1
+5306,7,Mid,BA,40000,172.1204684,Minimally Effective,1
+5307,30,Career,BA,65000,242.5682386,Developing,1
+5308,11,Mid,MA,45000,209.9140948,Developing,1
+5309,12,Mid,MA,46000,228.9694439,Developing,1
+5310,6,Novice,MA,40000,275.5187367,Highly Effective,0
+5311,15,Mid,BA,48000,247.7373018,Developing,1
+5312,4,Novice,BA,37000,215.0912584,Developing,1
+5313,3,Novice,BA,36000,211.7746915,Developing,1
+5314,11,Mid,MA,45000,198.743446,Minimally Effective,1
+5315,31,Career,BA,64000,216.4534445,Developing,1
+5316,1,New,BA,34000,206.7927139,Developing,1
+5317,11,Mid,MA,45000,166.3120402,Minimally Effective,1
+5318,8,Mid,MA,42000,219.6409512,Developing,1
+5319,12,Mid,MA,46000,228.9390771,Developing,1
+5320,2,New,MA,36000,208.3838016,Developing,1
+5321,25,Career,MA,59000,272.5967464,Proficient,1
+5322,8,Mid,BA,41000,255.4086835,Proficient,1
+5323,19,Experienced,MA,53000,251.5325618,Proficient,0
+5324,19,Experienced,BA,52000,241.0908555,Developing,1
+5325,7,Mid,BA,40000,206.3050039,Developing,0
+5326,8,Mid,BA,41000,225.8071651,Developing,0
+5327,3,Novice,BA,36000,207.209986,Developing,1
+5328,5,Novice,MA,39000,219.6939955,Developing,0
+5329,39,Career,MA,73000,233.9638869,Developing,1
+5330,36,Career,BA,69000,203.139765,Developing,0
+5331,19,Experienced,MA,53000,239.802834,Developing,1
+5332,1,New,BA,34000,223.1496996,Developing,0
+5333,4,Novice,BA,37000,194.1315619,Minimally Effective,1
+5334,20,Experienced,BA,53000,202.8793756,Developing,1
+5335,11,Mid,BA,44000,216.9271487,Developing,1
+5336,19,Experienced,BA,52000,216.2178737,Developing,1
+5337,10,Mid,MA,44000,222.2804559,Developing,1
+5338,31,Career,MA,65000,217.9945172,Developing,1
+5339,24,Experienced,BA,57000,185.7524386,Minimally Effective,1
+5340,19,Experienced,BA,52000,216.2694919,Developing,1
+5341,9,Mid,MA,43000,271.2889937,Proficient,1
+5342,4,Novice,BA,37000,190.3685752,Minimally Effective,1
+5343,20,Experienced,BA,53000,231.4980215,Developing,1
+5344,13,Mid,MA,47000,214.9307528,Developing,1
+5345,20,Experienced,BA,53000,222.5713116,Developing,1
+5346,13,Mid,MA,47000,255.7653628,Proficient,0
+5347,15,Mid,BA,48000,250.3514024,Proficient,1
+5348,14,Mid,MA,48000,242.3831507,Developing,0
+5349,1,New,MA,35000,207.3474419,Developing,1
+5350,11,Mid,BA,44000,254.801075,Proficient,1
+5351,21,Experienced,MA,55000,247.944474,Developing,0
+5352,26,Career,BA,61000,247.115502,Developing,1
+5353,5,Novice,BA,38000,206.7319929,Developing,0
+5354,1,New,BA,34000,220.4387063,Developing,0
+5355,34,Career,BA,67000,218.931453,Developing,1
+5356,33,Career,MA,67000,205.4450974,Developing,1
+5357,32,Career,MA,66000,221.7831873,Developing,1
+5358,13,Mid,BA,46000,233.7408493,Developing,1
+5359,16,Experienced,BA,49000,252.4048691,Proficient,1
+5360,16,Experienced,BA,49000,265.3371628,Proficient,0
+5361,6,Novice,BA,39000,232.0123296,Developing,1
+5362,5,Novice,BA,38000,251.4512695,Proficient,1
+5363,8,Mid,BA,41000,224.1264928,Developing,1
+5364,15,Mid,BA,48000,202.1434145,Developing,1
+5365,16,Experienced,BA,51000,249.4034858,Developing,1
+5366,19,Experienced,BA,52000,257.0155733,Proficient,1
+5367,14,Mid,BA,47000,267.2105837,Proficient,0
+5368,1,New,BA,34000,219.6346293,Developing,1
+5369,16,Experienced,BA,49000,233.6300754,Developing,1
+5370,1,New,MA,35000,163.2193996,Minimally Effective,1
+5371,3,Novice,BA,36000,188.0173028,Minimally Effective,0
+5372,18,Experienced,MA,52000,251.7266969,Proficient,1
+5373,38,Career,MA,74000,238.2155592,Developing,1
+5374,12,Mid,BA,45000,233.3301885,Developing,0
+5375,12,Mid,MA,46000,230.6594775,Developing,1
+5376,20,Experienced,BA,53000,230.940901,Developing,0
+5377,6,Novice,BA,39000,217.8622681,Developing,1
+5378,29,Career,BA,62000,218.1043442,Developing,1
+5379,10,Mid,MA,44000,223.1781477,Developing,1
+5380,13,Mid,MA,47000,272.6793668,Proficient,1
+5381,19,Experienced,MA,53000,237.3813492,Developing,1
+5382,8,Mid,MA,42000,231.8958884,Developing,0
+5383,14,Mid,BA,47000,247.6739831,Developing,1
+5384,10,Mid,MA,44000,221.712236,Developing,1
+5385,6,Novice,MA,40000,219.8573073,Developing,1
+5386,4,Novice,MA,38000,214.2037596,Developing,1
+5387,4,Novice,BA,37000,198.9931292,Minimally Effective,1
+5388,16,Experienced,BA,49000,237.7357699,Developing,1
+5389,11,Mid,BA,44000,238.4556874,Developing,1
+5390,4,Novice,MA,38000,267.5091619,Proficient,0
+5391,25,Career,MA,59000,248.8574501,Developing,1
+5392,29,Career,BA,62000,231.4869791,Developing,1
+5393,3,Novice,MA,37000,169.3766064,Minimally Effective,1
+5394,15,Mid,BA,48000,232.8661821,Developing,1
+5395,6,Novice,BA,39000,240.7469353,Developing,0
+5396,27,Career,BA,60000,193.707454,Minimally Effective,1
+5397,26,Career,MA,60000,242.1694881,Developing,1
+5398,13,Mid,BA,48000,230.6055543,Developing,0
+5399,13,Mid,BA,46000,208.0739643,Developing,1
+5400,2,New,BA,35000,211.8605233,Developing,1
+5401,7,Mid,BA,40000,188.4587954,Minimally Effective,1
+5402,1,New,BA,34000,193.9843633,Minimally Effective,1
+5403,28,Career,MA,62000,227.0073114,Developing,1
+5404,8,Mid,MA,42000,209.343094,Developing,0
+5405,10,Mid,BA,43000,274.0037277,Proficient,1
+5406,10,Mid,MA,44000,235.5213712,Developing,1
+5407,4,Novice,BA,37000,173.8802871,Minimally Effective,1
+5408,9,Mid,MA,43000,271.7712183,Proficient,1
+5409,2,New,BA,35000,212.0835241,Developing,1
+5410,12,Mid,BA,45000,223.9336575,Developing,1
+5411,2,New,MA,36000,189.9902061,Minimally Effective,1
+5412,7,Mid,BA,40000,204.6164142,Developing,1
+5413,17,Experienced,BA,50000,239.8823653,Developing,1
+5414,4,Novice,MA,38000,211.0500301,Developing,0
+5415,23,Experienced,MA,57000,218.5119241,Developing,1
+5416,10,Mid,BA,43000,231.0183881,Developing,1
+5417,3,Novice,BA,36000,223.6896001,Developing,0
+5418,2,New,BA,35000,186.3348337,Minimally Effective,1
+5419,17,Experienced,MA,51000,243.7208641,Developing,1
+5420,1,New,BA,34000,180.4100943,Minimally Effective,0
+5421,9,Mid,BA,42000,227.7161875,Developing,1
+5422,27,Career,BA,62000,230.0220342,Developing,1
+5423,5,Novice,BA,38000,267.9805142,Proficient,1
+5424,1,New,MA,35000,192.4688275,Minimally Effective,0
+5425,14,Mid,MA,52000,242.4090854,Developing,1
+5426,2,New,MA,36000,164.4176426,Minimally Effective,1
+5427,10,Mid,BA,43000,215.3136629,Developing,1
+5428,3,Novice,BA,36000,244.2629881,Developing,0
+5429,25,Career,BA,58000,194.0271502,Minimally Effective,1
+5430,5,Novice,MA,39000,215.7792703,Developing,1
+5431,22,Experienced,BA,57000,228.0918067,Developing,1
+5432,9,Mid,BA,42000,218.9387674,Developing,1
+5433,3,Novice,BA,36000,181.6959574,Minimally Effective,0
+5434,2,New,MA,36000,217.6524501,Developing,1
+5435,1,New,MA,35000,222.7672256,Developing,1
+5436,6,Novice,BA,39000,236.9179341,Developing,1
+5437,15,Mid,MA,49000,255.9465413,Proficient,1
+5438,38,Career,MA,74000,201.6443075,Developing,1
+5439,2,New,BA,35000,212.9093296,Developing,1
+5440,28,Career,MA,62000,210.7848058,Developing,1
+5441,9,Mid,BA,42000,274.2010474,Proficient,1
+5442,21,Experienced,BA,54000,232.7264529,Developing,1
+5443,16,Experienced,BA,49000,250.7338202,Proficient,0
+5444,34,Career,MA,68000,242.0670903,Developing,1
+5445,10,Mid,MA,44000,240.1139958,Developing,1
+5446,8,Mid,BA,41000,214.3275258,Developing,1
+5447,4,Novice,BA,37000,190.8863259,Minimally Effective,1
+5448,3,Novice,MA,37000,200.9399353,Developing,1
+5449,5,Novice,BA,38000,247.1587979,Developing,1
+5450,1,New,BA,34000,187.9028662,Minimally Effective,1
+5451,19,Experienced,BA,52000,212.184552,Developing,1
+5452,26,Career,BA,59000,220.6605089,Developing,1
+5453,10,Mid,MA,44000,230.4517715,Developing,1
+5454,3,Novice,MA,37000,270.9724864,Proficient,1
+5455,28,Career,BA,61000,219.8405987,Developing,1
+5456,5,Novice,BA,38000,252.7851879,Proficient,0
+5457,20,Experienced,BA,53000,206.0501357,Developing,0
+5458,7,Mid,MA,41000,251.5332946,Proficient,0
+5459,1,New,BA,34000,195.4925376,Minimally Effective,1
+5460,30,Career,BA,63000,216.2643892,Developing,1
+5461,1,New,PhD or EdD,36000,225.9430765,Developing,1
+5462,19,Experienced,BA,52000,240.2487487,Developing,1
+5463,14,Mid,BA,47000,238.1892461,Developing,1
+5464,24,Experienced,BA,57000,255.339256,Proficient,1
+5465,27,Career,BA,60000,224.6249421,Developing,1
+5466,16,Experienced,MA,54000,158.982099,Minimally Effective,1
+5467,18,Experienced,PhD or EdD,55000,253.6289931,Proficient,1
+5468,3,Novice,BA,36000,170.1106556,Minimally Effective,1
+5469,18,Experienced,BA,51000,247.1498615,Developing,1
+5470,26,Career,MA,60000,215.6964965,Developing,1
+5471,18,Experienced,BA,51000,271.059093,Proficient,1
+5472,16,Experienced,BA,49000,265.0077734,Proficient,1
+5473,2,New,MA,36000,208.190209,Developing,1
+5474,2,New,BA,35000,167.5696088,Minimally Effective,1
+5475,8,Mid,BA,41000,236.5181975,Developing,1
+5476,30,Career,BA,63000,238.4219637,Developing,0
+5477,12,Mid,BA,47000,243.5841566,Developing,0
+5478,24,Experienced,BA,59000,258.9449326,Proficient,1
+5479,4,Novice,BA,37000,214.0842653,Developing,1
+5480,9,Mid,BA,42000,231.2400871,Developing,1
+5481,14,Mid,BA,47000,239.0114731,Developing,1
+5482,23,Experienced,BA,56000,237.8237255,Developing,1
+5483,24,Experienced,PhD or EdD,59000,174.8722887,Minimally Effective,1
+5484,4,Novice,BA,37000,245.8102163,Developing,1
+5485,29,Career,BA,62000,209.0209348,Developing,0
+5486,5,Novice,MA,39000,211.2340866,Developing,1
+5487,22,Experienced,BA,55000,163.9383283,Minimally Effective,0
+5488,31,Career,MA,65000,222.6152782,Developing,0
+5489,1,New,BA,34000,205.1023414,Developing,0
+5490,9,Mid,MA,43000,266.9845502,Proficient,1
+5491,25,Career,BA,58000,231.3736923,Developing,1
+5492,1,New,BA,34000,202.922721,Developing,0
+5493,11,Mid,BA,44000,231.1372616,Developing,1
+5494,3,Novice,MA,37000,234.2932461,Developing,1
+5495,10,Mid,BA,43000,240.4962147,Developing,1
+5496,3,Novice,MA,37000,245.9809902,Developing,1
+5497,7,Mid,MA,41000,281.0453183,Highly Effective,1
+5498,9,Mid,BA,42000,223.7297532,Developing,1
+5499,27,Career,MA,63000,267.5353841,Proficient,1
+5500,18,Experienced,MA,52000,213.3333727,Developing,1
+5501,16,Experienced,BA,49000,223.0774417,Developing,1
+5502,9,Mid,MA,43000,269.4570596,Proficient,1
+5503,21,Experienced,MA,55000,200.5519995,Developing,1
+5504,11,Mid,BA,44000,247.1870005,Developing,0
+5505,20,Experienced,MA,54000,254.1191576,Proficient,0
+5506,1,New,MA,35000,191.4248664,Minimally Effective,0
+5507,21,Experienced,MA,55000,253.4812858,Proficient,1
+5508,13,Mid,BA,46000,207.5580028,Developing,1
+5509,1,New,BA,34000,170.7285639,Minimally Effective,0
+5510,40,Career,BA,73000,183.314527,Minimally Effective,1
+5511,12,Mid,MA,46000,224.4671876,Developing,1
+5512,30,Career,BA,63000,239.5971483,Developing,1
+5513,1,New,BA,34000,207.765539,Developing,0
+5514,7,Mid,MA,41000,225.8440694,Developing,1
+5515,24,Experienced,BA,57000,199.1693439,Minimally Effective,1
+5516,18,Experienced,MA,52000,235.2694297,Developing,1
+5517,11,Mid,MA,45000,242.088044,Developing,1
+5518,3,Novice,BA,36000,215.1729307,Developing,1
+5519,11,Mid,MA,45000,229.1907714,Developing,0
+5520,1,New,BA,34000,150.0060802,Minimally Effective,0
+5521,13,Mid,MA,47000,225.2384665,Developing,1
+5522,8,Mid,BA,41000,244.0714223,Developing,1
+5523,21,Experienced,BA,54000,275.6239016,Highly Effective,0
+5524,32,Career,BA,65000,214.4214971,Developing,1
+5525,24,Experienced,MA,58000,237.4896954,Developing,1
+5526,9,Mid,BA,42000,222.4019759,Developing,1
+5527,1,New,BA,34000,186.4046595,Minimally Effective,1
+5528,15,Mid,BA,50000,240.4119788,Developing,1
+5529,15,Mid,BA,48000,157.5777186,Minimally Effective,1
+5530,17,Experienced,MA,51000,265.198973,Proficient,1
+5531,28,Career,BA,61000,217.9119667,Developing,1
+5532,33,Career,MA,69000,258.1306046,Proficient,1
+5533,26,Career,MA,60000,233.7628328,Developing,1
+5534,9,Mid,BA,42000,209.5464625,Developing,1
+5535,7,Mid,BA,40000,202.5828192,Developing,1
+5536,11,Mid,MA,45000,262.2057665,Proficient,1
+5537,16,Experienced,BA,49000,213.7985987,Developing,1
+5538,20,Experienced,BA,53000,217.0718259,Developing,1
+5539,26,Career,BA,61000,210.5874644,Developing,0
+5540,1,New,MA,35000,166.3469766,Minimally Effective,1
+5541,17,Experienced,BA,50000,244.7788574,Developing,1
+5542,13,Mid,MA,47000,232.8424976,Developing,1
+5543,23,Experienced,MA,57000,183.6107654,Minimally Effective,1
+5544,2,New,BA,35000,212.050056,Developing,1
+5545,22,Experienced,BA,55000,268.7726541,Proficient,1
+5546,9,Mid,MA,43000,239.2130759,Developing,1
+5547,7,Mid,BA,40000,238.440543,Developing,1
+5548,1,New,BA,34000,126.7223729,Ineffective,1
+5549,17,Experienced,BA,52000,258.5588723,Proficient,1
+5550,16,Experienced,MA,50000,208.6604771,Developing,1
+5551,15,Mid,BA,48000,242.0080746,Developing,1
+5552,15,Mid,BA,48000,242.6442802,Developing,1
+5553,6,Novice,BA,39000,194.2068973,Minimally Effective,1
+5554,1,New,BA,34000,226.0670856,Developing,0
+5555,27,Career,BA,62000,262.1715508,Proficient,1
+5556,7,Mid,BA,40000,239.1856049,Developing,1
+5557,23,Experienced,BA,56000,192.4546972,Minimally Effective,1
+5558,2,New,MA,36000,179.6649428,Minimally Effective,1
+5559,36,Career,BA,69000,195.9158691,Minimally Effective,1
+5560,2,New,BA,35000,174.5209,Minimally Effective,1
+5561,5,Novice,MA,39000,199.8837219,Minimally Effective,1
+5562,18,Experienced,BA,51000,238.4594416,Developing,1
+5563,4,Novice,PhD or EdD,39000,243.0409453,Developing,1
+5564,1,New,BA,34000,185.6017478,Minimally Effective,0
+5565,11,Mid,BA,44000,220.6784637,Developing,1
+5566,21,Experienced,MA,55000,229.9125636,Developing,1
+5567,16,Experienced,BA,49000,221.0914842,Developing,1
+5568,16,Experienced,BA,49000,242.1938128,Developing,0
+5569,14,Mid,BA,47000,263.877816,Proficient,1
+5570,1,New,BA,34000,149.161309,Ineffective,0
+5571,31,Career,BA,64000,247.6130056,Developing,1
+5572,3,Novice,MA,37000,217.2480141,Developing,1
+5573,7,Mid,BA,40000,210.9283393,Developing,1
+5574,11,Mid,BA,44000,244.9706914,Developing,1
+5575,10,Mid,BA,43000,200.6270337,Developing,1
+5576,17,Experienced,BA,50000,226.4968278,Developing,1
+5577,6,Novice,BA,39000,208.7662806,Developing,1
+5578,11,Mid,MA,45000,234.7085146,Developing,1
+5579,8,Mid,BA,41000,233.5114177,Developing,1
+5580,9,Mid,MA,43000,240.2269346,Developing,1
+5581,12,Mid,MA,46000,209.476866,Developing,1
+5582,15,Mid,BA,48000,263.0884534,Proficient,1
+5583,14,Mid,BA,47000,208.9936163,Developing,0
+5584,20,Experienced,MA,54000,247.8936675,Developing,1
+5585,8,Mid,BA,41000,255.5358215,Proficient,0
+5586,24,Experienced,MA,58000,213.383952,Developing,1
+5587,5,Novice,BA,38000,212.2076512,Developing,0
+5588,27,Career,BA,60000,216.3273572,Developing,1
+5589,3,Novice,BA,36000,206.055787,Developing,1
+5590,17,Experienced,MA,51000,256.5189964,Proficient,1
+5591,19,Experienced,BA,54000,202.0860517,Developing,1
+5592,3,Novice,MA,37000,217.0609593,Developing,0
+5593,11,Mid,MA,45000,239.1256269,Developing,1
+5594,16,Experienced,BA,49000,207.9299005,Developing,1
+5595,8,Mid,MA,42000,210.6175743,Developing,1
+5596,39,Career,BA,72000,206.7703495,Developing,0
+5597,13,Mid,BA,46000,204.2668492,Developing,1
+5598,14,Mid,MA,48000,232.9471097,Developing,1
+5599,16,Experienced,MA,50000,207.7084751,Developing,1
+5600,2,New,BA,35000,197.8471433,Minimally Effective,1
+5601,11,Mid,MA,47000,249.323887,Developing,1
+5602,1,New,BA,34000,185.513813,Minimally Effective,1
+5603,14,Mid,BA,47000,246.1098516,Developing,1
+5604,5,Novice,MA,39000,243.7790783,Developing,1
+5605,1,New,MA,35000,178.8558306,Minimally Effective,1
+5606,3,Novice,MA,37000,211.2757168,Developing,1
+5607,33,Career,BA,66000,193.6896563,Minimally Effective,1
+5608,5,Novice,BA,38000,151.8809099,Minimally Effective,1
+5609,32,Career,BA,65000,229.8001643,Developing,1
+5610,11,Mid,BA,44000,229.9102571,Developing,1
+5611,4,Novice,BA,37000,162.7348139,Minimally Effective,1
+5612,30,Career,BA,63000,247.8841287,Developing,1
+5613,10,Mid,BA,43000,205.5154736,Developing,1
+5614,20,Experienced,BA,53000,262.101892,Proficient,1
+5615,2,New,BA,35000,227.2031095,Developing,1
+5616,3,Novice,BA,36000,206.276779,Developing,1
+5617,7,Mid,MA,41000,230.4209801,Developing,1
+5618,2,New,MA,36000,143.7175058,Ineffective,1
+5619,5,Novice,BA,38000,143.511589,Ineffective,1
+5620,8,Mid,BA,41000,202.352119,Developing,1
+5621,17,Experienced,BA,50000,228.5888231,Developing,1
+5622,2,New,BA,35000,144.4059782,Ineffective,1
+5623,14,Mid,BA,47000,253.9783536,Proficient,0
+5624,11,Mid,MA,45000,256.2120962,Proficient,0
+5625,13,Mid,PhD or EdD,48000,248.387707,Developing,1
+5626,15,Mid,MA,53000,224.8885149,Developing,1
+5627,5,Novice,BA,38000,193.6073136,Minimally Effective,1
+5628,9,Mid,BA,42000,232.6818089,Developing,1
+5629,20,Experienced,MA,54000,197.9856547,Minimally Effective,1
+5630,6,Novice,BA,39000,251.0118607,Proficient,1
+5631,8,Mid,PhD or EdD,43000,221.6444719,Developing,0
+5632,22,Experienced,MA,56000,233.65864,Developing,1
+5633,3,Novice,MA,37000,234.5030167,Developing,0
+5634,2,New,MA,36000,210.1423191,Developing,1
+5635,4,Novice,BA,37000,204.1893487,Developing,1
+5636,10,Mid,PhD or EdD,45000,215.9549259,Developing,1
+5637,6,Novice,MA,40000,244.9360105,Developing,1
+5638,26,Career,MA,60000,242.1256799,Developing,0
+5639,17,Experienced,MA,51000,237.0183214,Developing,1
+5640,36,Career,BA,69000,173.183988,Minimally Effective,1
+5641,11,Mid,BA,46000,239.3983489,Developing,1
+5642,29,Career,BA,62000,237.2846294,Developing,1
+5643,4,Novice,BA,37000,227.76228,Developing,0
+5644,12,Mid,MA,46000,219.5553185,Developing,1
+5645,9,Mid,BA,42000,267.7520094,Proficient,1
+5646,24,Experienced,BA,59000,246.4369843,Developing,0
+5647,13,Mid,MA,47000,199.2582301,Minimally Effective,1
+5648,9,Mid,BA,42000,215.5534091,Developing,0
+5649,18,Experienced,MA,54000,253.5090515,Proficient,0
+5650,19,Experienced,BA,52000,264.4945504,Proficient,1
+5651,11,Mid,MA,49000,212.399926,Developing,1
+5652,13,Mid,BA,46000,225.7881427,Developing,1
+5653,7,Mid,MA,41000,240.234403,Developing,0
+5654,9,Mid,PhD or EdD,44000,213.4188784,Developing,1
+5655,6,Novice,BA,39000,200.561922,Developing,0
+5656,8,Mid,BA,41000,234.2067468,Developing,1
+5657,1,New,BA,34000,154.0008383,Minimally Effective,1
+5658,16,Experienced,BA,49000,267.3258465,Proficient,0
+5659,16,Experienced,BA,49000,268.0804947,Proficient,1
+5660,27,Career,BA,60000,242.1653025,Developing,1
+5661,2,New,BA,35000,224.8542141,Developing,1
+5662,4,Novice,MA,38000,238.3688649,Developing,1
+5663,16,Experienced,BA,49000,219.1003029,Developing,1
+5664,21,Experienced,MA,55000,284.9871816,Highly Effective,0
+5665,23,Experienced,MA,59000,233.4255386,Developing,1
+5666,19,Experienced,BA,52000,241.0146556,Developing,0
+5667,8,Mid,MA,42000,229.7102437,Developing,1
+5668,14,Mid,MA,48000,231.2040854,Developing,1
+5669,8,Mid,BA,41000,217.2661589,Developing,0
+5670,7,Mid,BA,40000,277.9664979,Highly Effective,1
+5671,16,Experienced,BA,49000,203.9516148,Developing,1
+5672,11,Mid,MA,45000,209.43924,Developing,1
+5673,22,Experienced,MA,56000,234.256853,Developing,1
+5674,18,Experienced,MA,52000,272.9991477,Proficient,1
+5675,21,Experienced,BA,54000,261.1524443,Proficient,1
+5676,1,New,MA,35000,222.6832113,Developing,0
+5677,15,Mid,BA,48000,242.9250899,Developing,1
+5678,9,Mid,BA,42000,179.0273593,Minimally Effective,1
+5679,1,New,MA,35000,185.3529595,Minimally Effective,1
+5680,1,New,BA,34000,239.3430876,Developing,0
+5681,18,Experienced,BA,51000,188.6025475,Minimally Effective,1
+5682,12,Mid,BA,45000,264.4503275,Proficient,1
+5683,3,Novice,BA,36000,211.6166674,Developing,1
+5684,35,Career,MA,71000,243.0499789,Developing,1
+5685,17,Experienced,MA,51000,233.4027561,Developing,1
+5686,8,Mid,MA,42000,206.5892368,Developing,0
+5687,2,New,BA,35000,173.7229905,Minimally Effective,0
+5688,17,Experienced,BA,52000,241.6748368,Developing,0
+5689,23,Experienced,BA,56000,244.6068302,Developing,1
+5690,11,Mid,MA,45000,190.8570139,Minimally Effective,1
+5691,9,Mid,BA,42000,246.6690703,Developing,1
+5692,5,Novice,BA,38000,251.2138907,Proficient,1
+5693,3,Novice,BA,36000,179.6796527,Minimally Effective,1
+5694,4,Novice,BA,37000,202.3195894,Developing,1
+5695,6,Novice,BA,39000,221.0103278,Developing,0
+5696,18,Experienced,BA,51000,189.134621,Minimally Effective,1
+5697,24,Experienced,BA,57000,262.0962444,Proficient,1
+5698,13,Mid,MA,47000,214.5104947,Developing,1
+5699,7,Mid,MA,41000,265.0236518,Proficient,1
+5700,31,Career,MA,65000,254.6320247,Proficient,0
+5701,1,New,BA,34000,257.5790298,Proficient,0
+5702,22,Experienced,BA,55000,218.9236364,Developing,0
+5703,1,New,BA,34000,199.595249,Minimally Effective,1
+5704,8,Mid,MA,42000,177.8695863,Minimally Effective,1
+5705,14,Mid,MA,48000,286.1386337,Highly Effective,1
+5706,13,Mid,MA,47000,256.5079918,Proficient,1
+5707,1,New,BA,34000,225.4429579,Developing,1
+5708,2,New,MA,36000,248.7023349,Developing,1
+5709,26,Career,MA,62000,253.6787849,Proficient,1
+5710,32,Career,BA,65000,233.6818402,Developing,0
+5711,3,Novice,BA,36000,246.3041863,Developing,1
+5712,24,Experienced,BA,59000,278.0882629,Highly Effective,1
+5713,8,Mid,MA,42000,236.4773787,Developing,1
+5714,13,Mid,MA,47000,236.9898236,Developing,0
+5715,6,Novice,MA,40000,220.0266233,Developing,1
+5716,1,New,MA,35000,150.904395,Minimally Effective,1
+5717,4,Novice,MA,38000,190.3286089,Minimally Effective,1
+5718,13,Mid,BA,46000,207.5762981,Developing,1
+5719,5,Novice,MA,39000,198.990379,Minimally Effective,1
+5720,14,Mid,BA,49000,214.9795323,Developing,1
+5721,21,Experienced,BA,54000,262.4965729,Proficient,1
+5722,1,New,MA,35000,163.3400412,Minimally Effective,1
+5723,1,New,MA,35000,201.0817049,Developing,1
+5724,35,Career,BA,68000,241.7020182,Developing,1
+5725,24,Experienced,MA,58000,225.943536,Developing,1
+5726,31,Career,MA,65000,215.5169526,Developing,1
+5727,8,Mid,MA,42000,243.0590653,Developing,0
+5728,10,Mid,BA,43000,261.4288168,Proficient,0
+5729,28,Career,BA,61000,236.7187194,Developing,1
+5730,5,Novice,BA,38000,185.2958392,Minimally Effective,0
+5731,11,Mid,BA,46000,240.4710353,Developing,1
+5732,26,Career,BA,59000,195.2713595,Minimally Effective,1
+5733,6,Novice,BA,39000,214.9739783,Developing,1
+5734,2,New,BA,35000,199.264395,Minimally Effective,1
+5735,11,Mid,MA,45000,214.1647902,Developing,1
+5736,8,Mid,BA,41000,192.8832264,Minimally Effective,1
+5737,32,Career,MA,66000,221.6267907,Developing,1
+5738,19,Experienced,MA,53000,249.6717614,Developing,1
+5739,2,New,BA,35000,184.3028072,Minimally Effective,1
+5740,15,Mid,BA,48000,214.0271082,Developing,0
+5741,10,Mid,BA,43000,215.6071048,Developing,1
+5742,14,Mid,MA,48000,228.5865961,Developing,1
+5743,32,Career,MA,68000,244.1229292,Developing,1
+5744,11,Mid,MA,47000,232.6636021,Developing,1
+5745,8,Mid,MA,42000,218.8418659,Developing,1
+5746,23,Experienced,BA,58000,231.5494808,Developing,1
+5747,5,Novice,BA,38000,205.9770288,Developing,1
+5748,12,Mid,MA,46000,221.8999144,Developing,1
+5749,1,New,BA,34000,167.3603211,Minimally Effective,1
+5750,6,Novice,MA,40000,226.6195244,Developing,1
+5751,24,Experienced,BA,57000,212.0934956,Developing,0
+5752,1,New,BA,34000,205.155061,Developing,1
+5753,8,Mid,BA,41000,244.2982844,Developing,0
+5754,1,New,BA,34000,117.5301422,Ineffective,0
+5755,7,Mid,BA,40000,228.0518091,Developing,1
+5756,4,Novice,BA,37000,257.4286956,Proficient,1
+5757,5,Novice,BA,38000,210.0837417,Developing,1
+5758,20,Experienced,MA,54000,229.420684,Developing,1
+5759,8,Mid,BA,41000,204.5671043,Developing,1
+5760,11,Mid,MA,45000,246.9073991,Developing,1
+5761,2,New,MA,36000,190.4905441,Minimally Effective,1
+5762,3,Novice,BA,36000,221.4512411,Developing,1
+5763,4,Novice,BA,37000,188.6705295,Minimally Effective,0
+5764,27,Career,BA,60000,249.9849815,Developing,1
+5765,18,Experienced,BA,51000,180.3538923,Minimally Effective,0
+5766,13,Mid,PhD or EdD,48000,228.1069364,Developing,1
+5767,7,Mid,MA,41000,257.8005125,Proficient,0
+5768,1,New,MA,35000,261.8413334,Proficient,0
+5769,16,Experienced,BA,49000,264.9311662,Proficient,1
+5770,2,New,BA,35000,176.7662636,Minimally Effective,1
+5771,11,Mid,BA,44000,239.0623254,Developing,0
+5772,3,Novice,MA,37000,219.6883783,Developing,1
+5773,20,Experienced,MA,54000,204.5195848,Developing,1
+5774,7,Mid,BA,40000,235.8989465,Developing,1
+5775,9,Mid,MA,43000,208.4244095,Developing,1
+5776,4,Novice,MA,38000,189.3622673,Minimally Effective,1
+5777,2,New,MA,36000,202.6089333,Developing,1
+5778,23,Experienced,MA,57000,249.9663191,Developing,1
+5779,1,New,BA,34000,196.7025331,Minimally Effective,1
+5780,2,New,BA,35000,245.0651807,Developing,1
+5781,4,Novice,BA,37000,206.0674686,Developing,1
+5782,22,Experienced,MA,56000,267.7489787,Proficient,1
+5783,25,Career,MA,59000,228.9624457,Developing,1
+5784,7,Mid,MA,41000,175.3645731,Minimally Effective,1
+5785,30,Career,MA,64000,218.8143007,Developing,1
+5786,35,Career,BA,70000,247.7184485,Developing,1
+5787,24,Experienced,BA,57000,217.9549805,Developing,1
+5788,26,Career,MA,60000,214.5024483,Developing,1
+5789,18,Experienced,BA,51000,300,Highly Effective,1
+5790,30,Career,MA,64000,249.6846796,Developing,0
+5791,1,New,PhD or EdD,36000,150.7742627,Minimally Effective,1
+5792,4,Novice,BA,37000,209.4012445,Developing,1
+5793,13,Mid,BA,46000,249.216381,Developing,1
+5794,28,Career,MA,62000,189.5433777,Minimally Effective,1
+5795,14,Mid,BA,47000,238.229835,Developing,0
+5796,21,Experienced,MA,55000,256.3374152,Proficient,0
+5797,13,Mid,MA,47000,220.2276322,Developing,1
+5798,35,Career,BA,70000,246.9243484,Developing,1
+5799,4,Novice,MA,38000,261.2873096,Proficient,0
+5800,17,Experienced,MA,55000,216.1869942,Developing,1
+5801,26,Career,MA,64000,258.1177056,Proficient,1
+5802,34,Career,MA,68000,246.8114153,Developing,1
+5803,28,Career,MA,62000,204.4402944,Developing,1
+5804,4,Novice,MA,38000,212.4979102,Developing,1
+5805,15,Mid,MA,49000,236.3631931,Developing,1
+5806,3,Novice,MA,37000,201.6259587,Developing,1
+5807,26,Career,BA,59000,241.1204046,Developing,1
+5808,26,Career,BA,59000,225.028063,Developing,0
+5809,22,Experienced,MA,56000,242.3491828,Developing,1
+5810,12,Mid,MA,48000,224.285822,Developing,1
+5811,2,New,MA,36000,225.7817082,Developing,1
+5812,7,Mid,MA,41000,214.7606744,Developing,1
+5813,21,Experienced,BA,54000,193.9971608,Minimally Effective,1
+5814,26,Career,BA,59000,210.5218018,Developing,1
+5815,9,Mid,MA,43000,250.6635742,Proficient,1
+5816,15,Mid,BA,48000,246.2594902,Developing,1
+5817,4,Novice,BA,37000,225.7570501,Developing,1
+5818,5,Novice,BA,38000,185.9735777,Minimally Effective,1
+5819,16,Experienced,MA,50000,240.2629455,Developing,1
+5820,4,Novice,BA,37000,261.6598293,Proficient,1
+5821,14,Mid,MA,48000,237.7160776,Developing,0
+5822,27,Career,BA,60000,253.0232023,Proficient,1
+5823,5,Novice,MA,39000,208.8048683,Developing,1
+5824,6,Novice,BA,39000,212.4806358,Developing,1
+5825,20,Experienced,BA,53000,185.0850849,Minimally Effective,1
+5826,3,Novice,MA,37000,190.6638155,Minimally Effective,1
+5827,22,Experienced,BA,55000,204.0621708,Developing,1
+5828,10,Mid,BA,43000,212.7435711,Developing,1
+5829,2,New,MA,36000,198.2039226,Minimally Effective,1
+5830,6,Novice,MA,40000,218.6201293,Developing,1
+5831,1,New,MA,35000,137.3047649,Ineffective,0
+5832,16,Experienced,BA,49000,216.0954377,Developing,1
+5833,6,Novice,BA,39000,184.9919212,Minimally Effective,1
+5834,11,Mid,BA,44000,201.3814077,Developing,1
+5835,7,Mid,BA,40000,193.2727461,Minimally Effective,1
+5836,10,Mid,MA,44000,231.2967666,Developing,1
+5837,25,Career,MA,59000,232.5998615,Developing,1
+5838,3,Novice,BA,36000,177.3398857,Minimally Effective,1
+5839,3,Novice,MA,37000,209.9604851,Developing,1
+5840,20,Experienced,MA,54000,228.8227997,Developing,1
+5841,20,Experienced,MA,56000,203.2709139,Developing,1
+5842,10,Mid,BA,43000,186.8008329,Minimally Effective,0
+5843,22,Experienced,BA,55000,233.233066,Developing,1
+5844,4,Novice,BA,37000,204.4341612,Developing,1
+5845,4,Novice,BA,37000,231.8154081,Developing,1
+5846,26,Career,MA,60000,220.2315223,Developing,1
+5847,33,Career,MA,67000,277.4889517,Highly Effective,0
+5848,15,Mid,BA,48000,229.2860934,Developing,1
+5849,6,Novice,PhD or EdD,41000,219.6156861,Developing,1
+5850,26,Career,MA,60000,271.4863794,Proficient,1
+5851,5,Novice,MA,39000,251.497116,Proficient,0
+5852,6,Novice,MA,40000,213.5101123,Developing,1
+5853,8,Mid,BA,41000,227.3861133,Developing,0
+5854,7,Mid,BA,40000,229.7391153,Developing,1
+5855,6,Novice,MA,40000,211.9540401,Developing,1
+5856,1,New,BA,34000,209.4358097,Developing,0
+5857,19,Experienced,BA,52000,174.0702318,Minimally Effective,1
+5858,9,Mid,BA,42000,243.7388592,Developing,1
+5859,14,Mid,MA,48000,265.4916993,Proficient,1
+5860,26,Career,MA,60000,238.8956535,Developing,1
+5861,18,Experienced,MA,52000,215.1475177,Developing,1
+5862,15,Mid,BA,48000,214.6640821,Developing,1
+5863,4,Novice,BA,37000,196.5987008,Minimally Effective,1
+5864,16,Experienced,BA,51000,229.8876838,Developing,1
+5865,13,Mid,BA,46000,201.8023472,Developing,0
+5866,18,Experienced,BA,51000,246.7605882,Developing,1
+5867,25,Career,BA,60000,246.1644956,Developing,1
+5868,28,Career,BA,61000,226.6341296,Developing,1
+5869,1,New,BA,34000,200.676722,Developing,1
+5870,1,New,BA,34000,263.037943,Proficient,1
+5871,8,Mid,MA,42000,226.3019979,Developing,0
+5872,16,Experienced,BA,49000,211.7971363,Developing,1
+5873,23,Experienced,BA,58000,229.6413747,Developing,1
+5874,10,Mid,MA,44000,209.9341716,Developing,1
+5875,25,Career,BA,58000,229.6647587,Developing,1
+5876,25,Career,BA,58000,231.0972468,Developing,1
+5877,30,Career,MA,64000,233.2918652,Developing,1
+5878,6,Novice,MA,40000,221.9663636,Developing,1
+5879,3,Novice,BA,36000,249.9514911,Developing,1
+5880,1,New,BA,34000,197.6702657,Minimally Effective,1
+5881,12,Mid,BA,47000,243.992527,Developing,1
+5882,15,Mid,BA,48000,226.6941232,Developing,1
+5883,32,Career,MA,66000,222.239003,Developing,1
+5884,19,Experienced,BA,54000,196.7383802,Minimally Effective,1
+5885,4,Novice,BA,37000,245.1489938,Developing,1
+5886,3,Novice,BA,36000,229.8744627,Developing,1
+5887,4,Novice,BA,37000,242.4024509,Developing,1
+5888,1,New,BA,34000,157.0788724,Minimally Effective,0
+5889,1,New,BA,34000,177.1274047,Minimally Effective,0
+5890,1,New,BA,34000,186.844714,Minimally Effective,0
+5891,1,New,BA,34000,220.0609442,Developing,0
+5892,31,Career,BA,64000,216.4829167,Developing,1
+5893,21,Experienced,BA,54000,172.0255969,Minimally Effective,1
+5894,28,Career,MA,62000,231.5215253,Developing,1
+5895,8,Mid,MA,42000,248.2049299,Developing,1
+5896,2,New,BA,35000,219.0503092,Developing,0
+5897,21,Experienced,BA,54000,226.9449577,Developing,1
+5898,28,Career,BA,61000,206.4912967,Developing,1
+5899,30,Career,MA,64000,281.3458436,Highly Effective,1
+5900,19,Experienced,MA,53000,300,Highly Effective,1
+5901,5,Novice,BA,38000,265.4443325,Proficient,1
+5902,2,New,BA,35000,144.5405688,Ineffective,1
+5903,6,Novice,BA,39000,237.8444299,Developing,1
+5904,25,Career,BA,60000,207.554155,Developing,1
+5905,3,Novice,BA,36000,197.4089952,Minimally Effective,1
+5906,8,Mid,MA,42000,242.3781691,Developing,1
+5907,25,Career,BA,58000,214.1550664,Developing,1
+5908,4,Novice,BA,37000,205.2464505,Developing,0
+5909,33,Career,MA,67000,265.6767464,Proficient,1
+5910,1,New,MA,35000,242.2133013,Developing,0
+5911,22,Experienced,MA,56000,214.9365687,Developing,1
+5912,17,Experienced,BA,50000,233.0413269,Developing,1
+5913,6,Novice,MA,40000,246.3471542,Developing,0
+5914,2,New,BA,35000,174.596364,Minimally Effective,1
+5915,34,Career,BA,67000,226.140652,Developing,1
+5916,20,Experienced,MA,54000,189.5589078,Minimally Effective,0
+5917,26,Career,BA,59000,265.9768664,Proficient,0
+5918,7,Mid,MA,41000,263.5561194,Proficient,1
+5919,4,Novice,BA,37000,209.6534691,Developing,1
+5920,4,Novice,BA,37000,268.8158704,Proficient,0
+5921,14,Mid,BA,47000,207.4533722,Developing,1
+5922,1,New,BA,34000,135.2402486,Ineffective,1
+5923,13,Mid,BA,46000,219.2692833,Developing,1
+5924,5,Novice,MA,39000,191.9016705,Minimally Effective,1
+5925,5,Novice,MA,39000,153.873499,Minimally Effective,0
+5926,6,Novice,BA,39000,213.1419041,Developing,1
+5927,12,Mid,BA,45000,214.3761487,Developing,1
+5928,13,Mid,MA,47000,233.6957612,Developing,1
+5929,1,New,MA,35000,200.3215838,Developing,1
+5930,2,New,MA,36000,218.1976712,Developing,0
+5931,4,Novice,BA,37000,179.7519598,Minimally Effective,1
+5932,18,Experienced,MA,54000,259.0830076,Proficient,1
+5933,1,New,BA,34000,166.8613213,Minimally Effective,1
+5934,36,Career,BA,69000,238.3578349,Developing,1
+5935,26,Career,MA,62000,224.0819747,Developing,1
+5936,15,Mid,MA,49000,246.2905176,Developing,1
+5937,18,Experienced,BA,51000,193.7004028,Minimally Effective,1
+5938,11,Mid,MA,45000,226.0800784,Developing,1
+5939,14,Mid,MA,48000,224.6864458,Developing,1
+5940,24,Experienced,MA,58000,212.0623578,Developing,0
+5941,13,Mid,MA,47000,245.069571,Developing,1
+5942,3,Novice,BA,36000,195.802169,Minimally Effective,1
+5943,10,Mid,BA,43000,191.6350647,Minimally Effective,1
+5944,9,Mid,BA,42000,249.4866347,Developing,0
+5945,1,New,BA,34000,170.4518309,Minimally Effective,1
+5946,13,Mid,MA,47000,184.7485497,Minimally Effective,1
+5947,9,Mid,BA,42000,235.0245687,Developing,1
+5948,1,New,BA,34000,184.8182604,Minimally Effective,1
+5949,15,Mid,BA,48000,187.279661,Minimally Effective,1
+5950,22,Experienced,MA,58000,234.2780776,Developing,1
+5951,13,Mid,MA,47000,204.6296983,Developing,1
+5952,5,Novice,MA,39000,216.3633413,Developing,1
+5953,15,Mid,BA,48000,250.558811,Proficient,1
+5954,18,Experienced,BA,51000,156.2479224,Minimally Effective,1
+5955,8,Mid,BA,41000,236.1767253,Developing,0
+5956,33,Career,MA,67000,193.7130089,Minimally Effective,1
+5957,21,Experienced,BA,54000,254.3160634,Proficient,1
+5958,3,Novice,MA,37000,210.6002056,Developing,0
+5959,15,Mid,BA,48000,264.2197633,Proficient,1
+5960,22,Experienced,BA,55000,224.3988383,Developing,1
+5961,3,Novice,MA,37000,199.7023712,Minimally Effective,1
+5962,19,Experienced,BA,52000,231.1607704,Developing,1
+5963,9,Mid,BA,42000,242.9868149,Developing,1
+5964,29,Career,MA,63000,233.578719,Developing,1
+5965,28,Career,BA,61000,232.1536256,Developing,0
+5966,12,Mid,BA,49000,252.6192765,Proficient,1
+5967,1,New,MA,35000,157.2209475,Minimally Effective,0
+5968,16,Experienced,MA,50000,263.2535441,Proficient,1
+5969,3,Novice,MA,37000,187.2225029,Minimally Effective,1
+5970,6,Novice,MA,40000,186.5559628,Minimally Effective,0
+5971,1,New,MA,35000,161.3640261,Minimally Effective,0
+5972,17,Experienced,BA,50000,245.9141309,Developing,1
+5973,29,Career,BA,62000,221.1505109,Developing,1
+5974,8,Mid,MA,42000,205.8329908,Developing,1
+5975,18,Experienced,BA,51000,206.8239098,Developing,1
+5976,17,Experienced,BA,50000,158.4679331,Minimally Effective,1
+5977,4,Novice,BA,37000,206.4811018,Developing,1
+5978,3,Novice,BA,36000,203.6363696,Developing,1
+5979,5,Novice,BA,38000,198.468402,Minimally Effective,0
+5980,12,Mid,MA,46000,251.1685335,Proficient,0
+5981,6,Novice,BA,39000,229.0778438,Developing,1
+5982,17,Experienced,BA,52000,237.7850331,Developing,0
+5983,13,Mid,BA,46000,232.5194197,Developing,1
+5984,6,Novice,MA,40000,219.8598436,Developing,0
+5985,1,New,MA,35000,190.1425906,Minimally Effective,0
+5986,13,Mid,BA,46000,246.9494271,Developing,1
+5987,2,New,BA,35000,173.9361904,Minimally Effective,1
+5988,6,Novice,MA,40000,206.2751046,Developing,1
+5989,32,Career,BA,67000,258.3537228,Proficient,1
+5990,8,Mid,BA,41000,222.6418128,Developing,0
+5991,1,New,BA,34000,160.8410315,Minimally Effective,0
+5992,33,Career,BA,66000,218.6257097,Developing,1
+5993,6,Novice,BA,39000,202.3854715,Developing,1
+5994,2,New,MA,36000,156.0189198,Minimally Effective,1
+5995,19,Experienced,BA,52000,273.8499357,Proficient,1
+5996,5,Novice,BA,38000,258.511782,Proficient,1
+5997,16,Experienced,BA,49000,205.0195174,Developing,1
+5998,8,Mid,MA,42000,277.5969483,Highly Effective,0
+5999,14,Mid,BA,47000,154.3634078,Minimally Effective,1
+6.00E+03,2,New,BA,35000,215.1762345,Developing,1
+6001,1,New,BA,34000,176.2149704,Minimally Effective,0
+6002,5,Novice,BA,38000,233.6205755,Developing,1
+6003,39,Career,MA,75000,211.1962568,Developing,1
+6004,21,Experienced,BA,54000,218.9849412,Developing,1
+6005,1,New,BA,34000,201.0757812,Developing,0
+6006,9,Mid,BA,42000,256.5902939,Proficient,1
+6007,10,Mid,BA,43000,239.808482,Developing,1
+6008,13,Mid,MA,49000,178.4859788,Minimally Effective,1
+6009,9,Mid,BA,42000,216.1306899,Developing,1
+6010,1,New,BA,34000,142.9827152,Ineffective,1
+6011,28,Career,BA,65000,248.3044674,Developing,1
+6012,14,Mid,MA,48000,245.0829897,Developing,1
+6013,3,Novice,BA,36000,239.3798177,Developing,1
+6014,8,Mid,BA,41000,254.9426804,Proficient,1
+6015,11,Mid,MA,45000,215.3548929,Developing,1
+6016,2,New,MA,36000,181.4475724,Minimally Effective,1
+6017,24,Experienced,BA,57000,192.3702194,Minimally Effective,0
+6018,17,Experienced,MA,51000,191.2414728,Minimally Effective,1
+6019,7,Mid,BA,40000,243.7521165,Developing,1
+6020,26,Career,MA,60000,185.1301919,Minimally Effective,1
+6021,27,Career,BA,60000,209.5914787,Developing,1
+6022,23,Experienced,BA,56000,212.4888299,Developing,1
+6023,14,Mid,MA,50000,255.8321654,Proficient,0
+6024,10,Mid,MA,44000,193.024959,Minimally Effective,1
+6025,23,Experienced,PhD or EdD,58000,231.8332696,Developing,1
+6026,27,Career,BA,60000,234.6718913,Developing,1
+6027,31,Career,BA,64000,188.6407386,Minimally Effective,1
+6028,12,Mid,BA,45000,275.7971599,Highly Effective,0
+6029,21,Experienced,BA,54000,196.6668402,Minimally Effective,1
+6030,3,Novice,BA,36000,189.9016409,Minimally Effective,1
+6031,9,Mid,BA,42000,213.9055984,Developing,1
+6032,11,Mid,MA,45000,211.8943573,Developing,1
+6033,38,Career,BA,71000,235.5540637,Developing,1
+6034,10,Mid,MA,44000,256.2505383,Proficient,1
+6035,15,Mid,MA,51000,237.1313442,Developing,1
+6036,34,Career,MA,70000,201.4457713,Developing,1
+6037,16,Experienced,BA,49000,182.4018511,Minimally Effective,1
+6038,6,Novice,BA,39000,233.1746519,Developing,1
+6039,5,Novice,BA,38000,175.4725432,Minimally Effective,1
+6040,22,Experienced,BA,55000,256.3104801,Proficient,0
+6041,3,Novice,MA,37000,249.1875687,Developing,1
+6042,2,New,BA,35000,200.7166618,Developing,1
+6043,7,Mid,MA,41000,215.5944194,Developing,1
+6044,1,New,MA,35000,151.8091172,Minimally Effective,1
+6045,1,New,BA,34000,192.1142061,Minimally Effective,1
+6046,27,Career,BA,60000,228.6184078,Developing,1
+6047,5,Novice,MA,39000,210.4059985,Developing,1
+6048,2,New,BA,35000,221.7735576,Developing,1
+6049,20,Experienced,MA,54000,211.7179493,Developing,1
+6050,16,Experienced,BA,49000,246.984964,Developing,1
+6051,12,Mid,BA,45000,206.0992851,Developing,1
+6052,2,New,BA,35000,179.8253407,Minimally Effective,1
+6053,29,Career,BA,62000,254.0826274,Proficient,1
+6054,21,Experienced,MA,55000,237.8096731,Developing,1
+6055,16,Experienced,BA,49000,229.7124377,Developing,0
+6056,15,Mid,BA,48000,173.0465422,Minimally Effective,1
+6057,5,Novice,MA,39000,282.2952428,Highly Effective,1
+6058,11,Mid,MA,45000,218.5755058,Developing,1
+6059,4,Novice,MA,38000,170.5259592,Minimally Effective,0
+6060,16,Experienced,BA,49000,186.4228994,Minimally Effective,1
+6061,24,Experienced,MA,58000,280.4881994,Highly Effective,1
+6062,11,Mid,MA,45000,225.2993741,Developing,1
+6063,17,Experienced,BA,50000,242.9907378,Developing,1
+6064,10,Mid,MA,44000,211.9763869,Developing,1
+6065,39,Career,MA,73000,227.0313069,Developing,1
+6066,1,New,BA,34000,186.2505427,Minimally Effective,0
+6067,32,Career,BA,65000,300,Highly Effective,1
+6068,14,Mid,MA,48000,217.0646775,Developing,1
+6069,9,Mid,BA,42000,204.709719,Developing,1
+6070,10,Mid,BA,43000,220.6484589,Developing,1
+6071,26,Career,MA,60000,222.9281478,Developing,1
+6072,5,Novice,MA,39000,224.1564243,Developing,1
+6073,21,Experienced,BA,54000,224.774887,Developing,1
+6074,28,Career,MA,62000,265.8703565,Proficient,1
+6075,12,Mid,BA,45000,240.2851302,Developing,1
+6076,7,Mid,MA,41000,203.7794209,Developing,1
+6077,10,Mid,PhD or EdD,45000,261.6874821,Proficient,0
+6078,3,Novice,BA,36000,245.9086711,Developing,1
+6079,4,Novice,BA,37000,212.7858125,Developing,1
+6080,7,Mid,BA,40000,202.1474079,Developing,1
+6081,17,Experienced,BA,54000,246.049549,Developing,1
+6082,3,Novice,MA,37000,256.0153492,Proficient,0
+6083,3,Novice,BA,36000,228.8122197,Developing,1
+6084,5,Novice,MA,39000,240.4983704,Developing,0
+6085,28,Career,MA,64000,219.1525204,Developing,1
+6086,16,Experienced,BA,49000,189.4016969,Minimally Effective,1
+6087,3,Novice,BA,36000,221.49667,Developing,1
+6088,10,Mid,BA,43000,242.5191847,Developing,1
+6089,4,Novice,BA,37000,223.6793291,Developing,1
+6090,4,Novice,BA,37000,163.1986738,Minimally Effective,1
+6091,3,Novice,MA,37000,209.677332,Developing,1
+6092,1,New,MA,35000,226.6296169,Developing,1
+6093,7,Mid,MA,41000,209.8113712,Developing,0
+6094,11,Mid,BA,44000,260.6473739,Proficient,1
+6095,4,Novice,MA,38000,167.00278,Minimally Effective,1
+6096,5,Novice,BA,38000,265.2274652,Proficient,1
+6097,13,Mid,BA,48000,201.9802934,Developing,1
+6098,11,Mid,MA,47000,250.8207624,Proficient,0
+6099,5,Novice,BA,38000,212.0517671,Developing,1
+6100,22,Experienced,MA,56000,255.7321633,Proficient,1
+6101,19,Experienced,BA,52000,234.3991338,Developing,1
+6102,15,Mid,MA,51000,211.5460804,Developing,1
+6103,16,Experienced,MA,50000,194.4720609,Minimally Effective,1
+6104,6,Novice,MA,40000,254.355743,Proficient,0
+6105,2,New,MA,36000,157.8832025,Minimally Effective,1
+6106,3,Novice,BA,36000,224.0723493,Developing,0
+6107,22,Experienced,MA,56000,225.6008984,Developing,1
+6108,7,Mid,BA,40000,196.2957403,Minimally Effective,1
+6109,33,Career,BA,66000,235.9245193,Developing,1
+6110,1,New,BA,34000,187.0416095,Minimally Effective,0
+6111,2,New,BA,35000,167.1781688,Minimally Effective,1
+6112,1,New,BA,34000,244.7283758,Developing,0
+6113,29,Career,MA,65000,217.1698818,Developing,0
+6114,3,Novice,PhD or EdD,38000,171.6370794,Minimally Effective,1
+6115,22,Experienced,BA,55000,206.1215766,Developing,1
+6116,1,New,MA,35000,180.703036,Minimally Effective,1
+6117,16,Experienced,MA,50000,209.0932961,Developing,1
+6118,4,Novice,MA,38000,212.9532404,Developing,1
+6119,19,Experienced,BA,52000,235.5402002,Developing,0
+6120,5,Novice,BA,38000,211.0613255,Developing,1
+6121,8,Mid,MA,42000,217.9766644,Developing,1
+6122,7,Mid,BA,40000,228.0908105,Developing,1
+6123,3,Novice,BA,36000,203.0657574,Developing,1
+6124,11,Mid,BA,44000,197.1929937,Minimally Effective,1
+6125,22,Experienced,BA,55000,197.2428994,Minimally Effective,1
+6126,4,Novice,MA,38000,217.2659147,Developing,1
+6127,9,Mid,BA,42000,247.85888,Developing,0
+6128,14,Mid,MA,48000,228.7673559,Developing,1
+6129,1,New,MA,35000,144.0599598,Ineffective,1
+6130,2,New,BA,35000,219.0501481,Developing,1
+6131,1,New,MA,35000,175.2544242,Minimally Effective,1
+6132,7,Mid,MA,41000,215.4617985,Developing,1
+6133,10,Mid,BA,43000,266.1057586,Proficient,1
+6134,4,Novice,BA,37000,254.2631977,Proficient,1
+6135,2,New,BA,35000,168.1884825,Minimally Effective,0
+6136,26,Career,BA,59000,174.1701617,Minimally Effective,1
+6137,5,Novice,BA,38000,254.8361896,Proficient,1
+6138,19,Experienced,BA,52000,255.955222,Proficient,1
+6139,7,Mid,MA,41000,207.6968541,Developing,1
+6140,1,New,BA,34000,183.6810915,Minimally Effective,0
+6141,8,Mid,BA,41000,211.2274386,Developing,1
+6142,17,Experienced,MA,51000,225.5938464,Developing,1
+6143,10,Mid,PhD or EdD,45000,235.881043,Developing,1
+6144,7,Mid,BA,40000,214.5287529,Developing,1
+6145,1,New,MA,35000,200.9993379,Developing,0
+6146,9,Mid,MA,43000,215.4171169,Developing,1
+6147,11,Mid,MA,45000,262.4460638,Proficient,1
+6148,14,Mid,BA,47000,220.4182174,Developing,1
+6149,1,New,BA,34000,170.2183436,Minimally Effective,1
+6150,18,Experienced,MA,52000,270.0387531,Proficient,1
+6151,35,Career,MA,69000,247.1820586,Developing,1
+6152,2,New,BA,35000,198.6242328,Minimally Effective,1
+6153,3,Novice,BA,36000,203.3039155,Developing,1
+6154,5,Novice,BA,38000,248.9420324,Developing,1
+6155,1,New,MA,35000,193.5599947,Minimally Effective,1
+6156,14,Mid,BA,47000,206.2507248,Developing,1
+6157,10,Mid,MA,44000,250.038081,Proficient,0
+6158,24,Experienced,MA,58000,239.6687821,Developing,1
+6159,18,Experienced,BA,51000,218.0592191,Developing,1
+6160,2,New,BA,35000,200.7207528,Developing,1
+6161,16,Experienced,BA,49000,247.9450364,Developing,0
+6162,15,Mid,BA,48000,263.9621248,Proficient,0
+6163,3,Novice,BA,36000,282.4297947,Highly Effective,0
+6164,20,Experienced,BA,53000,231.9346399,Developing,1
+6165,15,Mid,BA,50000,232.8126048,Developing,0
+6166,3,Novice,BA,36000,229.0276373,Developing,0
+6167,25,Career,BA,58000,259.1907887,Proficient,0
+6168,15,Mid,MA,49000,222.3596448,Developing,1
+6169,4,Novice,MA,38000,203.7801593,Developing,1
+6170,11,Mid,MA,45000,222.8437377,Developing,1
+6171,24,Experienced,MA,58000,249.2541576,Developing,1
+6172,4,Novice,BA,37000,188.2272626,Minimally Effective,1
+6173,33,Career,MA,67000,210.4276992,Developing,1
+6174,3,Novice,BA,36000,213.5132438,Developing,1
+6175,5,Novice,MA,39000,228.2789467,Developing,0
+6176,19,Experienced,BA,52000,205.4897953,Developing,1
+6177,2,New,MA,36000,236.9335211,Developing,1
+6178,1,New,BA,34000,160.2222278,Minimally Effective,1
+6179,5,Novice,BA,38000,209.7260405,Developing,0
+6180,24,Experienced,BA,59000,252.982315,Proficient,1
+6181,24,Experienced,MA,58000,255.6673139,Proficient,1
+6182,5,Novice,MA,39000,280.5344127,Highly Effective,0
+6183,2,New,BA,35000,228.2033566,Developing,0
+6184,30,Career,BA,63000,232.2347023,Developing,1
+6185,3,Novice,BA,36000,275.4412131,Highly Effective,1
+6186,1,New,BA,34000,185.0038955,Minimally Effective,0
+6187,3,Novice,MA,37000,216.2541355,Developing,1
+6188,20,Experienced,MA,54000,225.7526875,Developing,0
+6189,25,Career,MA,59000,203.9607864,Developing,1
+6190,19,Experienced,MA,53000,239.9793833,Developing,1
+6191,13,Mid,BA,46000,232.7260809,Developing,1
+6192,3,Novice,BA,36000,259.0543181,Proficient,1
+6193,8,Mid,PhD or EdD,43000,225.8705128,Developing,1
+6194,11,Mid,BA,44000,223.417971,Developing,1
+6195,16,Experienced,MA,50000,255.7014321,Proficient,1
+6196,6,Novice,BA,39000,214.9375095,Developing,1
+6197,15,Mid,BA,48000,210.8903134,Developing,1
+6198,11,Mid,BA,46000,259.4252204,Proficient,1
+6199,10,Mid,BA,43000,214.7833745,Developing,1
+6200,14,Mid,BA,47000,216.8212026,Developing,1
+6201,27,Career,MA,61000,199.4258783,Minimally Effective,1
+6202,3,Novice,MA,37000,212.6283305,Developing,0
+6203,26,Career,BA,59000,186.2640476,Minimally Effective,1
+6204,9,Mid,BA,42000,255.8364497,Proficient,1
+6205,7,Mid,BA,40000,223.6477871,Developing,1
+6206,19,Experienced,MA,53000,245.6435123,Developing,0
+6207,1,New,BA,34000,144.1872086,Ineffective,1
+6208,8,Mid,BA,41000,205.1898773,Developing,1
+6209,3,Novice,MA,37000,212.5529163,Developing,1
+6210,14,Mid,BA,47000,254.6036422,Proficient,0
+6211,17,Experienced,MA,51000,240.3785733,Developing,1
+6212,24,Experienced,BA,57000,180.9406811,Minimally Effective,1
+6213,5,Novice,MA,39000,246.4177006,Developing,1
+6214,19,Experienced,BA,54000,267.9524519,Proficient,1
+6215,29,Career,BA,62000,227.4292515,Developing,1
+6216,1,New,BA,34000,181.8516328,Minimally Effective,0
+6217,1,New,MA,35000,169.2378902,Minimally Effective,1
+6218,19,Experienced,BA,52000,214.1650503,Developing,1
+6219,25,Career,BA,58000,212.4640853,Developing,1
+6220,11,Mid,BA,44000,268.3364972,Proficient,1
+6221,21,Experienced,BA,54000,290.2416077,Highly Effective,0
+6222,3,Novice,MA,37000,235.6602568,Developing,0
+6223,3,Novice,MA,37000,258.9307482,Proficient,1
+6224,7,Mid,BA,40000,234.9605473,Developing,1
+6225,15,Mid,MA,49000,227.5386615,Developing,1
+6226,5,Novice,MA,39000,225.3584791,Developing,1
+6227,13,Mid,BA,46000,237.4924457,Developing,1
+6228,19,Experienced,BA,52000,262.483674,Proficient,1
+6229,13,Mid,BA,46000,259.4530145,Proficient,1
+6230,1,New,MA,35000,220.2833868,Developing,1
+6231,5,Novice,BA,38000,240.9799871,Developing,1
+6232,30,Career,MA,64000,218.7798276,Developing,1
+6233,1,New,MA,35000,191.3808442,Minimally Effective,0
+6234,2,New,BA,35000,191.2981357,Minimally Effective,0
+6235,3,Novice,BA,36000,224.1376828,Developing,0
+6236,25,Career,MA,59000,245.1236149,Developing,1
+6237,15,Mid,MA,49000,233.8521062,Developing,1
+6238,18,Experienced,MA,52000,235.8080973,Developing,0
+6239,12,Mid,MA,46000,221.8528556,Developing,1
+6240,7,Mid,MA,41000,208.6724162,Developing,1
+6241,1,New,BA,34000,182.6213051,Minimally Effective,1
+6242,4,Novice,BA,37000,206.6144245,Developing,0
+6243,30,Career,MA,64000,220.7748894,Developing,0
+6244,5,Novice,MA,39000,194.5973903,Minimally Effective,1
+6245,15,Mid,BA,48000,217.321156,Developing,1
+6246,18,Experienced,BA,51000,226.1458096,Developing,0
+6247,4,Novice,MA,38000,212.5013005,Developing,0
+6248,3,Novice,BA,36000,224.1924318,Developing,1
+6249,21,Experienced,MA,55000,205.7105578,Developing,1
+6250,15,Mid,BA,48000,249.9872961,Developing,1
+6251,1,New,MA,35000,202.0531201,Developing,1
+6252,3,Novice,MA,37000,247.9705936,Developing,1
+6253,10,Mid,MA,44000,269.5816874,Proficient,1
+6254,4,Novice,MA,38000,240.9109206,Developing,0
+6255,9,Mid,MA,43000,235.7685036,Developing,1
+6256,27,Career,BA,60000,207.417336,Developing,1
+6257,21,Experienced,MA,57000,251.6330604,Proficient,1
+6258,31,Career,MA,65000,195.8544145,Minimally Effective,1
+6259,18,Experienced,MA,52000,274.3088257,Proficient,1
+6260,10,Mid,BA,43000,296.2772692,Highly Effective,1
+6261,28,Career,BA,63000,250.9893741,Proficient,1
+6262,5,Novice,BA,38000,216.9591206,Developing,0
+6263,3,Novice,BA,36000,194.7820658,Minimally Effective,0
+6264,9,Mid,MA,43000,249.4534946,Developing,1
+6265,28,Career,BA,65000,263.71229,Proficient,0
+6266,13,Mid,MA,47000,251.7030184,Proficient,1
+6267,1,New,MA,35000,181.7188522,Minimally Effective,0
+6268,16,Experienced,MA,50000,243.7824144,Developing,1
+6269,14,Mid,BA,47000,169.473865,Minimally Effective,1
+6270,18,Experienced,MA,52000,239.5313068,Developing,1
+6271,18,Experienced,BA,51000,188.069896,Minimally Effective,1
+6272,25,Career,MA,59000,259.532775,Proficient,1
+6273,2,New,BA,35000,231.9498059,Developing,1
+6274,8,Mid,BA,41000,236.3825988,Developing,1
+6275,24,Experienced,MA,58000,203.7452175,Developing,1
+6276,22,Experienced,MA,60000,212.5749036,Developing,1
+6277,8,Mid,BA,41000,213.4160839,Developing,1
+6278,25,Career,MA,59000,220.1220836,Developing,1
+6279,13,Mid,BA,46000,229.4993798,Developing,1
+6280,16,Experienced,MA,50000,226.3057838,Developing,0
+6281,34,Career,MA,68000,272.8376748,Proficient,1
+6282,5,Novice,MA,39000,300,Highly Effective,1
+6283,9,Mid,MA,43000,249.6310013,Developing,1
+6284,10,Mid,BA,43000,231.4821821,Developing,1
+6285,3,Novice,MA,37000,228.1404603,Developing,1
+6286,5,Novice,BA,38000,243.6528434,Developing,1
+6287,2,New,MA,36000,225.1857993,Developing,1
+6288,12,Mid,BA,45000,180.7555246,Minimally Effective,1
+6289,17,Experienced,PhD or EdD,52000,295.4762549,Highly Effective,1
+6290,5,Novice,BA,38000,210.4207679,Developing,1
+6291,31,Career,MA,65000,205.3341894,Developing,1
+6292,12,Mid,MA,48000,249.218286,Developing,1
+6293,18,Experienced,BA,51000,209.011683,Developing,1
+6294,4,Novice,BA,37000,247.6816536,Developing,0
+6295,7,Mid,MA,41000,176.4943318,Minimally Effective,0
+6296,22,Experienced,BA,55000,272.0791542,Proficient,1
+6297,1,New,BA,34000,174.4300802,Minimally Effective,1
+6298,4,Novice,MA,38000,265.6610699,Proficient,1
+6299,3,Novice,BA,36000,211.2998602,Developing,0
+6300,2,New,MA,36000,184.9068318,Minimally Effective,1
+6301,4,Novice,BA,37000,174.2089291,Minimally Effective,1
+6302,3,Novice,BA,36000,238.9948689,Developing,1
+6303,17,Experienced,BA,50000,241.2929187,Developing,0
+6304,5,Novice,BA,38000,171.1043736,Minimally Effective,1
+6305,9,Mid,BA,42000,253.0328511,Proficient,1
+6306,17,Experienced,MA,53000,212.6206389,Developing,1
+6307,24,Experienced,BA,57000,253.95691,Proficient,1
+6308,6,Novice,BA,39000,218.0414215,Developing,0
+6309,12,Mid,BA,45000,234.289801,Developing,1
+6310,5,Novice,BA,38000,261.4892549,Proficient,1
+6311,11,Mid,BA,44000,236.0467963,Developing,1
+6312,19,Experienced,MA,53000,245.5159553,Developing,1
+6313,29,Career,MA,65000,205.4360973,Developing,0
+6314,24,Experienced,MA,58000,244.9457448,Developing,1
+6315,6,Novice,BA,39000,248.202711,Developing,1
+6316,23,Experienced,MA,57000,241.8915638,Developing,0
+6317,4,Novice,MA,38000,248.3508145,Developing,1
+6318,12,Mid,MA,46000,213.8509365,Developing,1
+6319,22,Experienced,MA,56000,221.7172197,Developing,1
+6320,38,Career,BA,71000,166.5829166,Minimally Effective,1
+6321,10,Mid,BA,43000,183.6624745,Minimally Effective,0
+6322,7,Mid,MA,41000,219.4311784,Developing,1
+6323,33,Career,MA,67000,208.1758749,Developing,0
+6324,18,Experienced,MA,52000,207.9896657,Developing,1
+6325,1,New,MA,35000,194.1145571,Minimally Effective,1
+6326,15,Mid,MA,49000,292.2051626,Highly Effective,1
+6327,12,Mid,MA,46000,235.7497131,Developing,1
+6328,24,Experienced,BA,57000,217.1509395,Developing,1
+6329,23,Experienced,BA,56000,211.5619274,Developing,1
+6330,13,Mid,MA,49000,221.6343973,Developing,0
+6331,10,Mid,PhD or EdD,45000,214.8942641,Developing,0
+6332,5,Novice,BA,38000,233.960012,Developing,1
+6333,17,Experienced,MA,51000,218.8169673,Developing,1
+6334,25,Career,BA,58000,213.1469453,Developing,1
+6335,23,Experienced,BA,56000,235.6729389,Developing,0
+6336,33,Career,BA,66000,210.7857283,Developing,1
+6337,32,Career,BA,65000,216.4304237,Developing,1
+6338,9,Mid,BA,42000,235.087672,Developing,1
+6339,23,Experienced,MA,57000,193.2885299,Minimally Effective,1
+6340,4,Novice,MA,38000,220.6736205,Developing,1
+6341,1,New,BA,34000,198.4253027,Minimally Effective,0
+6342,17,Experienced,BA,50000,239.3423351,Developing,1
+6343,28,Career,BA,61000,200.3397732,Developing,0
+6344,2,New,BA,35000,191.9316622,Minimally Effective,1
+6345,15,Mid,MA,49000,263.9685098,Proficient,1
+6346,21,Experienced,BA,58000,235.2205264,Developing,1
+6347,17,Experienced,BA,52000,261.9438567,Proficient,1
+6348,12,Mid,PhD or EdD,49000,246.9486204,Developing,1
+6349,11,Mid,BA,44000,230.0011041,Developing,1
+6350,11,Mid,BA,44000,207.8905424,Developing,1
+6351,8,Mid,MA,42000,202.5679524,Developing,0
+6352,29,Career,MA,63000,216.5038071,Developing,1
+6353,1,New,BA,34000,142.8217527,Ineffective,1
+6354,2,New,BA,35000,176.4635673,Minimally Effective,1
+6355,16,Experienced,BA,49000,223.1623415,Developing,1
+6356,23,Experienced,BA,56000,240.4729941,Developing,1
+6357,21,Experienced,BA,54000,267.4501745,Proficient,1
+6358,2,New,MA,36000,221.6757454,Developing,1
+6359,2,New,BA,35000,221.7691923,Developing,0
+6360,2,New,BA,35000,210.2877595,Developing,0
+6361,4,Novice,BA,37000,198.8311099,Minimally Effective,0
+6362,2,New,BA,35000,270.8062928,Proficient,0
+6363,29,Career,MA,63000,172.2544106,Minimally Effective,0
+6364,3,Novice,MA,37000,238.71966,Developing,0
+6365,1,New,BA,34000,211.0662175,Developing,1
+6366,6,Novice,MA,40000,216.7408478,Developing,1
+6367,10,Mid,BA,43000,161.7201258,Minimally Effective,1
+6368,12,Mid,BA,45000,234.963516,Developing,0
+6369,19,Experienced,MA,53000,247.7599,Developing,0
+6370,23,Experienced,MA,57000,191.6314431,Minimally Effective,1
+6371,9,Mid,BA,42000,255.1579957,Proficient,1
+6372,24,Experienced,MA,58000,250.3677445,Proficient,1
+6373,16,Experienced,BA,49000,201.7475257,Developing,1
+6374,4,Novice,BA,37000,164.9468487,Minimally Effective,1
+6375,7,Mid,MA,41000,207.1307867,Developing,1
+6376,9,Mid,BA,42000,241.8171258,Developing,0
+6377,11,Mid,BA,44000,213.2674637,Developing,1
+6378,14,Mid,BA,47000,261.9751273,Proficient,0
+6379,20,Experienced,BA,53000,196.0199012,Minimally Effective,1
+6380,4,Novice,MA,38000,263.4762347,Proficient,1
+6381,2,New,BA,35000,170.6288273,Minimally Effective,1
+6382,1,New,MA,35000,185.7566146,Minimally Effective,1
+6383,26,Career,BA,61000,254.0348594,Proficient,1
+6384,5,Novice,PhD or EdD,40000,181.6926449,Minimally Effective,1
+6385,2,New,PhD or EdD,37000,171.7524706,Minimally Effective,0
+6386,19,Experienced,MA,53000,235.338146,Developing,1
+6387,11,Mid,BA,44000,270.9195541,Proficient,1
+6388,11,Mid,BA,44000,224.9026073,Developing,1
+6389,25,Career,MA,61000,237.1308496,Developing,1
+6390,15,Mid,MA,49000,197.9772449,Minimally Effective,1
+6391,20,Experienced,BA,53000,250.6033094,Proficient,1
+6392,35,Career,BA,68000,222.9497715,Developing,1
+6393,33,Career,BA,66000,220.1021078,Developing,1
+6394,16,Experienced,BA,49000,204.4214349,Developing,1
+6395,2,New,MA,36000,230.9474053,Developing,1
+6396,4,Novice,BA,37000,192.0416026,Minimally Effective,1
+6397,33,Career,MA,67000,203.6837869,Developing,1
+6398,24,Experienced,BA,57000,193.8610096,Minimally Effective,1
+6399,3,Novice,MA,37000,200.2043649,Developing,1
+6400,8,Mid,MA,42000,237.8107038,Developing,0
+6401,29,Career,MA,63000,257.6714892,Proficient,1
+6402,7,Mid,BA,40000,231.3655956,Developing,1
+6403,16,Experienced,MA,50000,246.2637025,Developing,1
+6404,3,Novice,MA,37000,188.9917244,Minimally Effective,1
+6405,26,Career,BA,59000,214.2213438,Developing,1
+6406,5,Novice,MA,39000,194.6143203,Minimally Effective,1
+6407,9,Mid,MA,43000,223.0181473,Developing,1
+6408,13,Mid,MA,49000,217.4411013,Developing,1
+6409,9,Mid,BA,42000,250.441417,Proficient,1
+6410,16,Experienced,BA,49000,281.9168847,Highly Effective,1
+6411,29,Career,BA,62000,267.5047124,Proficient,1
+6412,3,Novice,BA,36000,233.9209627,Developing,1
+6413,27,Career,BA,60000,239.0510568,Developing,1
+6414,11,Mid,MA,45000,243.578159,Developing,1
+6415,3,Novice,PhD or EdD,38000,175.7415171,Minimally Effective,1
+6416,27,Career,BA,60000,234.6734173,Developing,1
+6417,7,Mid,MA,41000,195.7715296,Minimally Effective,1
+6418,20,Experienced,MA,54000,300,Highly Effective,1
+6419,15,Mid,BA,48000,266.3953685,Proficient,0
+6420,19,Experienced,MA,53000,213.4921866,Developing,1
+6421,6,Novice,BA,39000,176.1805885,Minimally Effective,1
+6422,15,Mid,MA,49000,249.9536538,Developing,1
+6423,1,New,BA,34000,177.3532848,Minimally Effective,1
+6424,5,Novice,MA,39000,190.3150341,Minimally Effective,0
+6425,10,Mid,MA,44000,176.3337245,Minimally Effective,1
+6426,2,New,BA,35000,196.4851822,Minimally Effective,1
+6427,10,Mid,BA,43000,246.9613819,Developing,1
+6428,2,New,MA,36000,230.7518624,Developing,0
+6429,21,Experienced,BA,54000,200.6514133,Developing,1
+6430,1,New,BA,34000,170.0192784,Minimally Effective,1
+6431,6,Novice,BA,39000,180.7473479,Minimally Effective,1
+6432,1,New,BA,34000,216.3909954,Developing,1
+6433,13,Mid,MA,47000,211.3545959,Developing,0
+6434,15,Mid,MA,49000,278.7241349,Highly Effective,1
+6435,2,New,MA,36000,242.0086249,Developing,1
+6436,10,Mid,BA,43000,200.5363082,Developing,1
+6437,2,New,BA,35000,269.0302768,Proficient,1
+6438,11,Mid,MA,45000,224.0923545,Developing,0
+6439,25,Career,BA,58000,230.3088997,Developing,1
+6440,7,Mid,MA,41000,175.5070133,Minimally Effective,1
+6441,18,Experienced,MA,52000,227.4957159,Developing,1
+6442,16,Experienced,BA,49000,207.6545463,Developing,1
+6443,2,New,BA,35000,196.5900082,Minimally Effective,1
+6444,7,Mid,BA,40000,221.149254,Developing,1
+6445,18,Experienced,MA,54000,184.9439794,Minimally Effective,1
+6446,4,Novice,BA,37000,225.3231703,Developing,1
+6447,28,Career,BA,61000,237.261604,Developing,1
+6448,2,New,PhD or EdD,37000,175.3549283,Minimally Effective,1
+6449,2,New,BA,35000,212.0105104,Developing,0
+6450,8,Mid,BA,41000,249.5546295,Developing,1
+6451,4,Novice,BA,37000,236.4115384,Developing,1
+6452,5,Novice,MA,39000,218.4585116,Developing,1
+6453,17,Experienced,MA,51000,235.4189953,Developing,1
+6454,7,Mid,BA,40000,220.6631569,Developing,1
+6455,4,Novice,BA,37000,210.0881718,Developing,1
+6456,30,Career,MA,64000,236.5593289,Developing,0
+6457,5,Novice,BA,38000,199.2934136,Minimally Effective,1
+6458,6,Novice,BA,39000,240.6766399,Developing,1
+6459,10,Mid,MA,44000,257.9945068,Proficient,0
+6460,2,New,BA,35000,197.7968391,Minimally Effective,0
+6461,2,New,BA,35000,166.6013087,Minimally Effective,1
+6462,22,Experienced,BA,55000,181.2178934,Minimally Effective,1
+6463,13,Mid,MA,47000,250.7295107,Proficient,1
+6464,12,Mid,MA,46000,234.0236625,Developing,1
+6465,28,Career,BA,61000,244.0742201,Developing,1
+6466,11,Mid,MA,45000,266.9927379,Proficient,1
+6467,5,Novice,MA,39000,231.7652052,Developing,1
+6468,17,Experienced,MA,51000,275.2684792,Highly Effective,1
+6469,5,Novice,BA,38000,238.4422453,Developing,1
+6470,21,Experienced,MA,55000,174.3936043,Minimally Effective,1
+6471,15,Mid,MA,49000,241.2538448,Developing,1
+6472,31,Career,BA,66000,245.1407943,Developing,1
+6473,25,Career,BA,58000,283.4507014,Highly Effective,1
+6474,19,Experienced,BA,52000,173.7330081,Minimally Effective,1
+6475,25,Career,BA,58000,270.7731771,Proficient,1
+6476,20,Experienced,BA,53000,206.1549902,Developing,1
+6477,1,New,BA,34000,214.1884885,Developing,1
+6478,4,Novice,BA,37000,217.2653959,Developing,1
+6479,10,Mid,MA,44000,213.7670586,Developing,1
+6480,26,Career,BA,59000,236.4274213,Developing,0
+6481,8,Mid,BA,41000,180.2066077,Minimally Effective,1
+6482,26,Career,BA,59000,229.7876897,Developing,1
+6483,31,Career,BA,64000,191.024049,Minimally Effective,1
+6484,8,Mid,BA,41000,270.7903486,Proficient,0
+6485,1,New,MA,35000,196.3436022,Minimally Effective,0
+6486,26,Career,MA,60000,198.3904248,Minimally Effective,1
+6487,1,New,BA,34000,148.0062838,Ineffective,1
+6488,20,Experienced,MA,54000,165.7201341,Minimally Effective,1
+6489,24,Experienced,MA,58000,182.7899728,Minimally Effective,1
+6490,2,New,MA,36000,203.015519,Developing,1
+6491,12,Mid,MA,46000,195.5255251,Minimally Effective,0
+6492,16,Experienced,BA,49000,230.9355695,Developing,1
+6493,8,Mid,MA,42000,264.1100226,Proficient,0
+6494,18,Experienced,MA,56000,297.5606681,Highly Effective,1
+6495,18,Experienced,MA,52000,235.9325994,Developing,1
+6496,28,Career,MA,62000,229.3735125,Developing,1
+6497,2,New,BA,35000,163.9466867,Minimally Effective,1
+6498,7,Mid,BA,40000,236.8810061,Developing,1
+6499,35,Career,MA,69000,249.9364131,Developing,1
+6500,5,Novice,BA,38000,206.0135595,Developing,1
+6501,20,Experienced,BA,53000,242.7233797,Developing,1
+6502,1,New,BA,34000,202.523232,Developing,1
+6503,2,New,BA,35000,238.1117678,Developing,0
+6504,3,Novice,BA,36000,197.3324284,Minimally Effective,1
+6505,29,Career,BA,62000,233.2203517,Developing,1
+6506,1,New,BA,34000,205.1432712,Developing,1
+6507,9,Mid,BA,42000,220.8264649,Developing,1
+6508,30,Career,BA,63000,271.5889035,Proficient,0
+6509,17,Experienced,PhD or EdD,52000,237.7239264,Developing,1
+6510,12,Mid,MA,46000,173.4497909,Minimally Effective,1
+6511,13,Mid,BA,46000,242.690911,Developing,1
+6512,23,Experienced,BA,58000,238.815909,Developing,1
+6513,24,Experienced,BA,57000,229.6133145,Developing,1
+6514,2,New,BA,35000,193.5330323,Minimally Effective,1
+6515,9,Mid,BA,42000,203.0829409,Developing,1
+6516,14,Mid,MA,48000,270.3962384,Proficient,1
+6517,1,New,MA,35000,165.9960808,Minimally Effective,1
+6518,7,Mid,BA,40000,195.4116671,Minimally Effective,0
+6519,1,New,MA,35000,205.5814693,Developing,0
+6520,13,Mid,BA,46000,231.6053573,Developing,1
+6521,7,Mid,MA,41000,209.6988368,Developing,1
+6522,9,Mid,MA,43000,249.1836475,Developing,1
+6523,10,Mid,MA,44000,243.4457655,Developing,1
+6524,4,Novice,BA,37000,193.9691381,Minimally Effective,1
+6525,20,Experienced,BA,53000,231.8012072,Developing,1
+6526,3,Novice,BA,36000,259.685945,Proficient,1
+6527,18,Experienced,BA,51000,228.5794943,Developing,0
+6528,19,Experienced,MA,55000,259.562354,Proficient,1
+6529,8,Mid,BA,41000,223.8639237,Developing,1
+6530,2,New,MA,36000,192.3254564,Minimally Effective,1
+6531,9,Mid,BA,42000,182.6271489,Minimally Effective,1
+6532,12,Mid,MA,46000,223.9139115,Developing,1
+6533,16,Experienced,BA,49000,201.1892404,Developing,1
+6534,5,Novice,MA,39000,225.0201696,Developing,1
+6535,6,Novice,MA,40000,246.4729081,Developing,1
+6536,5,Novice,BA,38000,203.5425629,Developing,1
+6537,4,Novice,BA,37000,237.7994786,Developing,1
+6538,18,Experienced,BA,51000,232.8708826,Developing,1
+6539,8,Mid,MA,42000,203.7960332,Developing,1
+6540,20,Experienced,MA,54000,231.7919886,Developing,1
+6541,26,Career,BA,59000,225.2732483,Developing,1
+6542,9,Mid,MA,43000,191.9997733,Minimally Effective,1
+6543,6,Novice,MA,40000,200.2193293,Developing,0
+6544,1,New,BA,34000,187.1456306,Minimally Effective,1
+6545,8,Mid,BA,41000,224.6370717,Developing,1
+6546,19,Experienced,BA,52000,227.9468038,Developing,0
+6547,1,New,BA,34000,185.2071862,Minimally Effective,0
+6548,12,Mid,BA,45000,233.5240355,Developing,1
+6549,23,Experienced,MA,57000,236.4516468,Developing,0
+6550,28,Career,BA,61000,189.5080169,Minimally Effective,1
+6551,1,New,BA,34000,196.3420375,Minimally Effective,1
+6552,3,Novice,MA,37000,213.7623933,Developing,1
+6553,26,Career,MA,60000,189.8951919,Minimally Effective,1
+6554,7,Mid,BA,40000,221.1226844,Developing,0
+6555,24,Experienced,BA,57000,300,Highly Effective,1
+6556,19,Experienced,BA,52000,224.6124863,Developing,0
+6557,15,Mid,BA,48000,252.3256316,Proficient,0
+6558,1,New,MA,35000,170.7726598,Minimally Effective,1
+6559,7,Mid,BA,40000,262.2927604,Proficient,1
+6560,1,New,BA,34000,204.8751906,Developing,1
+6561,12,Mid,BA,45000,222.7027144,Developing,0
+6562,19,Experienced,MA,55000,240.0510714,Developing,1
+6563,29,Career,MA,65000,232.287397,Developing,1
+6564,2,New,MA,36000,175.6188758,Minimally Effective,1
+6565,11,Mid,BA,44000,257.3370387,Proficient,0
+6566,5,Novice,BA,38000,264.0240392,Proficient,1
+6567,13,Mid,BA,46000,235.1898294,Developing,1
+6568,16,Experienced,BA,49000,191.3706318,Minimally Effective,1
+6569,15,Mid,BA,50000,193.9438881,Minimally Effective,1
+6570,5,Novice,MA,39000,191.0817498,Minimally Effective,1
+6571,25,Career,BA,58000,241.0660879,Developing,1
+6572,4,Novice,BA,37000,233.5562378,Developing,1
+6573,9,Mid,BA,42000,257.6927174,Proficient,0
+6574,17,Experienced,MA,51000,271.0603678,Proficient,1
+6575,1,New,MA,35000,136.3119584,Ineffective,1
+6576,16,Experienced,BA,49000,238.8448741,Developing,1
+6577,2,New,BA,35000,183.1133429,Minimally Effective,0
+6578,16,Experienced,MA,50000,232.7090321,Developing,1
+6579,4,Novice,MA,38000,175.7298803,Minimally Effective,1
+6580,25,Career,MA,59000,233.4924682,Developing,1
+6581,31,Career,MA,65000,218.1423173,Developing,1
+6582,10,Mid,BA,43000,190.7499635,Minimally Effective,1
+6583,17,Experienced,MA,51000,238.243749,Developing,1
+6584,20,Experienced,BA,53000,204.2736647,Developing,1
+6585,21,Experienced,MA,55000,234.5601688,Developing,1
+6586,4,Novice,BA,37000,212.5109535,Developing,1
+6587,1,New,BA,34000,235.7919424,Developing,0
+6588,9,Mid,BA,42000,262.5146327,Proficient,1
+6589,13,Mid,BA,46000,226.8933076,Developing,1
+6590,13,Mid,BA,46000,251.8092828,Proficient,0
+6591,7,Mid,BA,40000,224.016367,Developing,1
+6592,7,Mid,MA,41000,168.2447854,Minimally Effective,1
+6593,1,New,BA,34000,171.4348842,Minimally Effective,1
+6594,3,Novice,BA,36000,225.0908038,Developing,1
+6595,21,Experienced,BA,54000,213.2026903,Developing,1
+6596,18,Experienced,MA,52000,209.3876465,Developing,1
+6597,10,Mid,BA,43000,225.2175134,Developing,1
+6598,3,Novice,BA,36000,195.5300581,Minimally Effective,0
+6599,12,Mid,BA,45000,213.2709874,Developing,1
+6600,5,Novice,BA,38000,179.7598216,Minimally Effective,1
+6601,23,Experienced,BA,56000,223.5051333,Developing,1
+6602,7,Mid,BA,40000,246.6477494,Developing,1
+6603,3,Novice,BA,36000,198.3820808,Minimally Effective,1
+6604,19,Experienced,MA,53000,205.0549385,Developing,1
+6605,9,Mid,MA,43000,242.5975098,Developing,1
+6606,17,Experienced,BA,50000,232.5174146,Developing,1
+6607,32,Career,MA,66000,273.7884702,Proficient,1
+6608,17,Experienced,BA,50000,224.3687579,Developing,1
+6609,7,Mid,BA,40000,189.8537903,Minimally Effective,1
+6610,14,Mid,BA,47000,208.9803672,Developing,0
+6611,22,Experienced,BA,55000,243.2131665,Developing,1
+6612,16,Experienced,MA,50000,264.4385622,Proficient,1
+6613,19,Experienced,MA,53000,236.0617596,Developing,1
+6614,5,Novice,BA,38000,245.4023007,Developing,1
+6615,15,Mid,BA,48000,224.4641774,Developing,1
+6616,25,Career,BA,58000,281.5198406,Highly Effective,1
+6617,15,Mid,MA,49000,263.1735401,Proficient,0
+6618,7,Mid,MA,41000,238.9796378,Developing,0
+6619,23,Experienced,MA,57000,212.9399183,Developing,1
+6620,31,Career,MA,65000,239.6022177,Developing,0
+6621,3,Novice,BA,36000,240.8567997,Developing,1
+6622,1,New,BA,34000,197.3476203,Minimally Effective,1
+6623,23,Experienced,BA,58000,225.0707025,Developing,1
+6624,3,Novice,BA,36000,245.0048448,Developing,0
+6625,2,New,MA,36000,179.9262277,Minimally Effective,1
+6626,30,Career,BA,65000,200.8292202,Developing,1
+6627,1,New,MA,35000,247.3481637,Developing,0
+6628,2,New,BA,35000,259.3400579,Proficient,1
+6629,21,Experienced,BA,54000,220.4554497,Developing,1
+6630,1,New,BA,34000,132.5612875,Ineffective,1
+6631,4,Novice,MA,38000,192.9293033,Minimally Effective,1
+6632,20,Experienced,BA,55000,242.182715,Developing,1
+6633,12,Mid,MA,46000,241.1214606,Developing,0
+6634,29,Career,BA,62000,190.1376537,Minimally Effective,1
+6635,24,Experienced,BA,57000,164.9674276,Minimally Effective,1
+6636,24,Experienced,BA,59000,227.983249,Developing,1
+6637,6,Novice,MA,40000,293.615598,Highly Effective,1
+6638,2,New,MA,36000,149.0160913,Ineffective,1
+6639,4,Novice,BA,37000,211.5779025,Developing,0
+6640,36,Career,BA,69000,187.7802849,Minimally Effective,1
+6641,2,New,BA,35000,219.2630394,Developing,0
+6642,8,Mid,BA,41000,184.5031672,Minimally Effective,1
+6643,24,Experienced,BA,57000,202.2590662,Developing,1
+6644,10,Mid,BA,43000,228.4157326,Developing,1
+6645,2,New,BA,35000,205.6422141,Developing,0
+6646,4,Novice,MA,38000,207.6930687,Developing,1
+6647,16,Experienced,MA,50000,238.8643615,Developing,1
+6648,13,Mid,MA,49000,234.2705167,Developing,1
+6649,9,Mid,MA,43000,221.1963451,Developing,1
+6650,1,New,MA,35000,170.3523218,Minimally Effective,1
+6651,4,Novice,MA,38000,244.5132795,Developing,0
+6652,21,Experienced,BA,56000,232.6943466,Developing,1
+6653,21,Experienced,BA,54000,190.3228741,Minimally Effective,1
+6654,10,Mid,BA,43000,221.2854043,Developing,1
+6655,19,Experienced,BA,54000,249.8723325,Developing,1
+6656,3,Novice,BA,36000,216.7601524,Developing,1
+6657,7,Mid,MA,41000,235.4754919,Developing,1
+6658,7,Mid,BA,40000,213.6584733,Developing,1
+6659,15,Mid,BA,48000,216.6094525,Developing,1
+6660,21,Experienced,BA,58000,229.5190081,Developing,1
+6661,26,Career,MA,62000,225.4485734,Developing,1
+6662,9,Mid,BA,42000,241.7280385,Developing,1
+6663,1,New,BA,34000,183.5405253,Minimally Effective,1
+6664,5,Novice,BA,38000,174.8840348,Minimally Effective,1
+6665,10,Mid,BA,43000,182.8402116,Minimally Effective,1
+6666,14,Mid,MA,48000,202.8579329,Developing,1
+6667,25,Career,MA,59000,215.6521996,Developing,1
+6668,8,Mid,BA,41000,212.9744537,Developing,1
+6669,36,Career,BA,69000,187.1616545,Minimally Effective,1
+6670,16,Experienced,MA,50000,269.0490367,Proficient,1
+6671,15,Mid,BA,48000,198.4977366,Minimally Effective,1
+6672,25,Career,MA,59000,210.4277587,Developing,1
+6673,23,Experienced,BA,56000,273.1654371,Proficient,1
+6674,2,New,MA,36000,168.61737,Minimally Effective,1
+6675,1,New,MA,35000,147.1741496,Ineffective,1
+6676,17,Experienced,PhD or EdD,54000,177.4324074,Minimally Effective,1
+6677,3,Novice,MA,37000,258.5192899,Proficient,1
+6678,5,Novice,PhD or EdD,40000,238.7885066,Developing,1
+6679,34,Career,MA,70000,224.7807061,Developing,1
+6680,26,Career,MA,60000,243.099944,Developing,1
+6681,18,Experienced,MA,52000,244.4243841,Developing,1
+6682,3,Novice,PhD or EdD,38000,190.5191961,Minimally Effective,0
+6683,7,Mid,BA,40000,224.4568486,Developing,0
+6684,16,Experienced,MA,50000,215.26001,Developing,1
+6685,29,Career,BA,62000,251.7501098,Proficient,1
+6686,28,Career,BA,61000,226.1611288,Developing,1
+6687,2,New,MA,36000,232.3842185,Developing,1
+6688,27,Career,BA,60000,239.4887145,Developing,1
+6689,3,Novice,MA,37000,202.1959565,Developing,1
+6690,1,New,MA,35000,224.6477128,Developing,0
+6691,4,Novice,MA,38000,206.9018861,Developing,1
+6692,1,New,MA,35000,178.129337,Minimally Effective,1
+6693,9,Mid,MA,43000,224.3689093,Developing,1
+6694,18,Experienced,BA,53000,265.2589825,Proficient,1
+6695,6,Novice,MA,40000,170.0598665,Minimally Effective,1
+6696,14,Mid,MA,48000,280.8972551,Highly Effective,0
+6697,1,New,BA,34000,187.1272394,Minimally Effective,0
+6698,6,Novice,BA,39000,204.5461988,Developing,0
+6699,29,Career,MA,63000,211.2650943,Developing,0
+6700,19,Experienced,BA,54000,225.0526972,Developing,1
+6701,1,New,BA,34000,181.8207836,Minimally Effective,1
+6702,4,Novice,MA,38000,231.8216212,Developing,1
+6703,37,Career,MA,71000,262.3246535,Proficient,1
+6704,16,Experienced,BA,49000,228.4965302,Developing,1
+6705,17,Experienced,MA,51000,221.2327362,Developing,1
+6706,4,Novice,BA,37000,181.2024942,Minimally Effective,1
+6707,1,New,MA,35000,163.9267616,Minimally Effective,0
+6708,12,Mid,MA,46000,205.7646947,Developing,1
+6709,1,New,BA,34000,165.2604309,Minimally Effective,0

@@ -71,7 +71,7 @@ Most teachers in MCSD are rated "Developing" (60%), with more teachers rated bel
 ratings_dist <- mcsd_data %>%
   group_by(rating) %>%
   summarize(count = n()) %>%
-  mutate(percent = percent (count / sum(count))) %>% 
+  mutate(percent = count / sum(count)) %>%
   select(rating, percent, count) # choose and reorder columns 
   
 kable(ratings_dist, col.names = c("Rating", "Percent", "N"), align = "lrr") # print as a table in Word
@@ -81,8 +81,8 @@ kable(ratings_dist, col.names = c("Rating", "Percent", "N"), align = "lrr") # pr
 
 ```{r q0b}
 
-ggplot(mcsd_data, aes(x = rating)) +
-  geom_bar(color = "white") +
+ggplot(mcsd_data, aes(x = score)) +
+  geom_histogram(binwidth = 2, color = "white") +
   labs(title = "MCSD 2015-16 Distribution of Ratings") +
   theme_minimal()
 
@@ -190,18 +190,29 @@ More experience teachers, on average, make more than less experienced teachers, 
 
 
 career_experience <- mcsd_data %>%
-  group_by(experience) %>%
-  mutate(career_experience = ifelse(experience<=10, "Early Career", "Late Career")) 
+  mutate(experience, teaching_experience = ifelse(experience <= 10, "Early Career", "Late Career"))
 
-ggplot(career_experience, aes(rating, salary, color=career_experience)) + 
+
+ggplot(career_experience, aes(score, col=teaching_experience)) + 
+  geom_density() + 
+  labs(title = "MCSD:Performance based on teaching experience") +
+  scale_color_manual(values= c("#034772", "#2888BC", "#73B7CE", "#699D46", "#EA8936"))
+
+ggplot(career_experience, aes(salary, col=teaching_experience)) + 
+  geom_density() + 
+  labs(title = "MCSD:Compensation based on teaching experience") +
+  scale_color_manual(values= c("#034772", "#2888BC", "#73B7CE", "#699D46", "#EA8936")) 
+
+ggplot(career_experience, aes(rating, salary, color=teaching_experience)) + 
   geom_jitter() + 
   labs(title = "MCSD:Compensation and Performance based on teaching experience") +
   scale_color_manual(values= c("#034772", "#73B7CE"))
 
-ggplot(career_experience, aes(score, salary, color=career_experience)) + 
+ggplot(career_experience, aes(score, salary, color=teaching_experience)) + 
   geom_jitter() + 
   labs(title = "MCSD:Compensation and Performance based on teaching experience") +
   scale_color_manual(values= c("#034772", "#73B7CE"))
+
 
 
 # Compare the distribution of salaries between the two groups...

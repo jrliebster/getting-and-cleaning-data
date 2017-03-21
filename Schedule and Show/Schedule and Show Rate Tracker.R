@@ -1,12 +1,13 @@
-#Schedule and Show Tracker: I want to be able to quickly determine the % of candidates who have been invited to interview that schedule interviews and attend them.
+#Schedule and Show Tracker: I want to be able to quickly determine the % of candidates who have been invited to interview that schedule interviews and attend them. 
+#I also want to know the average days it takes candidates to schedule and show at interviews.
 # Pull comprehensive data set from TT2 (second tab has output)
 # Determine the schedule and show rates for initial interview (phone) and interview (selection)
 # look at 14 day (invited at least 14 days ago)
 # look at 30 day (invited at least 30 days ago)
 # look at schedule and show rates broken down by 30 day direct to selection (were not invited to initial interview) and 30 day PI to SD (went to initial interview first)
 # ensure only interview dates in past are included in numerator/denominator for show rates (so those who have not had a chance to attend yet are not included in show rate)
+
 # Considerations/concerns:
-#   this should come first, before hiring tracker
 # need to filter out last week of events, to account for events not yet finalized
 # pull this data weekly on Wednesdays, events are usually finalized on Mondays
 
@@ -26,7 +27,7 @@ comprehensive <- subset(comprehensive, select = c("RRAppUserId3", "RRPrimarySubj
 #change all date variables to date class and consistent format (could this be done more efficiently?)
 #lapply?
 #comprehensive[,"RRDateofinterview42", "RRDateFirstInvitedtoPhoneInterview32", "RRDatecandidatescheduledfirstphoneinterview34", "RRDateofphoneinterview36", "RRDateInvitedtoSelectionDay38", "RRDatewhenscheduledinpersoninterview40"] <- as.Date(comprehensive[,"RRDateofinterview42", "RRDateFirstInvitedtoPhoneInterview32", "RRDatecandidatescheduledfirstphoneinterview34", "RRDateofphoneinterview36", "RRDateInvitedtoSelectionDay38", "RRDatewhenscheduledinpersoninterview40"], "%m/%d/%Y")
-#Marie--this could change to become more efficient/streamlined. I'll send you an updated version if it does
+#Marie--this could change to become more efficient/streamlined. I'll send you an updated version if it does (Marie runs the code each week and reports on the analysis)
 comprehensive$RRDateofinterview42 <- as.Date(comprehensive$RRDateofinterview42, "%m/%d/%Y")
 comprehensive$RRDateFirstInvitedtoPhoneInterview32 <- as.Date(comprehensive$RRDateFirstInvitedtoPhoneInterview32, "%m/%d/%Y")
 comprehensive$RRDatecandidatescheduledfirstphoneinterview34 <- as.Date(comprehensive$RRDatecandidatescheduledfirstphoneinterview34, "%m/%d/%Y")
@@ -40,17 +41,11 @@ initialshowcount <- count(comprehensive, RRPhoneinterviewed35, RRScheduledaphone
 initialschedulecount<-initialschedulecount[!(initialschedulecount$RREverinvitedtophoneinterview31=="No"),]
 initialshowcount<-initialshowcount[!(initialshowcount$RRScheduledaphoneinterview33=="No"),]
 
-#calculate schedule and show rates for interview--need to remove all observations that are "No" for RREverinvitedtoSelectionDay37
-# interviewschedulecount <- count(comprehensive, RREverinvitedtoSelectionDay37, RRScheduledaninpersoninterview39, wt = NULL, sort = TRUE)
-# interviewshowcount <- count(comprehensive, RRScheduledaninpersoninterview39, RREverInterviewed41, wt = NULL, sort = TRUE)
-# interviewschedulecount<-interviewschedulecount[!(interviewschedulecount$RREverinvitedtoSelectionDay37=="No"),]
-# interviewshowcount<-interviewshowcount[!(interviewshowcount$RRScheduledaninpersoninterview39=="No"),]
-
 #next, for both initial and interview, need to filter schedule and show rates for dates that have not occurred yet (remove from show rate)
 #then, make 14 and 30 day restrictions (filter for those who were invited 14+ or 30+ days ago)
 
 #Sys.Date() gives current date, filter out anything less than or equal to 14 days before sys.date (same for 30)
-#need to remove all future events (including today's date to the past Monday)
+#need to remove all future events (including today's date to the past Monday). Event attendance data is finalized on Mondays, so we would not want to include any events that occurred after the most recent Monday, as it can skew show rates (it will show that all canidates did not attend an event if it has not yet been finalized)
 #CleanHiredFellows$daysBetweenHCF <- as.Date(CleanHiredFellows$HCFDate.x, format = "%m/%d/%y") - as.Date(CleanHiredFellows$NominationDate.x, format = "%m/%d/%y")
 current_date <- Sys.Date()
 
@@ -68,7 +63,7 @@ initialscheduleshowcount30 <- comprehensive %>%
   filter(invitedtophoneinterview30day==1,
          RRDatecandidatescheduledfirstphoneinterview34 < (current_date - 2) | is.na (RRDatecandidatescheduledfirstphoneinterview34), 
          RRDateofphoneinterview36 < (current_date - 2) | is.na (RRDateofphoneinterview36)) %>%
-  #count(invitedtophoneinterview30day, RRScheduledaphoneinterview33, RRPhoneinterviewed35, wt = NULL, sort = TRUE)
+  #count(invitedtophoneinterview30day, RRScheduledaphoneinterview33, RRPhoneinterviewed35, wt = NULL, sort = TRUE) (not longer needed, as I'll be summarising below)
   summarise(invited_initial = sum(RREverinvitedtophoneinterview31 == "Yes", na.rm = TRUE),
           show_initial = sum(RRScheduledaphoneinterview33 == "Yes" & RRPhoneinterviewed35 == "Yes", na.rm = TRUE),
           scheduled_initial = sum(RRScheduledaphoneinterview33 == "Yes", na.rm = TRUE),
@@ -126,7 +121,7 @@ comprehensive$phonedaystointerview <- as.Date(comprehensive$RRDateofphoneintervi
 comprehensive$interviewdaystoschedule <- as.Date(comprehensive$RRDatewhenscheduledinpersoninterview40, format = "%m/%d/%y") - as.Date(comprehensive$RRDateInvitedtoSelectionDay38, format = "%m/%d/%y")
 comprehensive$interviewdaystointerview <- as.Date(comprehensive$RRDateofinterview42, format = "%m/%d/%y") - as.Date(comprehensive$RRDatewhenscheduledinpersoninterview40, format = "%m/%d/%y")
 
-#mean days between invited, scheduled, show
+#mean days between invited, scheduled, show for initial and interview
 averagedays <- comprehensive %>%
   mutate (phone_avg_days_schedule = round(mean(comprehensive$phonedaystoschedule, na.rm=TRUE),digits=1),
           phone_avg_days_show = round(mean(comprehensive$phonedaystointerview, na.rm=TRUE),digits=1),
