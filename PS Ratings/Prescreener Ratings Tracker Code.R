@@ -6,7 +6,6 @@ last_four <- read_csv("PSLast4Weeks.csv") %>%
   remove_empty_rows() %>%
   mutate(time_period = "Last Four Weeks")
 
-
 last_week <- read_csv("PSLastWeek.csv") %>%
   remove_empty_rows() %>%
   mutate(time_period = "Last Week")
