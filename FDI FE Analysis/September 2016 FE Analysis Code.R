@@ -67,24 +67,22 @@ fyi_report <- read_csv("fyireport.csv")%>%
   clean_names()
 pip_report <- read_csv("pipreport.csv") %>%
   clean_names()
+june_2016_crosswalk <- read_csv("cohort_27_crosswalk.csv") %>%
+  clean_names()
+all_fdi_2016 <- read_csv("cohort27_fdi.csv") %>%
+  clean_names() 
+coach_ratings <- read_csv("coachratings.csv") %>%
+  clean_names()
+lead_coach_survey <- read_csv("lead_coach_survey.csv") %>%
+  clean_names()
 
+lead_coach_survey <- lead_coach_survey[, !(colnames(lead_coach_survey) %in% c("respondentid","collectorid","startdate", "enddate", "ip_address", "custom_data"))]
+
+coach_ratings <- coach_ratings %>%
+  rename(coachname=name)
 # Filter out Cohort 27 observations for "which cohort" column in all FDI datasets, add to sep dataset for comparison, then keep only Cohort 28 observations in all dataframe, complete cases as well
 #checked against original excel files, all have correct number of cases
 #before joining all fdi datasets together, need to create a column in each fdi dataset that signifies the university
-bc_fdi_2016<-filter(bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") 
-bc_fdi_2016<-filter(bc_fdi_2016, status ==  "Complete") %>%
-  mutate(university="BC")
-
-city_fdi_2016<-filter(city_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") 
-city_fdi_2016<-filter(city_fdi_2016, status ==  "Complete") %>%
-  mutate(university="City")
-
-pace_fdi_2016<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") 
-pace_fdi_2016<-filter(pace_fdi_2016, status ==  "Complete") %>%
-  mutate(university="Pace")
-
-all_fdi_2016 <- rbind(pace_fdi_2016, city_fdi_2016)
-all_fdi_2016 <- rbind(all_fdi_2016, bc_fdi_2016)
 
 bc_fdi<-filter(bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28") 
 bc_fdi<-filter(bc_fdi, status ==  "Complete") %>%
@@ -107,6 +105,22 @@ names(all_fdi)[names(all_fdi) == "please_select_the_cohort_28_fellow_id_that_cor
 names(fellow_code_crosswalk)[names(fellow_code_crosswalk) == "six_digit_id"] <- "fellow_id"
 all_fdi <- left_join (all_fdi, fellow_code_crosswalk, by = "fellow_id")
 names(all_fdi)[names(all_fdi) == "app_user_id"] <- "tt2id"
+names(principal_survey_data)[names(principal_survey_data) == "please_enter_the_5_character_code_for_the_fellow_in_the_email_you_received_from_our_office"] <- "fellow_id"
+principal_survey_data <- left_join(principal_survey_data, fellow_code_crosswalk, by="fellow_id")
+
+all_fdi_2016 <- all_fdi_2016 %>%  
+  rename(fellow_id = c27id,
+         university = uni)
+
+june_2016_pst_ratings <- june_2016_pst_ratings %>%  
+  rename(tt2id = tt2_id)
+all_2016_fellow_data <- left_join(june_2016_pst_ratings, all_fdi_2016)
+all_2016_fellow_data <-filter(all_2016_fellow_data, `current_status` ==  "Enrolled")
+all_2016_fellow_data <- all_2016_fellow_data %>% drop_na(current_summative_score)
+all_2016_fellow_data <-filter (all_2016_fellow_data, `current_summative_score` !=  "Not all ratings have been entered")
+all_2016_fellow_data <- all_2016_fellow_data %>%
+  filter(!is.na(fellow_id))
+
 #all_fdi now includes school code and appid from fellow_code_crosswalk, no missing cases, all have appid
 
 #remove columns that include survey access data (keep school DBN column to confirm it is the same school, but reference School Code, as this column follows the 00X000 format)
@@ -141,32 +155,6 @@ all_fdi <- all_fdi %>%
 ## can also rename columns when selecting them [select(new_name = old_name)]
 ## read_csv(aasdfasdfhjaksdf, col_names =
 
-# names(all_fdi)[names(all_fdi) == "1a: :Please record your observation rating for component 1a: Demonstrating Knowledge of Content and Pedagogy."] <- "mar_dom1a"
-# names(all_fdi)[names(all_fdi) == "1c::Please record your observation rating for component 1c: Setting Instructional Outcomes."] <- "mar_dom1c"
-# names(all_fdi)[names(all_fdi) == "1e::Please record your observation rating for component 1e: Designing Coherent Instruction."] <- "mar_dom1e"
-# names(all_fdi)[names(all_fdi) == "2b: :Please record your observation rating for component 2b: Establishing a Culture for Learning."] <- "mar_dom2b"
-# names(all_fdi)[names(all_fdi) == "2c::Please record your observation rating for component 2c: Managing Classroom Procedures."] <- "mar_dom2c" 
-# names(all_fdi)[names(all_fdi) == "2d::Please record your observation rating for component 2d: Managing Student Behavior."] <- "mar_dom2d"
-# names(all_fdi)[names(all_fdi) == "3b::Please record your observation rating for component 3b: Using Questioning and Discussion Techniques."] <- "mar_dom3b"
-# names(all_fdi)[names(all_fdi) == "3c::Please record your observation rating for component 3c: Engaging Students in Learning."] <- "mar_dom3c"
-# names(all_fdi)[names(all_fdi) == "3d::Please record your observation rating for component 3d: Using Assessment in Instruction."] <- "mar_dom3d"
-# names(all_fdi)[names(all_fdi) == "4a::Please record your observation rating for component 4a: Reflecting on Teaching."] <- "mar_dom4a"
-# names(all_fdi)[names(all_fdi) == "How effective do you believe this Fellow is compared to other teachers with similar experience (eg- first year Fellows compared to other first year teachers)?"] <- "effectiveness_compared_to_other_teachers"
-# names(all_fdi)[names(all_fdi) == "Comments for Domain 1"] <- "dom1_comments"
-# names(all_fdi)[names(all_fdi) == "Comments for Domain 2"] <- "dom2_comments"
-# names(all_fdi)[names(all_fdi) == "Comments for Domain 3"] <- "dom3_comments"
-# names(all_fdi)[names(all_fdi) == "Comments for Domain 4"] <- "dom4_comments"
-# names(all_fdi)[names(all_fdi) == "What is the Fellow's assigned university subject area? (Please select the subject they are training in at their university, NOT the subject they are teaching during this observation.)"] <- "fellow_subject_area" 
-# names(all_fdi)[names(all_fdi) == "What was the date of this observation?"] <- "observation_date"
-# names(all_fdi)[names(all_fdi) == "Please select your Field Consultant ID."] <- "field_consultant_id"
-# names(all_fdi)[names(all_fdi) == "Which cohort is this Fellow a member of?"] <- "cohort"
-# names(all_fdi)[names(all_fdi) == "Please enter the school DBN as a letter and 3-digit number (e.g. X232 or K021)"] <- "DBN" 
-# names(all_fdi)[names(all_fdi) == "CTT/ICT:If applicable, please identify the Special Education setting of the observed lesson. Select all applicable settings."] <- "cct_ict" 
-# names(all_fdi)[names(all_fdi) == "Self-contained:If applicable, please identify the Special Education setting of the observed lesson. Select all applicable settings."] <- "self_contained" 
-# names(all_fdi)[names(all_fdi) == "SETTS:If applicable, please identify the Special Education setting of the observed lesson. Select all applicable settings."] <- "setts"
-# names(all_fdi)[names(all_fdi) == "D75:If applicable, please identify the Special Education setting of the observed lesson. Select all applicable settings."] <- "d75"
-# names(all_fdi)[names(all_fdi) == "N/A:If applicable, please identify the Special Education setting of the observed lesson. Select all applicable settings."] <- "other_sped_setting"
-
 # #			ii. Ensure ratings (developing, effective, etc.) are strings
 # 1) Need to be numeric for LM
 # a) Could have sep vector for numeric rating for descriptive statistics 
@@ -180,6 +168,7 @@ end_of_pst_ratings_detail <- end_of_pst_ratings_detail %>%
   rename(tt2id = tt2_id)
 all_fellow_data <- left_join(final_pst_ratings, end_of_pst_ratings_detail, by = "tt2id")
 all_fellow_data <- left_join(all_fellow_data, all_fdi)
+all_fellow_data <- left_join(all_fellow_data, principal_survey_data)
 all_fellow_data <-filter(all_fellow_data, `currentstatus` ==  "Enrolled")
 all_fellow_data <- all_fellow_data %>% drop_na(currentsummativescore)
 all_fellow_data <-filter (all_fellow_data, `currentsummativescore` !=  "Not all ratings have been entered")
@@ -206,87 +195,17 @@ all_fellow_data$count_fyi[is.na(all_fellow_data$count_fyi)] <- 0
 all_fellow_data$rrpipdate8[is.na(all_fellow_data$rrpipdate8)] <- 0
 all_fellow_data$everybody_writes[all_fellow_data$everybody_writes == "NA"] <- 0
 
+all_fellow_data <- all_fellow_data %>%
+  rename(principal_effectiveness = how_does_this_teaching_fellow_u_0092_s_performance_compare_to_other_first_year_teachers_you_u_0092_ve_worked_with)
+
 #there are duplicates in the FYI report, as some Fellows received multiple FYIs
 all_fellow_data <- all_fellow_data %>%
   group_by(tt2id) %>%
   arrange(currentsummativescore) %>%
   slice(1) 
 
-# ratings_dist_dom1a <- all_fdi %>%
-#   group_by(mar_dom1a) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom1a, percent, count) # choose and reorder columns 
-# 
-# ratings_dist_dom1c <- all_fdi %>%
-#   group_by(mar_dom1c) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom1c, percent, count) # choose and reorder columns 
-# 
-# ratings_dist_dom1e <- all_fdi %>%
-#   group_by(mar_dom1e) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom1e, percent, count) # choose and reorder columns 
-# 
-# ratings_dist_dom2b <- all_fdi %>%
-#   group_by(mar_dom2b) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom2b, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom2c <- all_fdi %>%
-#   group_by(mar_dom2c) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom2c, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom2d <- all_fdi %>%
-#   group_by(mar_dom2d) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom2d, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom3b <- all_fdi %>%
-#   group_by(mar_dom3b) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom3b, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom3c <- all_fdi %>%
-#   group_by(mar_dom3c) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom3c, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom3d <- all_fdi %>%
-#   group_by(mar_dom3d) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom3d, percent, count) # choose and reorder columns
-# 
-# ratings_dist_dom4a <- all_fdi %>%
-#   group_by(mar_dom4a) %>%
-#   summarize(count = n()) %>%
-#   mutate(percent = count / sum(count)*100) %>%
-#   select(mar_dom4a, percent, count) # choose and reorder columns
-
-
 tabyl(all_fdi$mar_dom1a)
 
-ratings_dist_effectiveness <- all_fellow_data %>%
-  group_by(effectiveness) %>%
-  summarize(count = n()) %>%
-  mutate(percent = count / sum(count)*100) %>%
-  select(effectiveness, percent, count) # choose and reorder columns
-
-
-ratings_dist_effectiveness_2016 <- all_fdi_2016 %>%
-  group_by(how_effective_do_you_believe_this_fellow_is_compared_to_other_teachers_with_similar_experience_eg_first_year_fellows_compared_to_other_first_year_teachers) %>%
-  summarize(count = n()) %>%
-  mutate(percent = count / sum(count)*100) %>%
-  select(how_effective_do_you_believe_this_fellow_is_compared_to_other_teachers_with_similar_experience_eg_first_year_fellows_compared_to_other_first_year_teachers, percent, count) # choose and reorder columns
 
 #distribution of final summative PST scores
 all_fellow_data$currentsummativescore <- as.numeric(as.character(all_fellow_data$currentsummativescore))
@@ -311,7 +230,20 @@ all_fellow_data[all_fellow_data== "Top 10%"] <- 4
 all_fellow_data[all_fellow_data== "Above Average"] <- 3
 all_fellow_data[all_fellow_data== "Average"] <- 2
 all_fellow_data[all_fellow_data== "Below Average"] <- 1
+all_fellow_data[all_fellow_data== "Bottom 10%"] <- 0
 
+all_2016_fellow_data[all_2016_fellow_data== "Highly Effective"] <- 6
+all_2016_fellow_data[all_2016_fellow_data=="Effective+"] <- 5
+all_2016_fellow_data[all_2016_fellow_data== "Effective"] <- 4
+all_2016_fellow_data[all_2016_fellow_data== "Developing+"] <- 3
+all_2016_fellow_data[all_2016_fellow_data== "Developing"] <- 2
+all_2016_fellow_data[all_2016_fellow_data== "Ineffective"] <- 1
+
+all_2016_fellow_data[all_2016_fellow_data== "Top 10%"] <- 4
+all_2016_fellow_data[all_2016_fellow_data== "Above Average"] <- 3
+all_2016_fellow_data[all_2016_fellow_data== "Average"] <- 2
+all_2016_fellow_data[all_2016_fellow_data== "Below Average"] <- 1
+all_fellow_data[all_fellow_data== "Bottom 10%"] <- 0
 
 #mutate_each or mutate_at or mutate_which to change them all at once (specify each or starts with)
 all_fellow_data$effectiveness <- as.numeric(as.character(all_fellow_data$effectiveness))
@@ -344,19 +276,16 @@ all_fellow_data$stretch_it <- as.numeric(as.character(all_fellow_data$stretch_it
 all_fellow_data$control_the_game<- as.numeric(as.character(all_fellow_data$control_the_game))
 all_fellow_data$everybody_writes <- as.numeric(as.character(all_fellow_data$everybody_writes))
 all_fellow_data$non_anchor_highest_formal_average <- as.numeric(as.character(all_fellow_data$non_anchor_highest_formal_average))
+all_fellow_data$principal_effectiveness <- as.numeric(as.character(all_fellow_data$principal_effectiveness))
+
 
 all_fellow_data <- all_fellow_data %>%
-  mutate(growth_week2 = round2 - round1)
+  mutate(growth_total = round((currentsummativescore - round1), digits = 1), 
+        growth_week3 = round((round3 - round2), digits = 1), 
+        growth_week2 = round((round2 - round1), digits = 1))
 
-all_fellow_data <- all_fellow_data %>%
-  mutate(growth_week3 = round3 - round2)
+all_2016_fellow_data$oct_rel_effect <- as.numeric(as.character(all_2016_fellow_data$oct_rel_effect))
 
-all_fellow_data <- all_fellow_data %>%
-  mutate(growth_total = currentsummativescore - round1) 
-  
-all_fellow_data$growth_total <- round(all_fellow_data$growth_total, digits=1)
-all_fellow_data$growth_week2 <- round(all_fellow_data$growth_week2, digits=1)
-all_fellow_data$growth_week3 <- round(all_fellow_data$growth_week3, digits=1)
 
 
 #create PST quartile variable
@@ -393,6 +322,30 @@ pst_effectiveness <- all_fellow_data %>%
 pst_quartile_effectiveness_anova <- aov(all_fellow_data$effectiveness ~ all_fellow_data$pst_quartile)
 summary(pst_quartile_effectiveness_anova)
 
+#same for june 2016
+pst_bottom_2016 <-quantile(all_2016_fellow_data$current_summative_score, .25, na.rm = TRUE)
+pst_median_2016 <-quantile(all_2016_fellow_data$current_summative_score, .50, na.rm = TRUE)
+pst_top_2016 <- quantile(all_2016_fellow_data$current_summative_score, .75, na.rm = TRUE)
+
+all_2016_fellow_data <- all_2016_fellow_data %>%
+  mutate(pst_quartile = ifelse(current_summative_score > pst_top_2016, 4,
+                               ifelse(current_summative_score > pst_median_2016, 3,
+                                      ifelse(current_summative_score > pst_bottom_2016, 2, 1))))
+
+pst_quartile_2016_effectiveness <- all_2016_fellow_data %>%
+  group_by(pst_quartile) %>%
+  summarise(mean_effectiveness = mean(oct_rel_effect, na.rm = TRUE))
+
+pst_effectiveness_2016 <- all_2016_fellow_data %>%
+  group_by(oct_rel_effect) %>%
+  drop_na(oct_rel_effect) %>%
+  summarise(mean_pst_rating = mean(current_summative_score, na.rm = TRUE))
+
+pst_quartile_effectiveness_anova_2016 <- aov(all_2016_fellow_data$oct_rel_effect ~ all_2016_fellow_data$pst_quartile)
+summary(pst_quartile_effectiveness_anova_2016)
+
+
+
 ##group ratings by university
 ##group ratings by field consultant
 ##group ratings by training academy
@@ -428,7 +381,6 @@ ggplot(all_fellow_data, aes(x = effectiveness, y = currentsummativescore)) +
   labs(x = "FDI Effectiveness", y = "Final PST Score") 
 
 
-
 #fdi_effectiveness_and_final_pst_score <- lm(all_fdi$effectiveness ~ final_pst_ratings$finalsummativescore)
 #I need to pull all numeric variables into a sep dataframe that I want to run correlations on. 
 #Then, I run the cor, save it as an object, and use corrplot on that
@@ -453,90 +405,151 @@ cor.mtest <- function(mat, conf.level = 0.95){
 
 #look at p.mat = res1[[1]]
 #pull all variables I will need for corr, convert to numeric, add to one dataset for corrplot
-for_cor <- all_fellow_data %>%
+overall_cor <- all_fellow_data %>%
   ungroup() %>%
   select (effectiveness, currentsummativescore, round1, round2, round3, anchortechaveragehighestfor, nonanchortechniqueaverage, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a, growth_total, growth_week2, growth_week3, pst_quartile) 
-#for_cor <- for_cor[, !(colnames(for_cor) %in% c("tt2id"))] 
-for_cor <- for_cor %>% drop_na(effectiveness, currentsummativescore, round1, round2, round3, anchortechaveragehighestfor, nonanchortechniqueaverage, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a, growth_total, growth_week2, growth_week3)
-cortest <- cor(for_cor)
-corrplot1 <- corrplot(cortest, method="number")
-res1 <- cor.mtest(for_cor,0.95)
-res2 <- cor.mtest(for_cor,0.99)
-corrplot1 <- corrplot(cortest, p.mat = res1[[1]], sig.level=0.05, method="number")
-corrplot1.1 <- corrplot(cortest, p.mat = res1[[1]], insig="p-value", method="number")
+overall_cor <- overall_cor %>% drop_na(effectiveness, currentsummativescore, round1, round2, round3, anchortechaveragehighestfor, nonanchortechniqueaverage, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a, growth_total, growth_week2, growth_week3)
+overall_corplot1 <- corrplot(cor(overall_cor), 
+                      p.mat = cor.mtest(overall_cor,0.95)[[1]], 
+                      sig.level=0.05, 
+                      method="number")
+overall_corplot2 <- corrplot(cor(overall_cor), 
+                      p.mat = cor.mtest(overall_cor,0.95)[[1]], 
+                      insig="p-value", 
+                      method="number")
+
 ##sig level shows black x over insignificant values
 ##insig="blank" leaves blank boxes for values that are not sig at .05 level
 ##insig="p-value" shows p value superimposed over correlation coefficient (if greater than .05)
 ##i like sig level, bc you can still see the corr coefficient 
 
-for_cor2 <- all_fellow_data %>%
+domain_cor <- all_fellow_data %>%
   ungroup() %>%
   select (effectiveness, currentsummativescore, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-#for_cor2 <- for_cor2[, !(colnames(for_cor2) %in% c("tt2id"))] 
-for_cor2 <- for_cor2 %>%drop_na(effectiveness, currentsummativescore, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a) 
-res1.2 <- cor.mtest(for_cor2,0.95)
-cortest2 <- cor(for_cor2)
-corrplot2 <- corrplot(cortest2, p.mat = res1.2[[1]], insig="p-value", method="number")
+domain_cor <- domain_cor %>%drop_na(effectiveness, currentsummativescore, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a) 
+domain_corplot1 <- corrplot(cor(domain_cor), 
+                             p.mat = cor.mtest(domain_cor,0.95)[[1]], 
+                             sig.level=0.05, 
+                             method="number")
+domain_corplot2 <- corrplot(cor(domain_cor), 
+                            p.mat = cor.mtest(domain_cor,0.95)[[1]], 
+                            insig="p-value", 
+                            method="number")
 
-for_cor3 <- all_fellow_data %>%
+
+fyi_pip_cor <- all_fellow_data %>%
   ungroup() %>%
   select (effectiveness, currentsummativescore, count_fyi, rrpipsubmitted11, anchortechaveragehighestfor, nonanchortechniqueaverage) 
-for_cor3 <- for_cor3[, !(colnames(for_cor3) %in% c("tt2id"))] 
-cortest3 <- cor(for_cor3)
-res1.3 <- cor.mtest(for_cor3,0.95)
-corrplot3 <- corrplot(cortest3, p.mat = res1.3[[1]], insig="blank", method="number")
-corrplot3.1 <- corrplot(cortest3, p.mat = res1.3[[1]], sig.level =0.05, method="number")
-corrplot3.2 <- corrplot(cortest3, p.mat = res1.3[[1]], insig="p-value", method="number")
+fyi_pip_cor <- fyi_pip_cor %>%drop_na(effectiveness, currentsummativescore, count_fyi, rrpipsubmitted11, anchortechaveragehighestfor, nonanchortechniqueaverage) 
+fyi_pip_corplot1 <- corrplot(cor(fyi_pip_cor), 
+                            p.mat = cor.mtest(fyi_pip_cor,0.95)[[1]], 
+                            sig.level=0.05, 
+                            method="number")
+fyi_pip_corplot2 <- corrplot(cor(fyi_pip_cor), 
+                             p.mat = cor.mtest(fyi_pip_cor,0.95)[[1]], 
+                             insig="p-value", 
+                             method="number")
+fyi_pip_corplot3 <- corrplot(cor(fyi_pip_cor), 
+                             p.mat = cor.mtest(fyi_pip_cor,0.95)[[1]], 
+                             insig="blank", 
+                             method="number")
 
-for_cor4 <- all_fellow_data %>%
+pst_indicators_cor <- all_fellow_data %>%
   ungroup() %>%
   select (x100percent, what_to_do, strong_voice, positive_framing, anchor_highest_formal_average, engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes, non_anchor_highest_formal_average, effectiveness, currentsummativescore) 
-#for_cor4 <- for_cor4[, !(colnames(for_cor4) %in% c("tt2id"))] 
-cortest4 <- cor(for_cor4)
-res1.4 <- cor.mtest(for_cor4,0.95)
-corrplot4 <- corrplot(cortest4, p.mat = res1.4[[1]], insig="blank", method="number")
-corrplot4.1 <- corrplot(cortest4, p.mat = res1.4[[1]], sig.level =0.05, method="number")
-corrplot4.2 <- corrplot(cortest4, p.mat = res1.4[[1]], insig="p-value", method="number")
+pst_indicators_cor <- pst_indicators_cor %>%drop_na(x100percent, what_to_do, strong_voice, positive_framing, anchor_highest_formal_average, engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes, non_anchor_highest_formal_average, effectiveness, currentsummativescore) 
+pst_indicators_corplot1 <- corrplot(cor(pst_indicators_cor), 
+                             p.mat = cor.mtest(pst_indicators_cor,0.95)[[1]], 
+                             sig.level=0.05, 
+                             method="number")
+pst_indicators_corplot2 <- corrplot(cor(pst_indicators_cor), 
+                             p.mat = cor.mtest(pst_indicators_cor,0.95)[[1]], 
+                             insig="p-value", 
+                             method="number")
+pst_indicators_corplot3 <- corrplot(cor(pst_indicators_cor), 
+                             p.mat = cor.mtest(pst_indicators_cor,0.95)[[1]], 
+                             insig="blank", 
+                             method="number")
 
-for_cor5 <- all_fellow_data %>%
+pst_2016_cor <- all_2016_fellow_data %>%
+  ungroup() %>%
+  select (anchor_technique_average, non_anchor_technique_average,current_summative_score, oct_rel_effect, pst_quartile) 
+pst_2016_cor <- pst_2016_cor %>%drop_na(anchor_technique_average, non_anchor_technique_average,current_summative_score, oct_rel_effect, pst_quartile) 
+pst_2016_corplot1 <- corrplot(cor(pst_2016_cor), 
+                                    p.mat = cor.mtest(pst_2016_cor,0.95)[[1]], 
+                                    sig.level=0.05, 
+                                    method="number")
+
+
+rounds_cor <- all_fellow_data %>%
   ungroup() %>%
   select (anchor_highest_formal_average, non_anchor_highest_formal_average, round1, round2, round3, effectiveness, currentsummativescore) 
-for_cor5 <- for_cor5[, !(colnames(for_cor5) %in% c("tt2id"))] 
-cortest5 <- cor(for_cor5)
-res1.5 <- cor.mtest(for_cor5,0.95)
-corrplot5 <- corrplot(cortest5, p.mat = res1.5[[1]], insig="blank", method="number")
-corrplot5.1 <- corrplot(cortest5, p.mat = res1.5[[1]], sig.level =0.05, method="number")
-corrplot5.2 <- corrplot(cortest5, p.mat = res1.5[[1]], insig="p-value", method="number")
+rounds_cor <- rounds_cor %>%drop_na(anchor_highest_formal_average, non_anchor_highest_formal_average, round1, round2, round3, effectiveness, currentsummativescore) 
+rounds_corplot1 <- corrplot(cor(rounds_cor), 
+                                    p.mat = cor.mtest(rounds_cor,0.95)[[1]], 
+                                    sig.level=0.05, 
+                                    method="number")
+rounds_corplot2 <- corrplot(cor(rounds_cor), 
+                                    p.mat = cor.mtest(rounds_cor,0.95)[[1]], 
+                                    insig="p-value", 
+                                    method="number")
+rounds_corplot3 <- corrplot(cor(rounds_cor), 
+                                    p.mat = cor.mtest(rounds_cor,0.95)[[1]], 
+                                    insig="blank", 
+                                    method="number")
 
-for_cor6 <- all_fellow_data %>%
+indicators_domains_cor <- all_fellow_data %>%
   ungroup() %>%
   select (x100percent, what_to_do, strong_voice, positive_framing, engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes,  mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-for_cor6 <- for_cor6 %>% drop_na(x100percent, what_to_do, strong_voice, positive_framing, engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes,  mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-cortest6 <- cor(for_cor6)
-res1.6 <- cor.mtest(for_cor6,0.95)
-corrplot6 <- corrplot(cortest6, p.mat = res1.6[[1]], insig="blank", method="number")
-corrplot6.1 <- corrplot(cortest6, p.mat = res1.6[[1]], sig.level =0.05, method="number")
-corrplot6.2 <- corrplot(cortest6, p.mat = res1.6[[1]], insig="p-value", method="number")
+indicators_domains_cor <- indicators_domains_cor %>%drop_na(x100percent, what_to_do, strong_voice, positive_framing, engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes,  mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
+indicators_domains_corplot1 <- corrplot(cor(indicators_domains_cor), 
+                            p.mat = cor.mtest(indicators_domains_cor,0.95)[[1]], 
+                            sig.level=0.05, 
+                            method="number")
+indicators_domains_corplot2 <- corrplot(cor(indicators_domains_cor), 
+                            p.mat = cor.mtest(indicators_domains_cor,0.95)[[1]], 
+                            insig="p-value", 
+                            method="number")
+indicators_domains_corplot3 <- corrplot(cor(indicators_domains_cor), 
+                            p.mat = cor.mtest(indicators_domains_cor,0.95)[[1]], 
+                            insig="blank", 
+                            method="number")
 
 for_cor_non_anchor <- all_fellow_data %>%
   ungroup() %>%
   select (engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes,  mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
 for_cor_non_anchor <- for_cor_non_anchor %>% drop_na(engineer_efficiency, strong_start, cold_call, stretch_it, control_the_game, everybody_writes,  mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-cortest_non_anchor <- cor(for_cor_non_anchor)
-res_non <- cor.mtest(for_cor_non_anchor,0.95)
-corrplot_non_anchor <- corrplot(cortest_non_anchor, p.mat = res_non[[1]], insig="blank", method="number")
-corrplot_non_anchor.1 <- corrplot(cortest_non_anchor, p.mat = res_non[[1]], sig.level =0.05, method="number")
-corrplot_non_anchor.2 <- corrplot(cortest_non_anchor, p.mat = res_non[[1]], insig="p-value", method="number")
+
+non_anchor_corplot1 <- corrplot(cor(for_cor_non_anchor), 
+                                        p.mat = cor.mtest(for_cor_non_anchor,0.95)[[1]], 
+                                        sig.level=0.05, 
+                                        method="number")
+non_anchor_corplot2 <- corrplot(cor(for_cor_non_anchor), 
+                                        p.mat = cor.mtest(for_cor_non_anchor,0.95)[[1]], 
+                                        insig="p-value", 
+                                        method="number")
+non_anchor_corplot3 <- corrplot(cor(for_cor_non_anchor), 
+                                        p.mat = cor.mtest(for_cor_non_anchor,0.95)[[1]], 
+                                        insig="blank", 
+                                        method="number")
 
 for_cor_anchor <- all_fellow_data %>%
   ungroup() %>%
   select (x100percent, what_to_do, strong_voice, positive_framing, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
 for_cor_anchor <- for_cor_anchor %>% drop_na(x100percent, what_to_do, strong_voice, positive_framing, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-cortest_anchor <- cor(for_cor_anchor)
-res_anchor <- cor.mtest(for_cor_anchor,0.95)
-corrplot_anchor <- corrplot(cortest_anchor, p.mat = res_anchor[[1]], insig="blank", method="number")
-corrplot_anchor.1 <- corrplot(cortest_anchor, p.mat = res_anchor[[1]], sig.level =0.05, method="number")
-corrplot_anchor.2 <- corrplot(cortest_anchor, p.mat = res_anchor[[1]], insig="p-value", method="number")
+anchor_corplot1 <- corrplot(cor(for_cor_anchor), 
+                                p.mat = cor.mtest(for_cor_anchor,0.95)[[1]], 
+                                sig.level=0.05, 
+                                method="number")
+anchor_corplot2 <- corrplot(cor(for_cor_anchor), 
+                                p.mat = cor.mtest(for_cor_anchor,0.95)[[1]], 
+                                insig="p-value", 
+                                method="number")
+anchor_corplot3 <- corrplot(cor(for_cor_anchor), 
+                                p.mat = cor.mtest(for_cor_anchor,0.95)[[1]], 
+                                insig="blank", 
+                                method="number")
+
 
 # for_cor_anchor_2 <- all_fellow_data %>%
 #   ungroup() %>%
@@ -547,7 +560,24 @@ corrplot_anchor.2 <- corrplot(cortest_anchor, p.mat = res_anchor[[1]], insig="p-
 # corrplot_anchor.1_2 <- corrplot(cortest_anchor_2, sig.level =0.05, method="number")
 # corrplot_anchor.2_2 <- corrplot(cortest_anchor_2, insig="p-value", method="number")
 
+coach_ratings <- coach_ratings %>%
+  select(coachname, level, returner) %>%
+  filter(!is.na(coachname))
 
+#change last, first to first last name
+coach_ratings$coachname <- sub("(\\w+),\\s(\\w+)","\\2 \\1", coach_ratings$coachname)
+
+coach_ratings$coachname[coach_ratings$coachname=="Lori Lowe-Ann"] <- "Lori-Ann Lowe"
+coach_ratings$coachname[coach_ratings$coachname=="Ravit-Lauren Franceskin"] <- "Lauren Ravit-Franceskin"
+
+coach_ratings$level[coach_ratings$level=="Green"] <- 3
+coach_ratings$level[coach_ratings$level=="Yellow"] <- 2
+coach_ratings$level[coach_ratings$level=="Red"] <- 1
+
+all_fellow_data <- left_join(all_fellow_data, coach_ratings)
+all_fellow_data <- all_fellow_data[, !(colnames(all_fellow_data) %in% c("coach_name.x","curret_status.x","enrollee_name.x", "training_academy.x"))]
+
+all_fellow_data$level <- as.numeric(as.character(all_fellow_data$level))
 
 #break out D75 as a group
 d75 <-filter(all_fellow_data, d75 ==  "D75") 
@@ -568,6 +598,44 @@ effectiveness_dist_non_d75 <- non_d75 %>%
   mutate(percent = count / sum(count)) %>%
   select(effectiveness, percent, count) # choose and reorder columns 
 
+d75_by_coach <- d75 %>%
+  group_by(coachname, pst_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(coachname, pst_quartile, percent, count) %>%
+  slice(1)
+
+subject_area_pst <- all_fellow_data %>%
+  group_by(subject, currentsummativescore) %>%
+  summarise(count = n()) %>%
+  mutate(mean = mean(currentsummativescore)) %>%
+  select(subject, currentsummativescore, mean, count) # choose and reorder columns 
+
+subject_area_pst <- subject_area_pst %>%
+  group_by(subject) %>%
+  arrange(mean) %>%
+  slice(1) 
+
+subject_area_effectiveness <- all_fellow_data %>%
+  group_by(subject, effectiveness) %>%
+  summarise(count = n()) %>%
+  mutate(mean = mean(effectiveness)) %>%
+  select(subject, effectiveness, mean, count) 
+
+subject_area_effectiveness <- subject_area_effectiveness %>%
+  group_by(subject) %>%
+  arrange(mean) %>%
+  slice(1) 
+
+effectiveness_sa <- all_fellow_data %>%
+  group_by(effectiveness, subject) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  group_by(subject) %>%
+  mutate(percent_of_total = round((count/sum(count)*100), 2),
+         cumulative = round(cumsum(percent_of_total))) %>%
+  arrange(subject)
+
 ##need to group into PST ratings quartiles (do this after all datasets are joined)
 
 pst_ratings_dist_d75 <- d75 %>%
@@ -575,29 +643,39 @@ pst_ratings_dist_d75 <- d75 %>%
   summarise(count = n()) %>%
   mutate(percent = count / sum(count)) %>%
   select(currentsummativescore, percent, count) # choose and reorder columns 
+
+pst_ratings_dist_d75 <- d75 %>%
+  group_by(pst_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(pst_quartile, percent, count)
 #coretest_1 <- rcorr(as.matrix(all_fellow_data$effectiveness, all_fellow_data$currentsummativescore))
 
 pst_ratings_dist_non_d75 <- non_d75 %>%
-  group_by(currentsummativescore) %>%
+  group_by(pst_quartile) %>%
   summarise(count = n()) %>%
   mutate(percent = count / sum(count)) %>%
-  select(currentsummativescore, percent, count) # choose and reorder columns 
+  select(pst_quartile, percent, count) # choose and reorder columns 
 #coretest_1 <- rcorr(as.matrix(all_fellow_data$effectiveness, all_fellow_data$currentsummativescore))
 
 
 #group by TA (need to first group PST scores by quartile)
 training_academy_ratings_dist <- all_fellow_data %>%
-  group_by(trainingacademy, effectiveness, pst_quartile) %>%
+  group_by(coachname, mean_effectiveness, pst_quartile) %>%
   summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(trainingacademy, effectiveness, pst_quartile, percent, count) # choose and reorder columns 
+  select(coachname, mean_effectiveness, pst_quartile, count) %>%
+  slice(1)
 
+pst_quartile_effectiveness <- all_fellow_data %>%
+  group_by(coachname, pst_quartile) %>%
+  summarise(mean_effectiveness = mean(effectiveness, na.rm = TRUE))
 
 coach_ratings_dist <- all_fellow_data %>%
   group_by(coachname, pst_quartile) %>%
   summarise(count = n()) %>%
   mutate(mean = mean(pst_quartile)) %>%
-  select(coachname, pst_quartile, mean, count) # choose and reorder columns 
+  select(coachname, pst_quartile, mean, count) %>%
+  slice(1) 
 
 coach_effectiveness_dist <- all_fellow_data %>%
   group_by(coachname, effectiveness) %>%
@@ -618,16 +696,10 @@ pst_growth <- all_fellow_data %>%
   select(growth_total, pst_quartile, mean_growth, count) # choose and reorder columns 
 
 coach_ta_scores <- all_fellow_data %>%
-  group_by(coachname, trainingacademy, pst_quartile) %>%
+  group_by(coachname, effectiveness, pst_quartile, round1, round2, round3) %>%
   summarise(count = n()) %>%
   mutate(mean_pst = mean(pst_quartile)) %>%
-  select(coachname, trainingacademy, pst_quartile, mean_pst, count) # choose and reorder columns 
-
-coach_ta_scores <- coach_ta_scores %>%
-  select(coachname, mean_pst, trainingacademy) %>%
-  group_by(coachname) %>%
-  arrange(mean_pst) %>%
-  slice(1) 
+  select(coachname, effectiveness, pst_quartile, round1, round2, round3, mean_pst, count) # choose and reorder columns 
 
 coach_growth <- all_fellow_data %>%
   group_by(coachname, growth_total) %>%
@@ -641,19 +713,149 @@ fdi_by_ta <- all_fellow_data %>%
   mutate(mean_effectiveness = mean(effectiveness)) %>%
   select(trainingacademy, effectiveness, mean_effectiveness, count) # choose and reorder columns 
 
-fdi_by_ta <- fdi_by_ta %>%
+fdi_by_ta_2 <- fdi_by_ta %>%
   select(trainingacademy, effectiveness, mean_effectiveness) %>%
   group_by(trainingacademy) %>%
-  arrange(mean_effectiveness) %>%
+  arrange(mean_effectiveness)%>%
   slice(1) 
 
-for_cor_ta <- training_academy_ratings_dist %>%
+for_cor_ta <- coach_ta_scores %>%
   ungroup() %>%
-  select (effectiveness, pst_quartile)
-#for_cor_ta <- for_cor_anchor %>% drop_na(x100percent, what_to_do, strong_voice, positive_framing, mar_dom1a, mar_dom1c, mar_dom1e, mar_dom2b, mar_dom2c, mar_dom2d, mar_dom3b, mar_dom3c, mar_dom3d, mar_dom4a)
-cortest_ta <- cor(for_cor_ta)
-res_ta <- cor.mtest(for_cor_ta,0.95)
-corrplot_ta <- corrplot(cortest_ta, p.mat = res_ta[[1]], insig="blank", method="number")
-corrplot_ta.1<- corrplot(cortest_ta, p.mat = res_ta[[1]], sig.level =0.05, method="number")
-corrplot_ta.2 <- corrplot(cortest_ta, p.mat = res_ta[[1]], insig="p-value", method="number")
+  select (effectiveness, pst_quartile, round1, round2, round3)
+for_cor_ta <- for_cor_ta %>% drop_na(effectiveness, pst_quartile, round1, round2, round3)
+ta_corplot1 <- corrplot(cor(for_cor_ta), 
+                            p.mat = cor.mtest(for_cor_ta,0.95)[[1]], 
+                            sig.level=0.05, 
+                            method="number")
+ta_corplot2 <- corrplot(cor(for_cor_ta), 
+                            p.mat = cor.mtest(for_cor_ta,0.95)[[1]], 
+                            insig="p-value", 
+                            method="number")
+ta_corplot3 <- corrplot(cor(for_cor_ta), 
+                            p.mat = cor.mtest(for_cor_ta,0.95)[[1]], 
+                            insig="blank", 
+                            method="number")
+
 #compared to June 2016 ratings (current_summative_score)
+june_2016_pst_ratings %>%
+  summarise(meanpstscore = mean(current_summative_score, na.rm = TRUE))
+
+pst_2016_bottom <-quantile(june_2016_pst_ratings$current_summative_score, .25, na.rm = TRUE)
+pst_2016_median <-quantile(june_2016_pst_ratings$current_summative_score, .50, na.rm = TRUE)
+pst_2016_top <- quantile(june_2016_pst_ratings$current_summative_score, .75, na.rm = TRUE)
+
+june_2016_pst_ratings <- june_2016_pst_ratings %>%
+  mutate(pst_2016_quartile = ifelse(current_summative_score > pst_2016_top, 4,
+                               ifelse(current_summative_score > pst_2016_median, 3,
+                                      ifelse(current_summative_score > pst_2016_bottom, 2, 1))))
+
+pst_descriptives_2016 <- june_2016_pst_ratings %>%
+  drop_na(pst_2016_quartile) %>%
+  group_by(pst_2016_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(pst_2016_quartile, percent, count)
+
+all_fellow_data %>%
+  ungroup() %>%
+  summarise(meanpstscore = mean(currentsummativescore, na.rm = TRUE))
+
+pst_descriptives <- all_fellow_data %>%
+  drop_na(pst_quartile) %>%
+  group_by(pst_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(pst_quartile, percent, count)
+
+
+all_fellow_data %>%
+  mutate(fyi_range = ifelse(count_fyi >= 5, 3, ifelse(count_fyi >= 1, 2, 1))) %>%
+  group_by(effectiveness, fyi_range) %>%
+  summarise(count = n()) %>%
+  select(effectiveness, fyi_range, count)
+
+mean(all_fellow_data$anchortechaveragehighestfor)
+mean(all_fellow_data$nonanchortechniqueaverage)
+mean(all_2016_fellow_data$anchor_technique_average)
+mean(all_2016_fellow_data$non_anchor_technique_average)
+
+mean(all_fellow_data$round1)
+mean(all_fellow_data$round2)
+mean(all_fellow_data$round3)
+
+
+all_2016_fellow_data <- all_2016_fellow_data %>% drop_na(week_2_fe_diagnostic, week_3_fe, week_4_fe, week_5_fe_obs_1, week_5_fe_obs_2) 
+
+all_2016_fellow_data$week_2_fe_diagnostic <- as.numeric(as.character(all_2016_fellow_data$week_2_fe_diagnostic))
+all_2016_fellow_data$week_5_fe_obs_2 <- as.numeric(as.character(all_2016_fellow_data$week_5_fe_obs_2))
+
+mean(all_2016_fellow_data$week_2_fe_diagnostic) 
+mean(all_2016_fellow_data$week_3_fe) 
+mean(all_2016_fellow_data$week_4_fe) 
+mean(all_2016_fellow_data$week_5_fe_obs_1) 
+mean(all_2016_fellow_data$week_5_fe_obs_2) 
+
+
+for_cor_principal_survey <- all_fellow_data %>%
+  ungroup() %>%
+  select (level, effectiveness, pst_quartile, principal_effectiveness)
+for_cor_principal_survey <- for_cor_principal_survey %>% drop_na(level, effectiveness, pst_quartile, principal_effectiveness)
+principal_corplot1 <- corrplot(cor(for_cor_principal_survey), 
+                        p.mat = cor.mtest(for_cor_principal_survey,0.95)[[1]], 
+                        sig.level=0.05, 
+                        method="number")
+principal_corplot2 <- corrplot(cor(for_cor_principal_survey), 
+                        p.mat = cor.mtest(for_cor_principal_survey,0.95)[[1]], 
+                        insig="p-value", 
+                        method="number")
+principal_corplot3 <- corrplot(cor(for_cor_principal_survey), 
+                        p.mat = cor.mtest(for_cor_principal_survey,0.95)[[1]], 
+                        insig="blank", 
+                        method="number")
+
+principal_pst <- all_fellow_data %>%
+  group_by(principal_effectiveness, pst_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(principal_effectiveness, pst_quartile, percent) # choose and reorder columns 
+
+principal_fdi <- all_fellow_data %>%
+  group_by(principal_effectiveness, effectiveness) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(principal_effectiveness, effectiveness, percent) # choose and reorder columns 
+
+#look at principal survey planning and prep question
+
+coach_level_pst <- all_fellow_data %>%
+  group_by(level, pst_quartile) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(level, pst_quartile, percent)
+
+coach_level_fdi <- all_fellow_data %>%
+  group_by(level, effectiveness) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(level, effectiveness, percent)
+
+coach_level_principal <- all_fellow_data %>%
+  group_by(level, principal_effectiveness) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count)) %>%
+  select(level, principal_effectiveness, percent)
+
+coach_level_d75 <- all_fellow_data %>%
+  group_by(level, d75) %>%
+  drop_na(level) %>%
+  summarise(count = n()) %>%
+  select(level, d75, count)
+
+coach_returning_d75 <- all_fellow_data %>%
+  group_by(returner, d75, pst_quartile) %>%
+  summarise(count = n()) %>%
+  select(returner, d75, pst_quartile, count)
+
+mean(all_fellow_data$effectiveness)
+table(all_fellow_data$effectiveness)
+table(all_2016_fellow_data$oct_rel_effect)
