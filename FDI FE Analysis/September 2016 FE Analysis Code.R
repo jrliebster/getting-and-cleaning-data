@@ -342,7 +342,33 @@ all_fellow_data$control_the_game<- as.numeric(as.character(all_fellow_data$contr
 all_fellow_data$everybody_writes <- as.numeric(as.character(all_fellow_data$everybody_writes))
 all_fellow_data$non_anchor_highest_formal_average <- as.numeric(as.character(all_fellow_data$non_anchor_highest_formal_average))
 
+## RR Analysis 
+all_fellow_data <- all_fellow_data %>%
+  mutate(currentsummativescore = as.numeric(currentsummativescore))
 
+bot_q <- quantile(all_fellow_data$currentsummativescore, .25)
+top_q <- quantile(all_fellow_data$currentsummativescore, .75)
+
+all_fellow_data <- all_fellow_data %>%
+  mutate(pst_quartile = ifelse(currentsummativescore > top_q, "Top-Q",
+                               ifelse(currentsummativescore < bot_q, "Bottom-Q", "Middle-Qs")),
+         pst_quartile = factor(pst_quartile, levels = c("Bottom-Q", "Middle-Qs", "Top-Q")))
+
+pst_quartile_performance <- all_fellow_data %>%
+  group_by(pst_quartile) %>%
+  summarise(mar_dom1a = mean(mar_dom1a, na.rm = TRUE),
+            mar_dom1c = mean(mar_dom1c, na.rm = TRUE),
+            mar_dom1e = mean(mar_dom1e, na.rm = TRUE),
+            mar_dom2b = mean(mar_dom2b, na.rm = TRUE),
+            mar_dom2c = mean(mar_dom2c, na.rm = TRUE),
+            mar_dom2d = mean(mar_dom2d, na.rm = TRUE),
+            mar_dom3b = mean(mar_dom3b, na.rm = TRUE),
+            mar_dom3c = mean(mar_dom3c, na.rm = TRUE),
+            mar_dom3d = mean(mar_dom3d, na.rm = TRUE),
+            mar_dom4a = mean(mar_dom4a, na.rm = TRUE))
+            
+mar_dom1a_aov <- aov(pst_quartile_performance$mar_dom1a ~ pst_quartile_performance$pst_quartile)      
+summary(mar_dom1a_aov)
 
 # ggplot(all_fellow_data, aes(x = effectiveness, y = count)) +
 #   geom_point() +
