@@ -16,7 +16,7 @@
 library(pacman)
 p_load(readxl, readr, dplyr, janitor, tidyr, stringr, ggplot2)
 
-comprehensive <- read_csv("comprehensive.csv")
+comprehensive <- read_csv("BitBucket/nyctf/Schedule and Show/comprehensive.csv")
 
 #remove RRAppStatus60 that is anything before Invited to Initial Interview
 comprehensive<-comprehensive[ ! comprehensive$RRAppStatus60 %in% c("Account Created", "Prescreened In","Application Started","Eligibility Hold",  "Application Incomplete", "Application Submitted", "Ineligible", "Automated Ineligible", "Prescreened Out"), ]
@@ -83,6 +83,14 @@ initialscheduleshowcount14 <- comprehensive %>%
           no_show_initial = sum(RRScheduledaphoneinterview33 == "Yes" & RRPhoneinterviewed35 =="No", na.rm =TRUE)) %>%
   mutate(show_rate_initial14 = show_initial/(show_initial + no_show_initial))%>%
   mutate(schedule_rate_initial14 = scheduled_initial/invited_initial)
+
+interviewscheduleshowcount14 <- comprehensive %>%
+  filter(invitedtointerview14day==1) %>%
+  summarise(show_rate_interview14 = sum(RREverInterviewed41 == "Yes", na.rm = TRUE)/
+              sum(RRDatewhenscheduledinpersoninterview40 < (current_date - 2), na.rm = TRUE),
+            schedule_rate_interview14 = sum(RRScheduledaninpersoninterview39 == "Yes", na.rm = TRUE)/
+              sum(RREverinvitedtoSelectionDay37 == "Yes", na.rm = TRUE))
+
 
 interviewscheduleshowcount14 <- comprehensive %>%
   filter(invitedtointerview14day==1) %>%
