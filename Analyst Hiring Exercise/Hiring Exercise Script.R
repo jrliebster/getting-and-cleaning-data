@@ -33,12 +33,10 @@ math_proficiency <- student_scores %>%
   group_by(building_name) %>% 
   summarise(school_math_proficiency_percent = weighted.mean(percent_proficient, number_proficient))
 
-# DELETE AFTER REVIEW
+
 # Douglass Academy showing as NaN, as they had 0 students at levels 1/2
 math_proficiency$school_math_proficiency_percent[math_proficiency$school_math_proficiency_percent=="NaN"] <- "0"
 
-# math_proficiency$school_math_proficiency_percent <- as.numeric(as.character(math_proficiency$school_math_proficiency_percent))
-  
 # keep full list of schools in sep vector to complete part two, create new table for top 10  
 top_math_proficiency <- math_proficiency %>%
   arrange(desc(school_math_proficiency_percent)) %>%
