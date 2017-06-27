@@ -35,7 +35,7 @@ math_proficiency <- student_scores %>%
 
 
 # Douglass Academy showing as NaN, as they had 0 students at levels 1/2
-math_proficiency$school_math_proficiency_percent[math_proficiency$school_math_proficiency_percent=="NaN"] <- "0"
+math_proficiency$school_math_proficiency_percent[math_proficiency$school_math_proficiency_percent=="NaN"] <- 0
 
 # keep full list of schools in sep vector to complete part two, create new table for top 10  
 top_math_proficiency <- math_proficiency %>%
