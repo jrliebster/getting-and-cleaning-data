@@ -26,13 +26,20 @@ student_scores <- student_scores %>%
 
 # Part 1: Summarize the Student Scores data to show the percent of students who are proficient or higher in math at each school.   
   # a.	Populate a table showing the top ten schools in math proficiency along with their proficiency rates (percent of students scoring at proficient or higher). There should be one percentage per school that accounts for all students at the school.
+# need to filter for building and subject area
+# multiple grades for each school, need to calculate number proficient, add up and divide by total number tested
+
+
 math_proficiency <- student_scores %>% 
   filter(subject_name == "Mathematics", subgroup == "All Students") %>%
   select(building_name, subject_name, number_tested, percent_proficient) %>%
-  mutate(number_proficient = number_tested*percent_proficient) %>%
-  group_by(building_name) %>% 
-  summarise(school_math_proficiency_percent = weighted.mean(percent_proficient, number_proficient))
-
+    # round number_proficient, as there are no portions of students
+  mutate(number_proficient = round(number_tested*percent_proficient), digits=0) %>%
+  group_by(building_name) %>%
+    summarise(number_proficient = sum(number_proficient), 
+              number_tested = sum(number_tested),
+              school_math_proficiency_percent = (number_proficient/number_tested)*100)
+# summarise output only includes grouping variable and summarise variable
 
 # Douglass Academy showing as NaN, as they had 0 students at levels 1/2
 math_proficiency$school_math_proficiency_percent[math_proficiency$school_math_proficiency_percent=="NaN"] <- 0
@@ -40,10 +47,12 @@ math_proficiency$school_math_proficiency_percent[math_proficiency$school_math_pr
 # keep full list of schools in sep vector to complete part two, create new table for top 10  
 top_math_proficiency <- math_proficiency %>%
   arrange(desc(school_math_proficiency_percent)) %>%
+    select(building_name, school_math_proficiency_percent) %>%
   slice(1:10)
 
 bottom_math_proficiency <- math_proficiency %>%
   arrange((school_math_proficiency_percent)) %>%
+    select(building_name, school_math_proficiency_percent) %>%
   slice(1:10)
 
 write_csv(top_math_proficiency, "mathproficiency.csv")
@@ -68,7 +77,6 @@ math_proficiency$location[math_proficiency$location=="Carstens Elementary-Middle
 math_proficiency$location[math_proficiency$location=="All Buildings"] <- "Detroit City School District"
 
 math_and_effectiveness <- merge(math_proficiency, educator_effectiveness, by = "location") 
-math_and_effectiveness$school_math_proficiency_percent <- as.numeric(as.character(math_and_effectiveness$school_math_proficiency_percent))
 
 cor.mtest <- function(mat, conf.level = 0.95){
   mat <- as.matrix(mat)
