@@ -1077,32 +1077,26 @@ d75_by_coach <- d75 %>%
   group_by(coachname, pst_quartile) %>%
   summarise(count = n()) %>%
   mutate(percent = count / sum(count)) %>%
-  select(coachname, pst_quartile, count) %>%
-  slice(1)
+  select(coachname, pst_quartile, count) 
 
 subject_area_pst <- all_fellow_data %>%
-  group_by(subject, currentsummativescore) %>%
-  summarise(count = n()) %>%
-  mutate(mean = mean(currentsummativescore)) %>%
-  select(subject, mean) %>%
-  arrange(mean) %>%
-  slice(1) 
+    group_by(subject) %>%
+    summarise(mean = mean(currentsummativescore)) %>%
+    arrange(mean)
 
 subject_area_2016_pst <- all_2016_fellow_data %>%
-  group_by(oct_subject, current_summative_score) %>%
-  summarise(count = n()) %>%
-  mutate(mean = mean(current_summative_score)) %>%
-  select(oct_subject, mean) %>%
-  arrange(mean) %>%
-  slice(1) 
+  group_by(oct_subject) %>%
+  summarise(mean = mean(current_summative_score)) %>%
+  arrange(mean) 
+# where did the subject areas go? look into it!
+tabyl(all_2016_fellow_data$oct_subject)
 
 subject_area_effectiveness <- all_fellow_data %>%
   group_by(subject, dom2_dom3_avg) %>%
   summarise(count = n()) %>%
   mutate(mean = mean(dom2_dom3_avg)) %>%
   select(subject, dom2_dom3_avg, mean, count) %>%
-  arrange(mean) %>%
-  slice(1) 
+  arrange(mean) 
 
 #look at relationship between selection performance and FDI ratings
 selection_and_fdi <- all_fellow_data %>%

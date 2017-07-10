@@ -26,4 +26,7 @@ library(swirl)
 install_from_swirl("R Programming")
 swirl()
 
-
+specdata <- tempfile()
+download.file("hC:/Users/jules.liebster/Desktop/TNTP/NYCTF/R/Coursera/rprog%2Fdata%2Fspecdata.zip/specdata",specdata)
+data <- read.table(unz(specdata, "a1.dat"))
+unlink(specdata)
