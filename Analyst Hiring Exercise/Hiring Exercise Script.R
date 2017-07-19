@@ -15,7 +15,8 @@ educator_effectiveness <- read_csv ("EducatorEffectivenessSnapshot.csv", col_nam
   clean_names()
 
 # delete rows with missing data/values of less than 10
-student_scores <-filter (student_scores, number_tested !=  "< 10")
+student_scores <- filter(student_scores, number_tested !=  "< 10")
+# can this be streamlined? having trouble firguring out how to write it as one line using filter or drop_na
 educator_effectiveness <- educator_effectiveness %>%
   filter(!is.na(total))
 
@@ -29,7 +30,6 @@ student_scores <- student_scores %>%
 # need to filter for building and subject area
 # multiple grades for each school, need to calculate number proficient, add up and divide by total number tested
 
-
 math_proficiency <- student_scores %>% 
   filter(subject_name == "Mathematics", subgroup == "All Students") %>%
   select(building_name, subject_name, number_tested, percent_proficient) %>%
@@ -39,6 +39,15 @@ math_proficiency <- student_scores %>%
     summarise(number_proficient = sum(number_proficient), 
               number_tested = sum(number_tested),
               school_math_proficiency_percent = (number_proficient/number_tested)*100)
+
+# or could use weighted.mean()
+math_proficiency_weighted_mean <- student_scores %>% 
+    filter(subject_name == "Mathematics", subgroup == "All Students") %>%
+    select(building_name, subject_name, number_tested, percent_proficient) %>%
+    mutate(number_proficient = round(number_tested*percent_proficient), digits=0) %>%
+    group_by(building_name) %>%
+    summarise(school_math_proficiency_percent = weighted.mean(percent_proficient, number_tested)) 
+
 # summarise output only includes grouping variable and summarise variable
 
 # Douglass Academy showing as NaN, as they had 0 students at levels 1/2
@@ -50,6 +59,7 @@ top_math_proficiency <- math_proficiency %>%
     select(building_name, school_math_proficiency_percent) %>%
   slice(1:10)
 
+# bottom 10 to use as reference point for later evaluation of math proficiency and educator effectiveness
 bottom_math_proficiency <- math_proficiency %>%
   arrange((school_math_proficiency_percent)) %>%
     select(building_name, school_math_proficiency_percent) %>%
@@ -57,11 +67,9 @@ bottom_math_proficiency <- math_proficiency %>%
 
 write_csv(top_math_proficiency, "mathproficiency.csv")
 
-
 # Part 2:  Explore the relationship between math proficiency and educator effectiveness at the school level.
 # a.	Calculate the correlation between the percent of students at a school who are proficient in math (the result of Part 1) and the percent of educators at a school who are rated Effective or Highly Effective.  All schools in the Student Scores file should be used in this correlation.
 # b.	The client for this work is the district's Director of School Improvement.  Provide the Director with a brief (no more than a paragraph or two) interpretation of the result of this correlation. What did you find? What do you think the district can learn from this result?   
-
 
 # Ensure that every school on the Student Scores list has a match on the Educator Effectiveness Snapshot list
 # same number of observations when joined, with no missing data
@@ -104,6 +112,7 @@ math_and_effectiveness_corrplot <- corrplot(cor(math_and_effectiveness_corr),
                                 method="number")
 
 # alternatively, if just need corr coefficient and p-value, can use cor.test(math_and_effectiveness$school_math_proficiency_percent, math_and_effectiveness$effective_or_more_percent)
+cor.test(math_and_effectiveness$school_math_proficiency_percent, math_and_effectiveness$effective_or_more_percent)
 
 # visualize the relatinship between effectiveness and proficiency in a more straightforward way for client
 mod1 = lm(math_and_effectiveness$effective_or_more_percent ~ math_and_effectiveness$school_math_proficiency_percent) 
@@ -118,7 +127,6 @@ ggplot(math_and_effectiveness, aes(x = school_math_proficiency_percent, y = effe
 # check the mean, as well as number of teachers rated effective/highly effective to see the spread
 mean(math_and_effectiveness$effective_or_more_percent)
 
-
 # Part 3:  Examine the spread of educator ratings in the district. The district is interested in how the evaluation rating scale has been used in practice.
 # a.	Create a chart illustrating a main message that you see in the ratings data.  The audience for this chart is the Director of School Improvement. 
 # b.	Provide a short accompanying description for your chart.  What trend(s) do you notice and how might they be actionable for the district?
@@ -129,8 +137,8 @@ mean(math_and_effectiveness$effective_or_more_percent)
 
 district_ratings <- subset(educator_effectiveness, subset = location=="Detroit City School District")
 district_ratings <- district_ratings %>%
-  select(highly_effective, effective, minimally_effective, ineffective)
-district_ratings <- gather(district_ratings, rating, count, highly_effective:ineffective, factor_key=TRUE)
+  select(highly_effective, effective, minimally_effective, ineffective) %>%
+    gather(rating, count, highly_effective:ineffective, factor_key=TRUE)
 
 district_ratings_percent <- subset(educator_effectiveness, subset = location=="Detroit City School District") %>%
   select(highly_effective_percent, effective_percent, minimally_effective_percent, ineffective_percent)
