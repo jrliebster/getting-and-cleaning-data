@@ -10,8 +10,6 @@ p_load(readxl, readr, dplyr, janitor, tidyr, stringr, ggplot2, data.table, corrp
 # i. Ensure ratings (developing, effective, etc.) are strings
 # 1) Need to be numeric for LM
 # a) Could have sep vector for numeric rating for descriptive statistics 
-# 2) Can also get mode to show where distribution lies--MG never offers a specific average for FDI
-# a) Think about it more as a grading curve 
 # 3) Can also do ANOVA test for significance of relationship between a numeric and string variable 
 # 4. Join NHF and Vacancy List
 # a. keep only: NHF--jobID, effective date, employee ID, name, email, phone; Vacancy List--effective date, jobID, current location
@@ -22,7 +20,6 @@ p_load(readxl, readr, dplyr, janitor, tidyr, stringr, ggplot2, data.table, corrp
 # . All lowercase
 # . mar_dom1a, mar_dom2a, mar_dom3b for domains for FDI
 # TT2ID as unique id
-
 
 # load datasets----------------------------------------------------------------------------
     # those without year are September 2016, those with years are June 2016 cohort
@@ -115,7 +112,8 @@ lead_coach_survey <- lead_coach_survey %>%
 coach_ratings <- coach_ratings %>%
   rename(coachname=name)
 
-# Filter out Cohort 27 observations for "which cohort" column in all FDI datasets, add to sep dataset for comparison, then keep only Cohort 28 observations in all dataframe, complete cases as well
+# Filter out Cohort 27 observations for "which cohort" column in all FDI datasets--------------------------------------------------------------------------------------------------------
+# add to sep dataset for comparison, then keep only Cohort 28 observations in all dataframe, complete cases as well
 # checked against original excel files, all have correct number of cases
 # before joining all fdi datasets together, need to create a column in each fdi dataset that signifies the university
 bc_fdi_2016 <- filter (bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") 
@@ -145,7 +143,7 @@ pace_fdi<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 2
     filter(status ==  "Complete") %>%
     mutate(university="Pace")
 
-all_fdi_2016 <- all_fdi_2016[all_fdi_2016$uni %in% c("Pace University" , "City College", "Brooklyn College"),] 
+all_fdi_2016 <- filter(all_fdi_2016, uni %in% c("Pace University" , "City College", "Brooklyn College"))
 
 # join all fdi data together into one larger dataset using rbind (as all variables are same)----------------------------------------------------------------------------------------------
 # then join with crosswalk of Fellow codes to we have their appid (change variables to have same name first)
@@ -168,9 +166,9 @@ all_fdi_2016 <- all_fdi_2016 %>%
 june_2016_pst_ratings <- june_2016_pst_ratings %>%  
   rename(tt2id = tt2_id)
 all_2016_fellow_data <- left_join(june_2016_pst_ratings, all_fdi_2016)
-all_2016_fellow_data <-filter(all_2016_fellow_data, `current_status` ==  "Enrolled")
+all_2016_fellow_data <- filter(all_2016_fellow_data, `current_status` ==  "Enrolled")
 all_2016_fellow_data <- all_2016_fellow_data %>% drop_na(current_summative_score)
-all_2016_fellow_data <-filter (all_2016_fellow_data, `current_summative_score` !=  "Not all ratings have been entered")
+all_2016_fellow_data <- filter (all_2016_fellow_data, `current_summative_score` !=  "Not all ratings have been entered")
 all_2016_fellow_data <- all_2016_fellow_data %>%
   filter(!is.na(fellow_id))
 all_2016_fellow_data <- left_join(all_2016_fellow_data, selection_2016)
@@ -183,7 +181,7 @@ all_2016_fellow_data$oct_subject[is.na(all_2016_fellow_data$oct_subject)] <- "D7
 #remove comments columns!
 all_fdi <- all_fdi[, !(colnames(all_fdi) %in% c("referer","extended_referer","language", "sessionid", "user_agent", "extended_user_agent", "tags", "ip_address", "contact_id", "legacy_comments", "longitude", "latitude", "country", "city", "state_region", "postal", "time_started", "comments", "url_redirect", "please_select_the_cohort_27_fellow_id_that_corresponds_to_the_fellow_you_observed"))]
 
-#change fdi ratings column headings to match Megan's business rules
+#change fdi ratings column headings to match Megan's business rules---------------------------------------------------------------------
 all_fdi <- all_fdi %>%  
   rename(mar_dom1a = x1a_please_record_your_observation_rating_for_component_1a_demonstrating_knowledge_of_content_and_pedagogy, 
   mar_dom1c = x1c_please_record_your_observation_rating_for_component_1c_setting_instructional_outcomes, 
@@ -224,7 +222,7 @@ mar_fdi_2016 <- mar_fdi_2016 %>%
 
 mar_fdi_2016 <- filter(mar_fdi_2016, subject %in% c("ESL", "D75", "Special Education", "Special Education - D75"))
 
-## can also rename columns when selecting them [select(new_name = old_name)]
+## can also rename columns when selecting them [select(new_name = old_name)]---------------------------------------------------------------
 ## read_csv(aasdfasdfhjaksdf, col_names =
 
 # #			ii. Ensure ratings (developing, effective, etc.) are strings
@@ -241,9 +239,9 @@ end_of_pst_ratings_detail <- end_of_pst_ratings_detail %>%
 all_fellow_data <- left_join(final_pst_ratings, end_of_pst_ratings_detail, by = "tt2id")
 all_fellow_data <- left_join(all_fellow_data, all_fdi)
 all_fellow_data <- left_join(all_fellow_data, principal_survey_data)
-all_fellow_data <-filter(all_fellow_data, `currentstatus` ==  "Enrolled")
+all_fellow_data <- filter(all_fellow_data, `currentstatus` ==  "Enrolled")
 all_fellow_data <- all_fellow_data %>% drop_na(currentsummativescore)
-all_fellow_data <-filter (all_fellow_data, `currentsummativescore` !=  "Not all ratings have been entered")
+all_fellow_data <- filter (all_fellow_data, `currentsummativescore` !=  "Not all ratings have been entered")
 all_fellow_data <- all_fellow_data %>% drop_na(effectiveness)
 all_fellow_data <- left_join(all_fellow_data, selection, by = "tt2id") 
 
@@ -254,12 +252,14 @@ all_fellow_data <- all_fellow_data %>%
          
 technique_ratings <- technique_ratings %>%
   rename(tt2id = tt2_id)
+
 all_fellow_data <- left_join(all_fellow_data, technique_ratings, by = "tt2id")
 all_fellow_data[all_fellow_data == "Missing"] <- "NA"
 
 pip_report <- pip_report %>%
   rename(tt2id = rrappuserid3) %>%
   select(tt2id, rrpipsubmitted11, rrpipdate8)
+
 fyi_report <- fyi_report %>%
   rename(tt2id = rrappuserid1) %>%
   group_by(tt2id) %>%
@@ -273,7 +273,7 @@ all_fellow_data$count_fyi[is.na(all_fellow_data$count_fyi)] <- 0
 all_fellow_data$rrpipdate8[is.na(all_fellow_data$rrpipdate8)] <- 0
 all_fellow_data$everybody_writes[all_fellow_data$everybody_writes == "NA"] <- 0
 
-#use effectiveness rating compared to other first year teachers as measure of effectiveness on principal survey
+#use effectiveness rating compared to other first year teachers as measure of effectiveness on principal survey------------------------------------------------
 all_fellow_data <- all_fellow_data %>%
   rename(principal_effectiveness = how_does_this_teaching_fellow_u_0092_s_performance_compare_to_other_first_year_teachers_you_u_0092_ve_worked_with)
 
@@ -292,8 +292,7 @@ ggplot(all_fellow_data, aes(x = currentsummativescore)) +
   labs(title = "Distribution of Final PST Ratings") +
   theme_minimal()
 
-
-#for linear modeling, recode variables to numeric string
+#for linear modeling, recode variables to numeric string--------------------------------------------------------
 all_fellow_data[all_fellow_data== "Highly Effective"] <- 6
 all_fellow_data[all_fellow_data=="Effective+"] <- 5
 all_fellow_data[all_fellow_data== "Effective"] <- 4
@@ -346,7 +345,7 @@ mar_fdi_2016[mar_fdi_2016== "Average"] <- 2
 mar_fdi_2016[mar_fdi_2016== "Below Average"] <- 1
 mar_fdi_2016[mar_fdi_2016== "Bottom 10%"] <- 0
 
-# mutate_each or mutate_at or mutate_which to change them all at once (specify each or starts with/contains)
+# mutate_each or mutate_at or mutate_which to change them all at once (specify each or starts with/contains)---------------------------------------------
 all_fellow_data <- all_fellow_data %>% 
   mutate_at(vars(starts_with("mar")),funs(as.numeric)) %>%   
   mutate_at(vars(starts_with("round")),funs(as.numeric)) %>%
@@ -373,13 +372,7 @@ all_fellow_data <- all_fellow_data %>%
 
 all_2016_fellow_data$oct_rel_effect <- as.numeric(as.character(all_2016_fellow_data$oct_rel_effect))
 
-#create vector with just vacancy effective and create dates
-vacancy_effective <- vacancy_list %>%
-  select(eff_date, vacancy_create_date)
-
-#create PST quartile variable
-
-
+#create PST quartile variable--------------------------------------------------------------------------------------------
 #create variables that calculate the mean of sub-domains, then mean of all domains, and just domains 2 and 3
 all_fellow_data <- all_fellow_data %>% 
   rowwise() %>% 
@@ -440,10 +433,9 @@ pst_quartile_effectiveness_anova <- aov(all_fellow_data$dom2_dom3_avg ~ all_fell
 summary(pst_quartile_effectiveness_anova)
 confint(pst_quartile_effectiveness_anova) 
 
-
-#same for june 2016
-pst_bottom_2016 <-quantile(all_2016_fellow_data$current_summative_score, .25, na.rm = TRUE)
-pst_median_2016 <-quantile(all_2016_fellow_data$current_summative_score, .50, na.rm = TRUE)
+#now create pst score quartiles for june 2016 so I can compare performance between june 2016 and sept 2016 cohorts---------------------------------
+pst_bottom_2016 <- quantile(all_2016_fellow_data$current_summative_score, .25, na.rm = TRUE)
+pst_median_2016 <- quantile(all_2016_fellow_data$current_summative_score, .50, na.rm = TRUE)
 pst_top_2016 <- quantile(all_2016_fellow_data$current_summative_score, .75, na.rm = TRUE)
 
 all_2016_fellow_data <- all_2016_fellow_data %>%
@@ -462,42 +454,7 @@ pst_effectiveness_2016 <- all_2016_fellow_data %>%
 
 pst_quartile_effectiveness_anova_2016 <- aov(all_2016_fellow_data$oct_rel_effect ~ all_2016_fellow_data$pst_quartile)
 summary(pst_quartile_effectiveness_anova_2016)
-
-
-#plot relationships between FDI, PST, and principal effectiveness ratings
-mod1 = lm(all_fellow_data$observationaveragetodate ~ all_fellow_data$dom2_dom3_avg) 
-summary(mod1)
-ggplot(all_fellow_data, aes(x = observationaveragetodate, y = dom2_dom3_avg)) +
-  geom_point() +
-  geom_jitter(alpha = .3) +
-  geom_smooth(method = "lm", formula = y~x) +
-  labs(x = "PST Observation Score", y = "FDI Effectiveness") +
-  theme_light()
-
-#final PST summative scores as compared to FDI effectiveness ratings
-mod2 = lm(all_fellow_data$currentsummativescore ~ all_fellow_data$dom2_dom3_avg)
-summary(mod2)
-ggplot(all_fellow_data, aes(x = dom2_dom3_avg, y = currentsummativescore)) +
-  geom_point() +
-  geom_jitter(alpha = .3) +
-  geom_smooth(method = "lm", formula = y~x) +
-  labs(x = "FDI Effectiveness", y = "Final PST Score") 
-
-mod3 = lm(all_fellow_data$principal_effectiveness ~ all_fellow_data$dom2_dom3_avg)
-summary(mod3)
-ggplot(all_fellow_data, aes(x = dom2_dom3_avg, y = principal_effectiveness)) +
-  geom_point() +
-  geom_jitter(alpha = .3) +
-  geom_smooth(method = "lm", formula = y~x) +
-  labs(x = "FDI Effectiveness", y = "Principal Effectiveness") 
-
-mod4 = lm(all_fellow_data$principal_effectiveness ~ all_fellow_data$currentsummativescore)
-summary(mod4)
-ggplot(all_fellow_data, aes(x = currentsummativescore, y = principal_effectiveness)) +
-  geom_point() +
-  geom_jitter(alpha = .3) +
-  geom_smooth(method = "lm", formula = y~x) +
-  labs(x = "PST Score", y = "Principal Effectiveness") 
+pst_descriptives_2016 <- tabyl(all_2016_fellow_data, pst_quartile, show_na = FALSE)
 
 #correlation between relative effectiveness and average of all components in domain 1/2/3/4 (then just 2 and 3)
 #first need to calculate mean FDI domain and overall scores, then quartiles for scores
@@ -558,8 +515,12 @@ mar_fdi_2016 <- mar_fdi_2016 %>%
                                        ifelse(mar_dom2_dom3_avg > mar_dom23_median, 3,
                                               ifelse(mar_dom2_dom3_avg > mar_dom23_bottom, 2, 1))))
 
-#I need to pull all numeric variables into a sep dataframe that I want to run correlations on. 
+#I need to pull all numeric variables into a sep dataframe that I want to run correlations on-------------------------------------------------
 # Then, I run the cor, save it as an object, and use corrplot on that
+# sig level shows black x over insignificant values
+# insig="blank" leaves blank boxes for values that are not sig at .05 level
+# insig="p-value" shows p value superimposed over correlation coefficient (if greater than .05)
+# i like sig level, bc you can still see the corr coefficient 
 
 cor.mtest <- function(mat, conf.level = 0.95){
     mat <- as.matrix(mat)
@@ -588,7 +549,43 @@ all_2016_effectiveness_corplot1 <- corrplot(cor(all_2016_effectiveness),
                                             sig.level=0.05,
                                             method="number", na.rm=FALSE)
 
-#look at mean FDI scores
+#plot relationships between FDI, PST, and principal effectiveness ratings-------------------------------------------------------
+mod1 = lm(all_fellow_data$observationaveragetodate ~ all_fellow_data$dom2_dom3_avg) 
+summary(mod1)
+ggplot(all_fellow_data, aes(x = observationaveragetodate, y = dom2_dom3_avg)) +
+    geom_point() +
+    geom_jitter(alpha = .3) +
+    geom_smooth(method = "lm", formula = y~x) +
+    labs(x = "PST Observation Score", y = "FDI Effectiveness") +
+    theme_light()
+
+#final PST summative scores as compared to FDI effectiveness ratings
+mod2 = lm(all_fellow_data$currentsummativescore ~ all_fellow_data$dom2_dom3_avg)
+summary(mod2)
+ggplot(all_fellow_data, aes(x = dom2_dom3_avg, y = currentsummativescore)) +
+    geom_point() +
+    geom_jitter(alpha = .3) +
+    geom_smooth(method = "lm", formula = y~x) +
+    labs(x = "FDI Effectiveness", y = "Final PST Score") 
+
+mod3 = lm(all_fellow_data$principal_effectiveness ~ all_fellow_data$dom2_dom3_avg)
+summary(mod3)
+ggplot(all_fellow_data, aes(x = dom2_dom3_avg, y = principal_effectiveness)) +
+    geom_point() +
+    geom_jitter(alpha = .3) +
+    geom_smooth(method = "lm", formula = y~x) +
+    labs(x = "FDI Effectiveness", y = "Principal Effectiveness") 
+
+mod4 = lm(all_fellow_data$principal_effectiveness ~ all_fellow_data$currentsummativescore)
+summary(mod4)
+ggplot(all_fellow_data, aes(x = currentsummativescore, y = principal_effectiveness)) +
+    geom_point() +
+    geom_jitter(alpha = .3) +
+    geom_smooth(method = "lm", formula = y~x) +
+    labs(x = "PST Score", y = "Principal Effectiveness") 
+
+
+#look at mean FDI scores-----------------------------------------------------------------------
 mean(all_fellow_data$dom2_dom3_avg, trim = 0, na.rm = TRUE)
 mean(all_fellow_data$mar_dom1, trim = 0, na.rm = TRUE)
 mean(all_fellow_data$mar_dom2, trim = 0, na.rm = TRUE)
@@ -612,7 +609,7 @@ t.test(all_fellow_data$dom2_dom3_avg, all_2016_fellow_data$oct_dom2_dom3_avg)
 #no significant relationship between pst scores and FDI
 #positive relationship between principal survey ratigns and PST scores
 
-#internal client wants to see data cut a bunch of different ways, so need to save tables of descriptitives containing a variety of variables
+#internal client wants to see data cut a bunch of different ways, so need to save tables of descriptitives containing a variety of variables----------------------------------------
 #comparisons/relationships between
 #EOT observation ratings as well as summative PST score
 #FDI ratings
@@ -647,11 +644,7 @@ dom3_dist <- tabyl(all_fellow_data, mar_dom3)
 
 dom4_dist <- tabyl(all_fellow_data, mar_dom4a)
 
-##sig level shows black x over insignificant values
-##insig="blank" leaves blank boxes for values that are not sig at .05 level
-##insig="p-value" shows p value superimposed over correlation coefficient (if greater than .05)
-##i like sig level, bc you can still see the corr coefficient 
-#correlation between average score and fdi/pst/principal, descriptives, bring to team Friday and see what questions they have  
+#correlation between average score and fdi/pst/principal, descriptives, bring to team Friday and see what questions they have------------------------------------------------ 
 all_effectiveness <- all_fellow_data %>%
   ungroup() %>%
   select (currentsummativescore, effectiveness, all_dom_quartile, all_dom_avg, dom2_dom3_avg, dom23_quartile, pst_quartile, principal_effectiveness)
@@ -670,8 +663,7 @@ all_rounds_effectiveness_corplot1 <- corrplot(cor(all_rounds_effectiveness),
                                        sig.level=0.05,
                                        method="number")
 
-
-#look at p.mat = res1[[1]]
+#look at p.mat = res1[[1]] if sig levels seem off
 #pull all variables I will need for corr, convert to numeric, add to one dataset for corrplot
 overall_cor <- all_fellow_data %>%
   ungroup() %>%
@@ -759,6 +751,7 @@ anchor_corplot1 <- corrplot(cor(for_cor_anchor),
                             sig.level=0.05, 
                             method="number")
 
+# look at relationship between coach ratings and Fellow performance--------------------------------------------
 coach_ratings <- coach_ratings %>%
   select(coachname, level, returner) %>%
   filter(!is.na(coachname))
@@ -810,13 +803,7 @@ all_fellow_data %>%
   mutate(mean_growth = mean(growth_total)) %>%
   select(coachname, growth_total, mean_growth, count) # choose and reorder columns 
 
-fdi_by_ta <- tabyl(all_fellow_data, dom2_dom3_avg, solo_site)
-
-solo_site <- filter(fdi_by_ta, solo_site == 1)
-ta_site <- filter(fdi_by_ta, solo_site == 0)
-View(ta_site)
-t.test(ta_site$dom2_dom3_avg, solo_site$dom2_dom3_avg)
-
+#look at performance by training academy--------------------------------------------------------------
 for_cor_ta <- coach_ta_scores %>%
   ungroup() %>%
   select (effectiveness, pst_quartile, round1, round2, round3)
@@ -825,24 +812,7 @@ ta_corplot1 <- corrplot(cor(for_cor_ta),
                         p.mat = cor.mtest(for_cor_ta,0.95)[[1]], 
                         sig.level=0.05, 
                         method="number")
-
-#compared to June 2016 ratings (current_summative_score)
-#first put PST scores into quartiles
-june_2016_pst_ratings %>%
-  summarise(meanpstscore = mean(current_summative_score, na.rm = TRUE))
-
-pst_2016_bottom <-quantile(june_2016_pst_ratings$current_summative_score, .25, na.rm = TRUE)
-pst_2016_median <-quantile(june_2016_pst_ratings$current_summative_score, .50, na.rm = TRUE)
-pst_2016_top <- quantile(june_2016_pst_ratings$current_summative_score, .75, na.rm = TRUE)
-
-june_2016_pst_ratings <- june_2016_pst_ratings %>%
-  mutate(pst_2016_quartile = ifelse(current_summative_score > pst_2016_top, 4,
-                                    ifelse(current_summative_score > pst_2016_median, 3,
-                                           ifelse(current_summative_score > pst_2016_bottom, 2, 1))))
-
-# this didn't remove NAs--asked SF why show_na = FALSE isn't working
-pst_descriptives_2016 <- tabyl(june_2016_pst_ratings, pst_2016_quartile, show_na = FALSE)
-
+# mean pst scores, broken out by anchor and non-anchor, as well as by round------------------------------------
 all_fellow_data %>%
   ungroup() %>%
   summarise(meanpstscore = mean(currentsummativescore, na.rm = TRUE))
@@ -875,6 +845,7 @@ mean(all_2016_fellow_data$week_4_fe)
 mean(all_2016_fellow_data$week_5_fe_obs_1) 
 mean(all_2016_fellow_data$week_5_fe_obs_2) 
 
+# relationship between principal survey data and pst scores, as well as FDI---------------------------
 for_cor_principal_survey <- all_fellow_data %>%
   ungroup() %>%
   select (level, dom2_dom3_avg, pst_quartile, principal_effectiveness, currentsummativescore, observationaveragetodate, anchor_highest_formal_average, non_anchor_highest_formal_average)
@@ -907,14 +878,16 @@ coach_level_principal <- all_fellow_data %>%
   mutate(percent = count / sum(count)) %>%
   select(level, principal_effectiveness, percent)
 
-coach_level_d75 <- tabyl(all_fellow_data, level, d75)
-
 coach_returning_d75 <- all_fellow_data %>%
   group_by(returner, d75, pst_quartile) %>%
   summarise(count = n()) %>%
   select(returner, d75, pst_quartile, count)
 
 mean(all_fellow_data$effectiveness)
+
+#create vector with just vacancy effective and create dates---------------------------------------------------
+vacancy_effective <- vacancy_list %>%
+    select(eff_date, vacancy_create_date)
 
 #now compare vacancy date to performance
 nhf <- nhf %>%
@@ -942,7 +915,7 @@ fellow_hiring_data <- fellow_hiring_data %>%
 table(fellow_hiring_data$vacancy)
 #not a large enough sample size between MY and persistent vacancies to make conclusions about vacancy date and performance
 
-#break out D75 as a group
+#break out D75 as a group, look at subject area performance-----------------------------------------------------------------------------------------------------------
 d75 <-filter(all_fellow_data, d75 ==  "D75") 
 non_d75 <- filter(all_fellow_data, is.na(d75))
 
@@ -991,12 +964,6 @@ subject_area_pst <- all_fellow_data %>%
     summarise(mean = mean(currentsummativescore)) %>%
     arrange(mean)
 
-# where did the oct_subject entries go? the disappear when I run the summarise line 
-subject_area_2016_pst <- all_2016_fellow_data %>%
-  group_by(oct_subject) %>%
-  summarise(mean = mean(current_summative_score)) %>%
-  arrange(mean) 
-
 subject_area_effectiveness <- all_fellow_data %>%
   group_by(subject, dom2_dom3_avg) %>%
   summarise(count = n()) %>%
@@ -1010,7 +977,7 @@ pst_ratings_2016_dist_d75 <- tabyl(d75_2016, pst_quartile)
 
 pst_ratings_dist_non_d75 <- tabyl(non_d75, pst_quartile)
 
-#look at relationship between selection performance and FDI ratings
+#look at relationship between selection performance and FDI ratings----------------------------------------
 selection_and_fdi <- all_fellow_data %>%
   group_by(rrteacherpresence23,rrteachingsampleoverall132,rrcriticalthinkingoverall27, dom2_dom3_avg) %>%
   summarise(count = n()) %>%
