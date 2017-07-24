@@ -21,12 +21,18 @@ comprehensive <- read_csv("comprehensive.csv") %>%
 #rename phone number column in fellow_hiring and new_hire_file
 names(fellow_hiring)[names(fellow_hiring) == "rrphonenumber18"] <- "phone_number"
 names(new_hire_file)[names(new_hire_file) == "phone"] <- "phone_number"
+names(comprehensive)[names(comprehensive) == "rrprimaryphone7"] <- "phone_number"
 
 ##need to remove any characters that are not numbers from the phone number field, this is trailing (look for code that removes special characters from inside vector)
 trim.trailing <- function (x) sub("\\-s+$", "", x) 
 fellow_hiring$phone_number <- trim.trailing(fellow_hiring$phone_number)
-
 fellow_hiring$phone_number <- gsub("[[:punct:]]", "", fellow_hiring$phone_number)
+
+comprehensive$phone_number <- trim.trailing(comprehensive$phone_number)
+comprehensive$phone_number <- gsub("[[:punct:]]", "", comprehensive$phone_number)
+
+new_hire_file$phone_number <- trim.trailing(new_hire_file$phone_number)
+new_hire_file$phone_number <- gsub("[[:punct:]]", "", new_hire_file$phone_number)
 
 #change names of app user id field to match so I am able to join the comprehensive and fellow hiring datasets 
 names(fellow_hiring)[names(fellow_hiring) == "rrappuserid1"] <- "appid"
@@ -34,6 +40,7 @@ names(comprehensive)[names(comprehensive) == "rrappuserid3"] <- "appid"
 
 #join comprehensive and fellow hiring
 fellow_hiring <- left_join(fellow_hiring, comprehensive, by = "appid")
+names(fellow_hiring)[names(fellow_hiring) == "phone_number.x"] <- "phone_number"
 #next, need to remove unnecessary variables, like those related to schgeudling interviews
 #keep only useful columns df <- subset(df, select = c(a,c))
 
@@ -43,9 +50,6 @@ fellow_hiring <- filter(fellow_hiring, !is.na(DBN))
 
 #change POCNonWhite column to name POC
 names(fellow_hiring)[names(fellow_hiring) == "rrpocnonehite63"] <- "POC"
-
-
-#****don't yet have new hire file, so will not be joining the two datasets
 
 #change blank cases in Cert.Description column to NA
 new_hire_file$Cert.Description[new_hire_file$Cert.Description == ""] <- NA 
@@ -63,8 +67,8 @@ all_fellow_hiring <- left_join(new_hire_file, fellow_hiring, by = "phone_number"
 #add column that pulls earliest data from all_fellow_hiring, read_csv, and readr recognized column entries as dates
 #Re: the NA values, use pmin, it takes an argument na.rm .  Specify na.rm = TRUE to not have it return NA whenever any argument is NA.
 ##struggling here--this created new duplicate columns called earliestdate.data
-fellow_hiring <- mutate(fellow_hiring, earliest_date = pmin(rrhiredate11, rrfellowhiringcommittmentformsubmitteddate16, na.rm = TRUE))
-fellow_hiring$earliest_date <- as.Date(fellow_hiring$earliest_date, format = "%m/%d/%y")
+all_fellow_hiring <- mutate(all_fellow_hiring, earliest_date = pmin(rrhiredate11, rrfellowhiringcommittmentformsubmitteddate16, na.rm = TRUE))
+all_fellow_hiring$earliest_date <- as.Date(all_fellow_hiring$earliest_date, format = "%m/%d/%y")
 
 #created crosswalk for schools participating in early hiring
 early_hiring_crosswalk <- read_csv("earlyhiringcrosswalk.csv") %>%
