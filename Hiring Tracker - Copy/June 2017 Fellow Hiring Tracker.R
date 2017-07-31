@@ -40,10 +40,39 @@ names(fellow_hiring)[names(fellow_hiring) == "rrappuserid1"] <- "appid"
 names(comprehensive)[names(comprehensive) == "rrappuserid2"] <- "appid"
 
 # join comprehensive and fellow hiring
-fellow_hiring <- left_join(fellow_hiring, comprehensive, by = "appid")
-names(fellow_hiring)[names(fellow_hiring) == "phone_number.x"] <- "phone_number"
-# next, need to remove unnecessary variables, like those related to schgeudling interviews
+names(comprehensive)[names(comprehensive) == "rremail16"] <- "email"
+comprehensive_nhf <- left_join(comprehensive, new_hire_file, by = "phone_number")
+comprehensive_nhf_fh <- left_join(comprehensive_nhf, fellow_hiring, by = "phone_number")
+
+# now, filter out all 800 Fellows who do not have hiring data from the C_nhf_fh
+# must have data in location or rrschoolcode5
+comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
+    filter(!is.na(location)|!is.na(rrschoolcode5))
+
+test_df <- comprehensive_nhf_fh %>%
+    filter(is.na(location))
+
+test_df_2 <- comprehensive_nhf_fh %>%
+    filter(is.na(rrschoolcode5))
+#------------------------------------------------------------------------------------------
+# Need to edit the rest of the code below
+
+# next, need to remove unnecessary variables, like those related to scheudling interviews
 # keep only useful columns df <- subset(df, select = c(a,c))
+comprehensive_nhf_fh <- comprehensive_nhf_fh [, !(colnames(comprehensive_nhf_fh) %in% c("ag_application_forms_complete", 
+                                                                                        "tsn_application_submitted",
+                                                                                        "eis_top_line_title",
+                                                                                        "termintated_from_job",
+                                                                                        "dual_employment_issue",
+                                                                                        "cert_issue_dt",
+                                                                                        "cert_expire",
+                                                                                        "datecertupdated",
+                                                                                        "appid.y",
+                                                                                        "fiscal_year",
+                                                                                        "mq_submitted",
+                                                                                        "terminated_from_job"))]
+comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
+    select(-c("ag_application_forms_complete", "tsn_application_submitted"))
 
 # change names of school code field to DBN so I am able to join the renewal crosswalk and fellow hiring datasets, remove DBN NA
 names(fellow_hiring)[names(fellow_hiring) == "rrschoolcode5"] <- "DBN"
@@ -53,17 +82,14 @@ fellow_hiring <- filter(fellow_hiring, !is.na(DBN))
 names(fellow_hiring)[names(fellow_hiring) == "rrpocnonehite63"] <- "POC"
 
 # change blank cases in Cert.Description column to NA
-new_hire_file$Cert.Description[new_hire_file$Cert.Description == ""] <- NA 
+new_hire_file$cert_description[new_hire_file$cert_description == ""] <- NA 
 
 # change blank cases in Lic.Desc column to NA
-new_hire_file$Lic.Desc[new_hire_file$Lic.Desc == ""] <- NA 
+new_hire_file$lic_desc[new_hire_file$licdesc == ""] <- NA 
 
 # join fellow_hiring and new_hire_file by phone number
 # can't get these to properly merge and populate data by phone or email
-names(comprehensive)[names(comprehensive) == "rremail16"] <- "email"
-names(fellow_hiring)[names(fellow_hiring) == "rremail4"] <- "email"
-new_hire_file$phone_number <- as.character(new_hire_file$phone_number)
-all_fellow_hiring <- left_join(new_hire_file, fellow_hiring, by = "email")
+
 
 # if the reports cannot be joined by phone number, join by another variable or use fuzzy joins
 # may need to rename multiple variables for joins
