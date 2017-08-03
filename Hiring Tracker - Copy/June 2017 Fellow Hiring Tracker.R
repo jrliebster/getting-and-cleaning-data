@@ -22,7 +22,7 @@ comprehensive <- comprehensive %>%
 # rename phone number column in fellow_hiring and new_hire_file
 names(fellow_hiring)[names(fellow_hiring) == "rrphonenumber18"] <- "phone_number"
 names(new_hire_file)[names(new_hire_file) == "phone"] <- "phone_number"
-names(comprehensive)[names(comprehensive) == "rrprimaryphone3"] <- "phone_number"
+names(comprehensive)[names(comprehensive) == "rrprimaryphone5"] <- "phone_number"
 
 # need to remove any characters that are not numbers from the phone number field, this is trailing (look for code that removes special characters from inside vector)
 trim.trailing <- function (x) sub("\\-s+$", "", x) 
@@ -39,6 +39,13 @@ new_hire_file$phone_number <- gsub("[[:punct:]]", "", new_hire_file$phone_number
 names(fellow_hiring)[names(fellow_hiring) == "rrappuserid1"] <- "appid"
 names(comprehensive)[names(comprehensive) == "rrappuserid2"] <- "appid"
 
+# remove NA school codes from fellow hiring and NHF
+fellow_hiring <- fellow_hiring %>%
+    filter(!is.na(rrschoolcode5))
+
+new_hire_file <- new_hire_file %>%
+    filter(!is.na(location))
+
 # join comprehensive and fellow hiring
 names(comprehensive)[names(comprehensive) == "rremail16"] <- "email"
 comprehensive_nhf <- left_join(comprehensive, new_hire_file, by = "phone_number")
@@ -47,32 +54,22 @@ comprehensive_nhf_fh <- left_join(comprehensive_nhf, fellow_hiring, by = "phone_
 # now, filter out all 800 Fellows who do not have hiring data from the C_nhf_fh
 # must have data in location or rrschoolcode5
 comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
-    filter(!is.na(location)|!is.na(rrschoolcode5))
+    filter(!is.na(location) | !is.na(rrschoolcode5))
+
 
 test_df <- comprehensive_nhf_fh %>%
-    filter(is.na(location))
+    filter(!is.na(location))
 
 test_df_2 <- comprehensive_nhf_fh %>%
     filter(is.na(rrschoolcode5))
-#------------------------------------------------------------------------------------------
-# Need to edit the rest of the code below
 
 # next, need to remove unnecessary variables, like those related to scheudling interviews
-# keep only useful columns df <- subset(df, select = c(a,c))
-comprehensive_nhf_fh <- comprehensive_nhf_fh [, !(colnames(comprehensive_nhf_fh) %in% c("ag_application_forms_complete", 
-                                                                                        "tsn_application_submitted",
-                                                                                        "eis_top_line_title",
-                                                                                        "termintated_from_job",
-                                                                                        "dual_employment_issue",
-                                                                                        "cert_issue_dt",
-                                                                                        "cert_expire",
-                                                                                        "datecertupdated",
-                                                                                        "appid.y",
-                                                                                        "fiscal_year",
-                                                                                        "mq_submitted",
-                                                                                        "terminated_from_job"))]
+# keep only useful columns df <- subset(df, select = c(a,c)) or select(-(c))
 comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
-    select(-c("ag_application_forms_complete", "tsn_application_submitted"))
+    select(-hire_type, -cluster, -network, -title, -terminated_from_job,-(problem_code_exists:dual_employment_issue), -(bq_submitted:background_investigation), -(certificate:appid.y))
+
+#------------------------------------------------------------------------------------------
+# Need to edit the rest of the code below
 
 # change names of school code field to DBN so I am able to join the renewal crosswalk and fellow hiring datasets, remove DBN NA
 names(fellow_hiring)[names(fellow_hiring) == "rrschoolcode5"] <- "DBN"

@@ -116,31 +116,31 @@ coach_ratings <- coach_ratings %>%
 # add to sep dataset for comparison, then keep only Cohort 28 observations in all dataframe, complete cases as well
 # checked against original excel files, all have correct number of cases
 # before joining all fdi datasets together, need to create a column in each fdi dataset that signifies the university
-bc_fdi_2016 <- filter (bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") 
-bc_fdi_2016 <- filter (bc_fdi_2016, status ==  "Complete") %>%
-  mutate(university="BC") 
-bc_fdi_2016 <- bc_fdi_2016[, !(colnames(bc_fdi_2016) %in% c("please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed"))]
+bc_fdi_2016 <- filter (bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27", 
+                       status == "Complete") %>%
+    mutate(university="BC") %>%
+    select(-c(please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed))
 
 bc_fdi <- filter(bc_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28") %>%
     filter(status == "Complete") %>%
     mutate(university="BC")
 
-city_fdi_2016<-filter(city_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") %>%
-    filter(status ==  "Complete") %>%
+city_fdi_2016<-filter(city_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27",
+                      status ==  "Complete") %>%
+    mutate(university="City") %>%
+    select(-c(please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed))
+
+city_fdi<-filter(city_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28",
+                 status ==  "Complete") %>%
     mutate(university="City")
-city_fdi_2016 <- city_fdi_2016[, !(colnames(city_fdi_2016) %in% c("please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed"))]
 
-city_fdi<-filter(city_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28") %>%
-    filter(status ==  "Complete") %>%
-    mutate(university="City")
+pace_fdi_2016<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27",
+                      status ==  "Complete") %>%
+    mutate(university="Pace") %>%
+    select(-c(please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed))
 
-pace_fdi_2016<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 27") %>%
-    filter(status ==  "Complete") %>%
-    mutate(university="Pace")
-pace_fdi_2016 <- pace_fdi_2016[, !(colnames(pace_fdi_2016) %in% c("please_select_the_cohort_28_fellow_id_that_corresponds_to_the_fellow_you_observed"))]
-
-pace_fdi<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28") %>%
-    filter(status ==  "Complete") %>%
+pace_fdi<-filter(pace_fdi, which_cohort_is_this_fellow_a_member_of ==  "Cohort 28",
+                 status ==  "Complete") %>%
     mutate(university="Pace")
 
 all_fdi_2016 <- filter(all_fdi_2016, uni %in% c("Pace University" , "City College", "Brooklyn College"))
@@ -771,37 +771,34 @@ all_fellow_data <- all_fellow_data[, !(colnames(all_fellow_data) %in% c("coach_n
 
 all_fellow_data$level <- as.numeric(as.character(all_fellow_data$level))
 
+# add in specific research questions
+
+# what were Fellow PST, principal, and FDI ratings by coach?
 coach_ratings_dist <- all_fellow_data %>%
-  group_by(coachname, pst_quartile) %>%
-  summarise(count = n()) %>%
-  mutate(mean = mean(pst_quartile)) %>%
-  select(coachname, pst_quartile, mean, count) %>%
-  slice(1) 
+  group_by(coachname) %>%
+  summarise(count = n(),
+            mean_pst = mean(pst_quartile, na.rm = TRUE))
 
 coach_effectiveness_dist <- all_fellow_data %>%
-  group_by(coachname, dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(mean_effectiveness = mean(dom2_dom3_avg)) %>%
-  select(coachname, mean_effectiveness) %>%
-  slice(1) 
+  group_by(coachname) %>% 
+  summarise(count = n(),
+            mean_avg = mean(dom2_dom3_avg, na.rm = TRUE))
 
 all_fellow_data %>%
   group_by(growth_total, pst_quartile) %>%
-  summarise(count = n()) %>%
-  mutate(mean_growth = mean(growth_total)) %>%
-  select(growth_total, pst_quartile, mean_growth, count) # choose and reorder columns 
+  summarise(count = n(),
+            mean_growth = mean(growth_total, na.rm = TRUE))
 
 coach_ta_scores <- all_fellow_data %>%
   group_by(coachname, effectiveness, pst_quartile, round1, round2, round3) %>%
-  summarise(count = n()) %>%
-  mutate(mean_pst = mean(pst_quartile)) %>%
-  select(coachname, effectiveness, pst_quartile, round1, round2, round3, mean_pst, count) # choose and reorder columns 
+  summarise(count = n(),
+            mean_pst = mean(pst_quartile))
 
+# fellow growth by coach
 all_fellow_data %>%
-  group_by(coachname, growth_total) %>%
-  summarise(count = n()) %>%
-  mutate(mean_growth = mean(growth_total)) %>%
-  select(coachname, growth_total, mean_growth, count) # choose and reorder columns 
+  group_by(coachname) %>%
+  summarise(count = n(),
+            mean_growth = mean(growth_total)) 
 
 #look at performance by training academy--------------------------------------------------------------
 for_cor_ta <- coach_ta_scores %>%
@@ -822,8 +819,7 @@ pst_descriptives <- tabyl(all_fellow_data, pst_quartile)
 all_fellow_data %>%
   mutate(fyi_range = ifelse(count_fyi >= 5, 3, ifelse(count_fyi >= 1, 2, 1))) %>%
   group_by(effectiveness, fyi_range) %>%
-  summarise(count = n()) %>%
-  select(effectiveness, fyi_range, count)
+  summarise(count = n()) 
 
 mean(all_fellow_data$anchortechaveragehighestfor)
 mean(all_fellow_data$nonanchortechniqueaverage)
@@ -857,26 +853,21 @@ principal_corplot1 <- corrplot(cor(for_cor_principal_survey),
 
 principal_pst <- all_fellow_data %>%
   group_by(principal_effectiveness, pst_quartile) %>%
-  summarise(count = n()) %>%
-  select(principal_effectiveness, pst_quartile)
+  summarise(count = n())
 
 coach_level_pst <- all_fellow_data %>%
-  group_by(level, pst_quartile) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(level, pst_quartile, percent)
+    crosstab(level, pst_quartile, "row")
+
+# crosstab (y axis, x axis, row/col percent (can leave third formula blank))
+coach_level_pst <- all_fellow_data %>%
+    crosstab(level, pst_quartile, "row")
 
 coach_level_fdi <- all_fellow_data %>%
-  group_by(level, effectiveness) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(level, effectiveness, percent)
+    crosstab(level, dom2_dom3_avg)
+
 
 coach_level_principal <- all_fellow_data %>%
-  group_by(level, principal_effectiveness) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(level, principal_effectiveness, percent)
+    crosstab(level, principal_effectiveness, "row")
 
 coach_returning_d75 <- all_fellow_data %>%
   group_by(returner, d75, pst_quartile) %>%
@@ -930,34 +921,29 @@ non_d75_2016_item<-filter(all_2016_fellow_data, oct_subject != "D75")
 
 effectiveness_dist_d75 <- d75 %>%
   group_by(dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(dom2_dom3_avg, percent, count) 
+  summarise(count = n(),
+            percent = count / sum(count)) 
 
 effectiveness_dist_2016_d75 <- d75_2016 %>%
   group_by(oct_dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(oct_dom2_dom3_avg, percent, count) 
+  summarise(count = n(),
+            percent = count / sum(count)) 
 
 effectiveness_dist_non_d75 <- non_d75 %>%
   group_by(dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(dom2_dom3_avg, percent, count) 
+  summarise(count = n(),
+            percent = count / sum(count))
 
 effectiveness_dist_2016_non_d75 <- non_d75_2016 %>%
   group_by(oct_dom2_dom3_avg) %>%
   drop_na(oct_dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(oct_dom2_dom3_avg, percent, count)  
+  summarise(count = n(),
+            percent = count / sum(count))  
 
 d75_by_coach <- d75 %>%
   group_by(coachname, pst_quartile) %>%
-  summarise(count = n()) %>%
-  mutate(percent = count / sum(count)) %>%
-  select(coachname, pst_quartile, count) 
+  summarise(count = n(),
+            percent = count / sum(count))
 
 subject_area_pst <- all_fellow_data %>%
     group_by(subject) %>%
@@ -966,9 +952,8 @@ subject_area_pst <- all_fellow_data %>%
 
 subject_area_effectiveness <- all_fellow_data %>%
   group_by(subject, dom2_dom3_avg) %>%
-  summarise(count = n()) %>%
-  mutate(mean = mean(dom2_dom3_avg)) %>%
-  select(subject, dom2_dom3_avg, mean, count) %>%
+  summarise(count = n(),
+            mean = mean(dom2_dom3_avg)) %>%
   arrange(mean) 
 
 pst_ratings_dist_d75 <- tabyl(d75, pst_quartile) 
@@ -981,7 +966,6 @@ pst_ratings_dist_non_d75 <- tabyl(non_d75, pst_quartile)
 selection_and_fdi <- all_fellow_data %>%
   group_by(rrteacherpresence23,rrteachingsampleoverall132,rrcriticalthinkingoverall27, dom2_dom3_avg) %>%
   summarise(count = n()) %>%
-  select(rrteacherpresence23,rrteachingsampleoverall132,rrcriticalthinkingoverall27, dom2_dom3_avg, count) %>%
   filter(!is.na(dom2_dom3_avg))
 
 aggregate(selection_and_fdi[, 4], list(selection_and_fdi$rrteacherpresence23), mean)
@@ -991,7 +975,6 @@ aggregate(selection_and_fdi[, 4], list(selection_and_fdi$rrcriticalthinkingovera
 selection_and_fdi_2016 <- all_2016_fellow_data %>%
   group_by(rrteacherpresence23,rrteachingsampleoverall132,rrcriticalthinkingoverall27, oct_dom2_dom3_avg) %>%
   summarise(count = n()) %>%
-  select(rrteacherpresence23,rrteachingsampleoverall132,rrcriticalthinkingoverall27, oct_dom2_dom3_avg, count) %>%
   filter(!is.na(oct_dom2_dom3_avg))
 
 aggregate(selection_and_fdi_2016[, 4], list(selection_and_fdi_2016$rrteacherpresence23), mean)
