@@ -51,6 +51,7 @@ names(comprehensive)[names(comprehensive) == "rremail16"] <- "email"
 comprehensive_nhf <- left_join(comprehensive, new_hire_file, by = "phone_number")
 comprehensive_nhf_fh <- left_join(comprehensive_nhf, fellow_hiring, by = "phone_number")
 
+table(is.na(comprehensive_nhf_fh$location), is.na(comprehensive_nhf_fh$rrschoolcode5))
 # now, filter out all 800 Fellows who do not have hiring data from the C_nhf_fh
 # must have data in location or rrschoolcode5
 comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
@@ -70,6 +71,7 @@ comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
 
 #------------------------------------------------------------------------------------------
 # Need to edit the rest of the code below
+# from HD: need district and borough column
 
 # change names of school code field to DBN so I am able to join the renewal crosswalk and fellow hiring datasets, remove DBN NA
 names(fellow_hiring)[names(fellow_hiring) == "rrschoolcode5"] <- "DBN"
