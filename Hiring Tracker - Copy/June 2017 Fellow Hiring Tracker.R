@@ -6,7 +6,7 @@
 
 # load packages
 library(pacman)
-p_load(readxl, readr, dplyr, janitor, tidyr, stringr, ggplot2, lubridate, data.table)
+p_load(readxl, readr, dplyr, stringr, janitor, tidyr, stringr, ggplot2, lubridate, data.table)
 
 # upload datasets (Hiring information report from TT2, comprehensive report, and NHF from DOE client)
 fellow_hiring <- read_csv("hiringinformation.csv") %>%
@@ -25,15 +25,21 @@ names(new_hire_file)[names(new_hire_file) == "phone"] <- "phone_number"
 names(comprehensive)[names(comprehensive) == "rrprimaryphone5"] <- "phone_number"
 
 # need to remove any characters that are not numbers from the phone number field, this is trailing (look for code that removes special characters from inside vector)
+# also need to remove spaces between numbers in phone_number string
+# also need to remove 1 at beginning of phone number
 trim.trailing <- function (x) sub("\\-s+$", "", x) 
 fellow_hiring$phone_number <- trim.trailing(fellow_hiring$phone_number)
 fellow_hiring$phone_number <- gsub("[[:punct:]]", "", fellow_hiring$phone_number)
+fellow_hiring$phone_number <- str_replace_all(fellow_hiring$phone_number, fixed(" "), "")
 
 comprehensive$phone_number <- trim.trailing(comprehensive$phone_number)
 comprehensive$phone_number <- gsub("[[:punct:]]", "", comprehensive$phone_number)
+comprehensive$phone_number <- str_replace_all(comprehensive$phone_number, fixed(" "), "")
+## comprehensive$phone_number <- str_sub(comprehensive$phone_number, -9)
 
 new_hire_file$phone_number <- trim.trailing(new_hire_file$phone_number)
 new_hire_file$phone_number <- gsub("[[:punct:]]", "", new_hire_file$phone_number)
+new_hire_file$phone_number <- str_replace_all(new_hire_file$phone_number, fixed(" "), "")
 
 # change names of app user id field to match so I am able to join the comprehensive and fellow hiring datasets 
 names(fellow_hiring)[names(fellow_hiring) == "rrappuserid1"] <- "appid"
@@ -47,9 +53,15 @@ new_hire_file <- new_hire_file %>%
     filter(!is.na(location))
 
 # join comprehensive and fellow hiring
-names(comprehensive)[names(comprehensive) == "rremail16"] <- "email"
-comprehensive_nhf <- left_join(comprehensive, new_hire_file, by = "phone_number")
-comprehensive_nhf_fh <- left_join(comprehensive_nhf, fellow_hiring, by = "phone_number")
+names(comprehensive)[names(comprehensive) == "rremail8"] <- "email"
+names(fellow_hiring)[names(fellow_hiring) == "rremail4"] <- "email"
+missing <- anti_join(new_hire_file, comprehensive, by = "email") 
+missing <- left_join(missing, comprehensive, by = "phone_number") 
+missing <- missing %>%
+    select(email.y, phone_number, appid)
+comprehensive_nhf <- left_join(comprehensive, new_hire_file, by = "email")
+comprehensive_nhf_fh <- left_join(comprehensive_nhf, fellow_hiring, by = "email")
+comprehensive_nhf_fh <- left_join(comprehensive_nhf_fh, missing, by = "phone_number")
 
 table(is.na(comprehensive_nhf_fh$location), is.na(comprehensive_nhf_fh$rrschoolcode5))
 # now, filter out all 800 Fellows who do not have hiring data from the C_nhf_fh
@@ -62,7 +74,7 @@ test_df <- comprehensive_nhf_fh %>%
     filter(!is.na(location))
 
 test_df_2 <- comprehensive_nhf_fh %>%
-    filter(is.na(rrschoolcode5))
+    filter(!is.na(rrschoolcode5))
 
 # next, need to remove unnecessary variables, like those related to scheudling interviews
 # keep only useful columns df <- subset(df, select = c(a,c)) or select(-(c))
