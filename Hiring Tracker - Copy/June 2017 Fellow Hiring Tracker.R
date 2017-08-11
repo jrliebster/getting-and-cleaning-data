@@ -6,7 +6,7 @@
 
 # load packages
 library(pacman)
-p_load(readxl, readr, dplyr, stringr, janitor, tidyr, stringr, ggplot2, lubridate, data.table)
+p_load(readxl, readr, dplyr, stringr, janitor, tidyr, ggplot2, lubridate, data.table)
 
 # upload datasets (Hiring information report from TT2, comprehensive report, and NHF from DOE client)
 fellow_hiring <- read_csv("hiringinformation.csv") %>%
@@ -86,8 +86,7 @@ comprehensive_nhf_fh <- comprehensive_nhf_fh %>%
 # from HD: need district and borough column
 
 # change names of school code field to DBN so I am able to join the renewal crosswalk and fellow hiring datasets, remove DBN NA
-names(fellow_hiring)[names(fellow_hiring) == "rrschoolcode5"] <- "DBN"
-fellow_hiring <- filter(fellow_hiring, !is.na(DBN))
+names(comprehensive_nhf_fh)[names(comprehensive_nhf_fh) == "rrschoolcode5"] <- "DBN"
 
 # change POCNonWhite column to name POC
 names(fellow_hiring)[names(fellow_hiring) == "rrpocnonehite63"] <- "POC"
