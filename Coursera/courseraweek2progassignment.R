@@ -37,7 +37,7 @@ test_data <- cbind(y_test, subject_test, x_test)
 # merge the train and test data sets together
 all_data <- rbind(train_data, test_data)
 
-
+# Extract the measurements on the mean and standard deviation for each measurement.
 
 
 
