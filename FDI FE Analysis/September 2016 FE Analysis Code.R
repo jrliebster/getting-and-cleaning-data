@@ -904,9 +904,10 @@ fellow_hiring_data <- fellow_hiring_data %>%
                           ifelse(eff_date <= "2016-09-06", "start of year", eff_date)))
 
 table(fellow_hiring_data$vacancy)
-#not a large enough sample size between MY and persistent vacancies to make conclusions about vacancy date and performance
+# not a large enough sample size between MY and persistent vacancies to make conclusions about vacancy date and performance
+# mid year: 33 start of year: 3
 
-#break out D75 as a group, look at subject area performance-----------------------------------------------------------------------------------------------------------
+# break out D75 as a group, look at subject area performance-----------------------------------------------------------------------------------------------------------
 d75 <-filter(all_fellow_data, d75 ==  "D75") 
 non_d75 <- filter(all_fellow_data, is.na(d75))
 
