@@ -8,7 +8,7 @@
 # data source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 library(pacman)
-p_load(readr, dplyr, utils, stringr, janitor, tidyr, data.table)
+p_load(readr, dplyr, utils, stringr, janitor, tidyr, data.table, knitr)
 
 # 6 total datasets to load; xtrain, xtest, subjecttest, subjecttrain, ytrain, ytest
 # all are .txt files
@@ -49,8 +49,16 @@ mean_std_data <- all_data %>%
 # Uses descriptive activity names to name the activities in the data set
 # Appropriately labels the data set with descriptive variable names.
 mean_std_data <- left_join(mean_std_data, activity_label, by = "activity_id")
-
+names(mean_std_data) <- gsub("acc", "acceleration", names(mean_std_data))
+names(mean_std_data) <- gsub("^t", "time", names(mean_std_data))
+names(mean_std_data) <- gsub("^f", "frequency", names(mean_std_data))
+names(mean_std_data) <- gsub("bodybody", "body", names(mean_std_data))
+names(mean_std_data) <- gsub("mag", "magnitude", names(mean_std_data))
 
 # From the data set in step 4, 
 # creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject.
+tidy_data <- mean_std_data %>%
+  group_by(sub_id, activity_type) %>%
+  summarise_all(funs(mean))
+
